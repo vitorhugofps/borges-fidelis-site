@@ -37,13 +37,13 @@ const anos = new Date().getFullYear() - site.desde;
   <!-- 2 · Intro -->
   <section class="intro on-paper grid" aria-label="Apresentação">
     <p class="intro__lead" data-split>
-      Desde {site.desde}, a Borges & Fidélis acompanha médicos quando a carreira está em jogo, numa notificação do CRM, numa ação de paciente, numa intimação, e também nos dias comuns, quando ainda dá para prevenir.
+      Desde {site.desde}, a Borges & Fidélis acompanha médicos quando a carreira está em jogo: uma notificação do CRM, uma ação de paciente, uma intimação. E também nos dias comuns, quando ainda dá para prevenir.
     </p>
     <div class="intro__cols" data-stagger>
-      <p><strong>Para quem.</strong> Médicos, cirurgiões-dentistas, enfermeiros e demais profissionais da saúde, além de clínicas e hospitais. O escritório atua sempre do lado do profissional.</p>
+      <p><strong>Para quem.</strong> Médicos, cirurgiões-dentistas, enfermeiros e demais profissionais da saúde, além de clínicas e hospitais. Atendimento a profissionais e a empresas da área da saúde.</p>
       <p><strong>Em quê.</strong> Defesa no CRM, ações de indenização e investigações criminais; publicidade, clínicas, trabalho e tributos; residência, aposentadoria especial e FIES.</p>
       <p><strong>Onde.</strong> Sede em {site.endereco.cidade}, no bairro {site.endereco.bairro}, e filial em São Paulo. Atendimento presencial ou online, sempre com hora marcada.</p>
-      <p><strong>Como falar.</strong> Pelo WhatsApp <a class="link" href={wa()} target="_blank" rel="noopener">{site.telefone}</a> ou pelo e-mail <a class="link" href={`mailto:${site.email}`}>{site.email}</a>. Cada conversa é protegida pelo sigilo profissional.</p>
+      <p><strong>Como falar.</strong> Pelo WhatsApp <a class="link nw" href={wa()} target="_blank" rel="noopener">{site.telefone}</a> ou pelo e-mail <a class="link" href={`mailto:${site.email}`}>{site.email}</a>. Cada conversa é protegida pelo sigilo profissional.</p>
     </div>
   </section>
 
@@ -63,7 +63,7 @@ const anos = new Date().getFullYear() - site.desde;
   <section class="areas on-paper grid" id="areas" aria-labelledby="areas-t" data-areas>
     <div class="areas__aside">
       <h2 class="t-l lines" id="areas-t"><span class="line"><span data-line>Onde atuamos</span></span></h2>
-      <p data-area-caption data-default="Dez frentes e um único público: quem trabalha com saúde. Passe o cursor por uma área para ler o resumo.">Dez frentes e um único público: quem trabalha com saúde. Passe o cursor por uma área para ler o resumo.</p>
+      <p data-area-caption data-default="Dez frentes e um único público: quem trabalha com saúde. Cada área tem uma página com as situações mais comuns, as normas e o modo de atuação.">Dez frentes e um único público: quem trabalha com saúde. Cada área tem uma página com as situações mais comuns, as normas e o modo de atuação.</p>
     </div>
     <div class="areas__col">
       {grupos.map((g) => (
@@ -95,7 +95,7 @@ const anos = new Date().getFullYear() - site.desde;
       <div><dt>Atendimento</dt><dd>Presencial e online</dd></div>
     </dl>
     <div class="about__text" data-split>
-      <p>O escritório nasceu em Uberlândia com um recorte claro: atender quem trabalha com saúde. Esse recorte muda a defesa. Prontuário, escala de plantão e Código de Ética Médica fazem parte do trabalho de todo dia, ao lado das leis processuais. Por isso a primeira conversa já começa pelo que importa.</p>
+      <p>O escritório nasceu em Uberlândia com um recorte claro: atender quem trabalha com saúde. Prontuário, escala de plantão e Código de Ética Médica fazem parte do trabalho de todo dia, ao lado das leis processuais. O mesmo episódio pode chegar ao Conselho, à Justiça e à delegacia, e o caso é olhado nas três frentes desde o início.</p>
     </div>
     <p class="about__label">Formação das sócias</p>
     <div class="about__lists">
@@ -116,7 +116,7 @@ const anos = new Date().getFullYear() - site.desde;
   <section class="socias on-oak" aria-labelledby="socias-t">
     <div class="socias__txt">
       <h2 class="sr-only" id="socias-t">As sócias</h2>
-      <p class="socias__intro" data-reveal>Duas advogadas, uma em cada sala, e as duas no seu caso desde a primeira conversa.</p>
+      <p class="socias__intro" data-reveal>Duas advogadas à frente do escritório, cada uma com a sua sala e a sua placa.</p>
       {site.socias.map((s, i) => (
         <div class="socia">
           <p class="socia__name t-l lines" data-reveal-lines><span class="line"><span data-line>{s.nome}</span></span></p>
@@ -184,7 +184,7 @@ const anos = new Date().getFullYear() - site.desde;
   <section class="contact on-paper" aria-labelledby="contato-t">
     <h2 class="sr-only" id="contato-t">Contato</h2>
     <div class="contact__rows">
-      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>Av. dos Vinhedos, 71, sala 404</span></a>
+      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>{site.endereco.linha1}</span></a>
       <p data-wipe style="--d:80"><span>{site.endereco.bairro}, {site.endereco.cidade}</span></p>
       <p data-wipe style="--d:160"><span>Filial em {site.filial}</span></p>
       <p data-wipe style="--d:240"><span>Presencial e online, com hora marcada</span></p>

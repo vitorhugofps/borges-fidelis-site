@@ -16,11 +16,11 @@ const { i = 0 } = Astro.props;
 const a = fotos[(i * 2) % fotos.length];
 const b = fotos[(i * 2 + 1) % fotos.length];
 ---
-<figure class="band-pair" aria-label="Fotos do escritório em Uberlândia">
+<div class="band-pair" role="group" aria-label="Fotos do escritório em Uberlândia">
   {[a, b].map((f) => (
-    <div class="band-pair__ph" data-drift>
+    <figure class="band-pair__ph" data-drift>
       <Image src={f.src} alt={f.alt} widths={[480, 720, 960, 1440]} sizes="50vw" loading="lazy" style={`object-position:${f.pos}`} />
       <figcaption>{f.cap}</figcaption>
-    </div>
+    </figure>
   ))}
-</figure>
+</div>

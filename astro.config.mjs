@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://advogandoparamedicos.com.br',
-  trailingSlash: 'ignore',
+  trailingSlash: 'never',
   build: { format: 'directory', inlineStylesheets: 'auto' },
   integrations: [sitemap({ filter: (page) => !page.includes('/404') })],
   prefetch: { prefetchAll: false, defaultStrategy: 'hover' },

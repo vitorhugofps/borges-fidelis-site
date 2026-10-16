@@ -25,7 +25,7 @@ const jsonld = [
   },
 ];
 ---
-<Base title={a.titulo} description={a.resumo} current={`/conteudos/${a.slug}`} jsonld={jsonld}>
+<Base title={`${a.h1}: ${a.sub.charAt(0).toLowerCase()}${a.sub.slice(1)}`} description={a.resumo} current={`/conteudos/${a.slug}`} jsonld={jsonld}>
   <section class="page-hero page-hero--short on-paper" data-page-hero>
     <div class="page-hero__title">
       <h1 class="t-l lines" style="font-size:clamp(40px, 7.4vw, 132px)"><span class="line"><span data-line>{a.h1}</span></span></h1>

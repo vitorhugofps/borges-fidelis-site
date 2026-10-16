@@ -3,7 +3,7 @@
   "marca": "Borges & Fidélis",
   "marcaCompleta": "Borges & Fidélis Advocacia",
   "url": "https://advogandoparamedicos.com.br",
-  "descricao": "Borges & Fidélis: advocacia dedicada a médicos, dentistas, clínicas e profissionais da saúde. Defesa no CRM, ações de indenização, defesa criminal, publicidade médica, clínicas, trabalho e tributos. Uberlândia, São Paulo e online.",
+  "descricao": "Advocacia dedicada a médicos e profissionais da saúde: defesa no CRM, ações de indenização, criminal, publicidade médica, clínicas e tributos. Uberlândia e São Paulo.",
   "desde": 2013,
   "whatsapp": "5534999053289",
   "telefone": "(34) 99905-3289",
@@ -24,30 +24,66 @@
       "id": "tuane",
       "nome": "Tuane Borges",
       "tratamento": "Dra. Tuane Borges",
-      "oab": ["OAB/MG 26.658", "OAB/SP 422.277", "OAB/GO 59.163"],
+      "oab": [
+        "OAB/MG 26.658",
+        "OAB/SP 422.277",
+        "OAB/GO 59.163"
+      ],
       "instagram": "https://www.instagram.com/tuaneborgesmatozo",
       "foto": "tuane-borges",
       "formacao": [
-        { "titulo": "Graduação em Direito", "instituicao": "UFU" },
-        { "titulo": "Pós-graduação em Processo do Trabalho", "instituicao": "Faculdade Anhanguera" },
-        { "titulo": "Pós-graduação em Direito Médico e Hospitalar", "instituicao": "Faculdade Paulista de Direito" },
-        { "titulo": "Especialização em Direito da Saúde e Bioética", "instituicao": "Universidade de Coimbra" }
+        {
+          "titulo": "Graduação em Direito",
+          "instituicao": "UFU"
+        },
+        {
+          "titulo": "Pós-graduação em Processo do Trabalho",
+          "instituicao": "Faculdade Anhanguera"
+        },
+        {
+          "titulo": "Pós-graduação em Direito Médico e Hospitalar",
+          "instituicao": "Faculdade Paulista de Direito"
+        },
+        {
+          "titulo": "Especialização em Direito da Saúde e Bioética",
+          "instituicao": "Universidade de Coimbra"
+        }
       ]
     },
     {
       "id": "flavia",
       "nome": "Flávia Fidélis",
       "tratamento": "Dra. Flávia Fidélis",
-      "oab": ["OAB/MG 124.385"],
+      "oab": [
+        "OAB/MG 124.385"
+      ],
       "instagram": "https://www.instagram.com/flaviafidelis",
       "foto": "flavia-fidelis",
       "formacao": [
-        { "titulo": "Graduação em Direito", "instituicao": "Uniminas" },
-        { "titulo": "Pós-graduação em Processo Civil", "instituicao": "UFU" },
-        { "titulo": "Especialização em Direito Empresarial", "instituicao": "FGV" },
-        { "titulo": "Pós-graduação em Direito Médico e Hospitalar", "instituicao": "Faculdade Paulista de Direito" },
-        { "titulo": "Especialização em Direito Médico", "instituicao": "Universidade de Coimbra" },
-        { "titulo": "Professora de pós-graduação", "instituicao": "" }
+        {
+          "titulo": "Graduação em Direito",
+          "instituicao": "Uniminas"
+        },
+        {
+          "titulo": "Pós-graduação em Processo Civil",
+          "instituicao": "UFU"
+        },
+        {
+          "titulo": "Especialização em Direito Empresarial",
+          "instituicao": "FGV"
+        },
+        {
+          "titulo": "Pós-graduação em Direito Médico e Hospitalar",
+          "instituicao": "Faculdade Paulista de Direito"
+        },
+        {
+          "titulo": "Especialização em Direito Médico",
+          "instituicao": "Universidade de Coimbra"
+        },
+        {
+          "titulo": "Professora de pós-graduação",
+          "instituicao": ""
+        }
       ]
     }
   ],
@@ -57,9 +93,21 @@
     "carreira": "Ao longo da carreira"
   },
   "passos": [
-    { "linha": "Primeiro, você nos conta.", "texto": "Por WhatsApp, e-mail ou no escritório. Ouvimos o que aconteceu e verificamos logo se há prazo correndo." },
-    { "linha": "Depois, lemos tudo.", "texto": "Ofício, prontuário, contratos, mensagens. O caso ganha uma linha do tempo feita a partir dos documentos." },
-    { "linha": "Então, traçamos o caminho.", "texto": "Você conhece as alternativas, os riscos de cada uma e o que depende de você. A decisão é sempre sua." },
-    { "linha": "E seguimos até o fim.", "texto": "Audiências, sessões de julgamento e recursos, com notícia a cada fase. Em sigilo, do primeiro ao último dia." }
+    {
+      "linha": "Primeiro, você nos conta.",
+      "texto": "Por WhatsApp, e-mail ou no escritório. Ouvimos o que aconteceu e verificamos logo se há prazo correndo."
+    },
+    {
+      "linha": "Depois, lemos tudo.",
+      "texto": "Ofício, prontuário, contratos, mensagens. O caso ganha uma linha do tempo feita a partir dos documentos."
+    },
+    {
+      "linha": "Então, traçamos o caminho.",
+      "texto": "Você conhece as alternativas, os riscos de cada uma e o que depende de você. A decisão é sempre sua."
+    },
+    {
+      "linha": "E seguimos até o fim.",
+      "texto": "Audiências, sessões de julgamento e recursos, com notícia a cada fase. Em sigilo, do primeiro ao último dia."
+    }
   ]
 }

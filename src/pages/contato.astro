@@ -70,7 +70,7 @@ import { wa } from '../lib/util.js';
   <section class="contact on-paper" aria-labelledby="contato-t">
     <h2 class="sr-only" id="contato-t">Endereço e canais</h2>
     <div class="contact__rows">
-      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>Av. dos Vinhedos, 71, sala 404</span></a>
+      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>{site.endereco.linha1}</span></a>
       <p data-wipe style="--d:80"><span>{site.endereco.bairro}, {site.endereco.cidade}</span></p>
       <p data-wipe style="--d:160"><span>Filial em {site.filial}</span></p>
       <p data-wipe style="--d:240"><span>Presencial e online, com hora marcada</span></p>
@@ -81,5 +81,5 @@ import { wa } from '../lib/util.js';
 
   <Band i={2} />
 
-  <Atendimento titulo="Com quem você fala" texto="As duas sócias acompanham os casos desde a primeira conversa. Atenção a golpes: o escritório não pede pagamentos nem dados bancários por mensagem. Na dúvida, ligue para o número oficial." />
+  <Atendimento titulo="Com quem você fala" texto="As sócias do escritório, Dra. Tuane Borges e Dra. Flávia Fidélis. Atenção a golpes: o escritório não pede pagamentos nem dados bancários por mensagem. Na dúvida, ligue para o número oficial." />
 </Base>

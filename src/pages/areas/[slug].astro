@@ -17,11 +17,6 @@ const msg = `Olá. Gostaria de falar com o escritório sobre ${a.nome.toLowerCas
 const jsonld = [
   {
     '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: a.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-  },
-  {
-    '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Início', item: site.url },
@@ -31,7 +26,7 @@ const jsonld = [
   },
 ];
 ---
-<Base title={`${a.nome}: ${a.titulo}`} description={a.resumo} current={`/areas/${a.slug}`} jsonld={jsonld}>
+<Base title={a.nome} description={a.resumo} current={`/areas/${a.slug}`} jsonld={jsonld}>
   <section class="page-hero on-paper" data-page-hero>
     <FitTitle text={a.nome} class="page-hero__title" />
     <div class="page-hero__foot">

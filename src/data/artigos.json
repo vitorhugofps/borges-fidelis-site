@@ -32,7 +32,7 @@
       },
       {
         "tipo": "p",
-        "texto": "No PEP, esse prazo é contado da juntada do comprovante de citação ou do comparecimento espontâneo, e o médico pode indicar até três testemunhas (art. 43). Por isso, a primeira tarefa é ler o documento e identificar se se trata de pedido de esclarecimentos em sindicância ou de citação em processo já instaurado."
+        "texto": "No PEP, esse prazo é contado a partir da juntada aos autos do comprovante da citação, e o médico pode indicar até três testemunhas (art. 43). Por isso, a primeira tarefa é ler o documento e identificar se se trata de pedido de esclarecimentos em sindicância ou de citação em processo já instaurado."
       },
       {
         "tipo": "h2",
@@ -100,7 +100,7 @@
       },
       {
         "tipo": "p",
-        "texto": "Este texto tem caráter informativo e não substitui a análise do caso concreto. Cada notificação tem particularidades que devem ser examinadas com cuidado antes de qualquer resposta."
+        "texto": "Cada notificação tem particularidades que devem ser examinadas com cuidado antes de qualquer resposta."
       }
     ],
     "h1": "Notificação do CRM",
@@ -142,7 +142,7 @@
       },
       {
         "tipo": "p",
-        "texto": "Há vedações claras: identificar o paciente e editar, manipular ou melhorar as imagens. Imagens do próprio banco do médico dependem de autorização do paciente e de garantia de anonimato. A captação por equipes externas durante procedimentos só é admitida em partos, e a transmissão em tempo real de consultas e procedimentos continua proibida (art. 11, VIII)."
+        "texto": "Há vedações claras: identificar o paciente e editar, manipular ou melhorar as imagens. Imagens do próprio banco do médico dependem de autorização do paciente e de garantia de anonimato. A captura de imagens por equipes externas durante procedimentos fica autorizada apenas para partos (art. 14, II, d), e a transmissão em tempo real de consultas e procedimentos continua proibida (art. 11, VIII)."
       },
       {
         "tipo": "citacao",
@@ -158,7 +158,7 @@
       },
       {
         "tipo": "p",
-        "texto": "Para quem tem pós-graduação lato sensu sem RQE, a regra é específica: a divulgação segue o formato “MÉDICO(A) com pós-graduação em…”, acompanhado da expressão “NÃO ESPECIALISTA” em caixa alta (art. 13, §1º, d). O médico sem especialidade registrada também não pode anunciar sistemas, órgãos ou doenças de forma que sugira especialidade (art. 11, I)."
+        "texto": "Para quem tem pós-graduação lato sensu sem RQE, a regra é específica: a divulgação segue o formato “MÉDICO(A) com pós-graduação em…”, acompanhado da expressão “NÃO ESPECIALISTA” em caixa alta (art. 13, §1º, d). O médico sem especialidade registrada também não pode divulgar que trata de sistemas orgânicos, órgãos ou doenças específicas (art. 11, I)."
       },
       {
         "tipo": "h2",
@@ -170,8 +170,8 @@
           "Sensacionalismo, autopromoção e concorrência desleal, conceitos definidos nos §§2º a 4º do art. 11.",
           "Divulgar medicamento ou equipamento sem registro na Anvisa (art. 11, III).",
           "Participar de listas de “médico do ano” ou de premiações patrocinadas (art. 11, XIII).",
-          "Oferecer consultoria online como substituta da consulta, fora das regras da telemedicina (art. 11, XI).",
-          "Anunciar marcas ou fabricantes de órteses e próteses (art. 9º, XVIII)."
+          "Oferecer consultoria a pacientes e familiares como substituição da consulta presencial, ressalvado o que a telemedicina regulamenta (art. 11, XI).",
+          "Ao anunciar a aplicação de órteses, próteses ou fármacos, mencionar marcas comerciais ou fabricantes (o art. 9º, XVIII, c, condiciona a permissão a não fazê-lo)."
         ]
       },
       {
@@ -180,11 +180,11 @@
       },
       {
         "tipo": "p",
-        "texto": "A resolução considera redes próprias do médico os sites, blogs, Instagram, YouTube, WhatsApp, TikTok, LinkedIn e outras plataformas (art. 8º, §1º). Dois pontos costumam passar despercebidos. Primeiro, conteúdo de pacientes ou de terceiros repostado pelo médico passa a ser considerado publicação dele (art. 8º, §3º). Segundo, quando o perfil mistura vida pessoal e profissional, as regras de publicidade valem para o conjunto (art. 6º, §3º)."
+        "texto": "A resolução considera redes próprias do médico sites, blogs e perfis em plataformas como Facebook, Instagram, YouTube e TikTok (art. 8º, §1º). Dois pontos costumam passar despercebidos. Primeiro, conteúdo de pacientes ou de terceiros repostado pelo médico passa a ser considerado publicação dele (art. 8º, §3º). Segundo, quando o perfil mistura vida pessoal e profissional, as regras de publicidade valem para o conjunto (art. 6º, §3º)."
       },
       {
         "tipo": "p",
-        "texto": "Depoimentos sobre a atuação do médico e autorretratos repostados devem ser sóbrios, sem adjetivos que denotem superioridade ou sugiram promessa de resultado (art. 14). Elogios reiterados ou sistemáticos de pacientes ou terceiros podem ser apurados pela Comissão de Divulgação de Assuntos Médicos (art. 8º, §4º)."
+        "texto": "Depoimentos sobre a atuação do médico e autorretratos repostados devem ser sóbrios, sem adjetivos que denotem superioridade ou induzam a promessa de resultado (art. 14, II, g). Elogios reiterados ou sistemáticos de pacientes ou terceiros devem ser investigados pela Comissão de Divulgação de Assuntos Médicos (art. 8º, §4º)."
       },
       {
         "tipo": "h2",
@@ -196,7 +196,7 @@
       },
       {
         "tipo": "p",
-        "texto": "Uma revisão periódica dos perfis, com atenção à identificação obrigatória, ao uso de imagens e ao tom dos textos, é a forma mais simples de reduzir riscos. Para apoiar essa revisão, o CFM lançou em março de 2024 o Manual de Publicidade Médica. Este conteúdo é informativo e não substitui a análise de cada peça ou campanha."
+        "texto": "Uma revisão periódica dos perfis, com atenção à identificação obrigatória, ao uso de imagens e ao tom dos textos, é a forma mais simples de reduzir riscos. Para apoiar essa revisão, o CFM lançou em março de 2024 o Manual de Publicidade Médica."
       }
     ],
     "h1": "Publicidade médica",
@@ -242,7 +242,7 @@
       },
       {
         "tipo": "p",
-        "texto": "A Lei 13.787/2018 estabelece prazo mínimo de guarda de 20 anos, contado do último registro, para prontuários em papel e digitalizados (art. 6º). A digitalização deve usar certificado digital no padrão ICP-Brasil (art. 2º, §2º), e o documento digitalizado conforme a lei tem o mesmo valor probatório do original (art. 5º). Atendimentos por telemedicina também devem ser registrados, em sistemas com nível de segurança NGS2 (Resolução CFM 2.314/2022, art. 3º)."
+        "texto": "A Lei 13.787/2018 estabelece prazo mínimo de guarda de 20 anos, contado do último registro, para prontuários em papel e digitalizados (art. 6º). A Resolução CFM 1.821/2007 previa guarda permanente para prontuários arquivados eletronicamente, por isso convém confirmar a orientação vigente. A digitalização deve usar certificado digital no padrão ICP-Brasil (art. 2º, §2º), e o documento digitalizado conforme a lei tem o mesmo valor probatório do original (art. 5º). Atendimentos por telemedicina também devem ser registrados, em sistemas com nível de segurança NGS2 (Resolução CFM 2.314/2022, art. 3º)."
       },
       {
         "tipo": "p",
@@ -302,7 +302,7 @@
       },
       {
         "tipo": "p",
-        "texto": "Revisar periodicamente os modelos de TCLE e as rotinas de registro, com a participação da equipe, custa pouco diante do peso que esses documentos têm em qualquer processo. Este conteúdo é informativo e não substitui a orientação específica para cada serviço."
+        "texto": "Revisar periodicamente os modelos de TCLE e as rotinas de registro, com a participação da equipe, custa pouco diante do peso que esses documentos têm em qualquer processo."
       }
     ],
     "h1": "Prontuário e TCLE",
@@ -350,7 +350,7 @@
       },
       {
         "tipo": "p",
-        "texto": "A situação muda na cirurgia plástica estética. O Superior Tribunal de Justiça entende que, quando o objetivo é exclusivamente embelezador, o cirurgião assume obrigação de resultado. Em dezembro de 2024, a Quarta Turma reafirmou que, nesse cenário, a responsabilidade continua subjetiva, mas com culpa presumida e inversão do ônus da prova (REsp 2.173.636/MT). Para se eximir, o médico precisa demonstrar um fator imponderável, como caso fortuito, força maior ou culpa exclusiva da paciente, ou provar que o resultado foi satisfatório segundo o senso comum, e não apenas segundo a expectativa subjetiva da paciente."
+        "texto": "A situação muda na cirurgia plástica estética. O Superior Tribunal de Justiça entende que, quando o objetivo é exclusivamente embelezador, o cirurgião assume obrigação de resultado. Em dezembro de 2024, a Quarta Turma reafirmou que, nesse cenário, a responsabilidade continua subjetiva, mas com culpa presumida e inversão do ônus da prova (REsp 2.173.636/MT). Para se eximir, o médico precisa demonstrar um fator imponderável, como caso fortuito, força maior ou culpa exclusiva do paciente, ou provar que o resultado foi satisfatório segundo o senso comum, e não apenas segundo a expectativa subjetiva do paciente."
       },
       {
         "tipo": "p",
@@ -393,13 +393,9 @@
           "Diante de uma reclamação, preserve os documentos e busque orientação antes de responder.",
           "Lembre-se de que o mesmo fato pode gerar, em paralelo, processo ético no CRM e investigação criminal."
         ]
-      },
-      {
-        "tipo": "p",
-        "texto": "Este texto tem caráter informativo e não substitui a análise de um caso concreto."
       }
     ],
-    "h1": "Erro médico",
+    "h1": "Acusação de erro médico",
     "sub": "Como funciona a responsabilidade civil do médico",
     "publicado": "2026-10-16"
   }

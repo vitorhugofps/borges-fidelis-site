@@ -4,6 +4,7 @@ import { SplitText } from 'gsap/SplitText';
 import Lenis from 'lenis';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
+window.__bf = true;
 
 const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -26,6 +27,10 @@ const scrollTo = (target, offset = -88) => {
   }
 };
 // in-page anchors through Lenis
+const focusTarget = (el) => {
+  if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1');
+  el.focus({ preventScroll: true });
+};
 $$('a[href^="#"]').forEach((a) => {
   a.addEventListener('click', (e) => {
     const id = a.getAttribute('href');
@@ -33,14 +38,28 @@ $$('a[href^="#"]').forEach((a) => {
       e.preventDefault();
       if (lenis) lenis.scrollTo(0, { duration: 1.4 });
       else window.scrollTo({ top: 0 });
+      const brand = $('.hdr__brand');
+      if (brand) brand.focus({ preventScroll: true });
       return;
     }
     const el = id.length > 1 && $(id);
     if (el) {
       e.preventDefault();
-      scrollTo(el);
+      if (a.classList.contains('skip')) {
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80 });
+        lenis?.scrollTo(el, { immediate: true, offset: -80 });
+      } else scrollTo(el);
+      focusTarget(el);
     }
   });
+});
+// links that open a new tab say so to screen readers
+$$('a[target="_blank"]').forEach((a) => {
+  if (a.querySelector('.sr-only')) return;
+  const s = document.createElement('span');
+  s.className = 'sr-only';
+  s.textContent = ' (abre em nova aba)';
+  a.appendChild(s);
 });
 
 /* ------------------------------------------------------------------ header */
@@ -301,7 +320,7 @@ if (tri) {
   const compose = () => {
     const s = current();
     let msg = s.dataset.msg || '';
-    if (perfil.value) msg += ` Sou ${perfil.value.toLowerCase()}.`;
+    if (perfil.value) msg += perfil.value.startsWith('Clínica') ? ' Represento uma clínica ou hospital.' : ` Sou ${perfil.value.toLowerCase()}.`;
     if (prazo.value === 'sim') msg += ' Já há um prazo correndo.';
     if (prazo.value === 'nao') msg += ' Ainda não há prazo correndo.';
     waBtn.href = `${phone}?text=${encodeURIComponent(msg)}`;
@@ -309,6 +328,8 @@ if (tri) {
   $$('input[name="situacao"]', tri).forEach((input) => {
     input.addEventListener('change', () => {
       sits.forEach((s) => s.classList.toggle('is-on', s.dataset.sit === input.value));
+      const live = $('[data-ficha-live]', tri);
+      if (live) live.textContent = `Ficha: ${current().querySelector('.ficha__title')?.textContent || ''}`;
       compose();
       if (window.matchMedia('(max-width: 899px)').matches) {
         const r = ficha.getBoundingClientRect();
@@ -329,7 +350,8 @@ if (form) {
     const d = new FormData(form);
     const parts = [];
     parts.push(`Olá. Meu nome é ${String(d.get('nome') || '').trim() || '(não informado)'}.`);
-    if (d.get('perfil')) parts.push(`Sou ${String(d.get('perfil')).toLowerCase()}.`);
+    const pf = String(d.get('perfil') || '');
+    if (pf) parts.push(pf.startsWith('Clínica') ? 'Represento uma clínica ou hospital.' : `Sou ${pf.toLowerCase()}.`);
     if (d.get('assunto')) parts.push(`Assunto: ${d.get('assunto')}.`);
     const p = d.get('prazo');
     if (p === 'sim') parts.push('Já há um prazo correndo.');
@@ -341,6 +363,9 @@ if (form) {
   };
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    const nome = form.querySelector('[name="nome"]');
+    nome.value = nome.value.trim();
+    nome.setCustomValidity(nome.value ? '' : 'Informe o seu nome.');
     if (!form.reportValidity()) return;
     const via = e.submitter?.value || 'whatsapp';
     const msg = build();
@@ -350,7 +375,7 @@ if (form) {
         : `https://wa.me/${form.dataset.whatsapp}?text=${encodeURIComponent(msg)}`;
     if (via === 'email') window.location.href = url;
     else window.open(url, '_blank', 'noopener');
-    if (out) out.textContent = via === 'email' ? 'Abrimos o seu aplicativo de e-mail com a mensagem pronta.' : 'Abrimos o WhatsApp numa nova aba com a mensagem pronta.';
+    if (out) out.textContent = via === 'email' ? `Se o seu aplicativo de e-mail não abrir, escreva para ${form.dataset.email}.` : 'O WhatsApp abre numa nova aba com a mensagem pronta.';
   });
 }
 

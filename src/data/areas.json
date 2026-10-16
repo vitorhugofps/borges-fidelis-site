@@ -85,7 +85,7 @@
       },
       {
         "q": "A citação pode chegar por WhatsApp?",
-        "a": "Pode. O Código admite citação preferencialmente por aplicativo de mensagens ou correspondência eletrônica, enviada de aparelho exclusivo do Conselho e com medidas para confirmar a identidade do destinatário (Res. CFM 2.306/2022, art. 41). Se não houver confirmação de recebimento em três dias, usam-se outras formas, como os Correios. Na dúvida sobre a autenticidade, confirme diretamente com o CRM."
+        "a": "Pode. O Código admite citação preferencialmente por aplicativo de mensagens ou correspondência eletrônica, enviada de aparelho exclusivo do Conselho e com medidas para confirmar a identidade do destinatário (Res. CFM 2.306/2022, art. 41). Sem entrega, leitura ou confirmação em três dias, o Conselho passa às demais formas de citação, como os Correios (art. 41, §4º, e inciso II). Na dúvida sobre a autenticidade, confirme diretamente com o CRM."
       }
     ],
     "cuidado": "Não altere o prontuário depois de receber a notificação."
@@ -315,7 +315,7 @@
       },
       {
         "titulo": "Antes e depois",
-        "texto": "Imagens de pacientes são admitidas com finalidade educativa, acompanhadas de texto sobre indicações, fatores que influenciam o resultado e complicações descritas na literatura (art. 14). O paciente não pode ser identificado e as imagens não podem ser editadas ou melhoradas. Continua vedado prometer ou insinuar bons resultados (art. 11, XII)."
+        "texto": "Imagens de pacientes são admitidas com finalidade educativa, acompanhadas de texto sobre indicações, fatores que influenciam o resultado e complicações descritas na literatura (art. 14, II, a). O paciente não pode ser identificado e as imagens não podem ser editadas ou melhoradas (art. 14, II, e e f). Continua vedado prometer ou insinuar bons resultados (art. 11, XII)."
       },
       {
         "titulo": "Preços e descontos",
@@ -347,7 +347,7 @@
     "faq": [
       {
         "q": "Posso postar antes e depois?",
-        "a": "Sim, desde março de 2024, com condições. A Resolução CFM 2.336/2023 exige finalidade educativa e texto sobre indicações, fatores que influenciam o resultado e complicações, com resultados satisfatórios e insatisfatórios (art. 14). O paciente não pode ser identificado, deve autorizar o uso das imagens do seu banco, e as imagens não podem ser editadas. Também é vedado prometer ou insinuar bons resultados (art. 11, XII)."
+        "a": "Sim, desde março de 2024, com condições. A Resolução CFM 2.336/2023 exige finalidade educativa e texto sobre indicações, fatores que influenciam o resultado e complicações, com resultados satisfatórios e insatisfatórios (art. 14, II). O paciente não pode ser identificado, deve autorizar o uso das imagens do banco do médico, e as imagens não podem ser editadas. Também é vedado prometer ou insinuar bons resultados (art. 11, XII)."
       },
       {
         "q": "Posso divulgar o preço da consulta?",
@@ -355,7 +355,7 @@
       },
       {
         "q": "Repostar elogios de pacientes é permitido?",
-        "a": "Com cautela. Ao repostar, o conteúdo passa a ser considerado publicação do próprio médico (Res. CFM 2.336/2023, art. 8º, §3º). Depoimentos sobre a atuação do médico devem ser sóbrios, sem adjetivos que denotem superioridade ou sugiram promessa de resultado (art. 14). Elogios reiterados ou sistemáticos podem ser apurados pela Comissão de Divulgação de Assuntos Médicos (art. 8º, §4º)."
+        "a": "Com cautela. Ao repostar, o conteúdo passa a ser considerado publicação do próprio médico (Res. CFM 2.336/2023, art. 8º, §3º). Depoimentos sobre a atuação do médico devem ser sóbrios, sem adjetivos que denotem superioridade ou induzam a promessa de resultado (art. 14, II, g). Elogios reiterados ou sistemáticos devem ser investigados pela Comissão de Divulgação de Assuntos Médicos (art. 8º, §4º)."
       }
     ],
     "cuidado": "Revise a página principal do perfil: nome, CRM e, se houver especialidade, o RQE."
@@ -398,7 +398,7 @@
     "pontos": [
       {
         "titulo": "Registro no CRM",
-        "texto": "O registro de empresas e a anotação dos profissionais responsáveis devem ser feitos no conselho que fiscaliza a atividade básica da empresa (Lei 6.839/1980, art. 1º). Cabe ao diretor técnico zelar pelo registro, no CRM, das pessoas jurídicas que atuam na instituição (Res. CFM 2.147/2016, art. 2º, §3º)."
+        "texto": "Empresas devem ser registradas no conselho que fiscaliza sua atividade básica (Lei 6.839/1980, art. 1º). Cabe ao diretor técnico assegurar que as pessoas jurídicas que atuam na instituição estejam inscritas no CRM (Res. CFM 2.147/2016, art. 2º, §3º, XIV). A Res. CFM 2.448/2025 alterou essa resolução, e parte das mudanças está suspensa judicialmente."
       },
       {
         "titulo": "Contrato com a operadora",
@@ -414,7 +414,7 @@
       },
       {
         "titulo": "Publicidade da clínica",
-        "texto": "Anúncios de estabelecimentos de saúde devem informar o registro no CRM e o nome do diretor técnico-médico, com sua inscrição e, quando exigível, o RQE (Res. CFM 2.336/2023, art. 5º). Pela publicidade do estabelecimento responde o diretor técnico-médico (art. 3º)."
+        "texto": "Anúncios de estabelecimentos de saúde devem informar o registro no CRM e o nome do diretor técnico-médico, com sua inscrição e, quando exigível, o RQE (Res. CFM 2.336/2023, art. 5º, I). Pela publicidade do estabelecimento responde o diretor técnico-médico (art. 3º, II)."
       }
     ],
     "normas": [
@@ -424,7 +424,7 @@
       },
       {
         "nome": "Diretor técnico",
-        "ref": "Res. CFM 2.147/2016"
+        "ref": "Res. CFM 2.147/2016, alterada pela Res. CFM 2.448/2025 (parte suspensa judicialmente)"
       },
       {
         "nome": "Contratos com operadoras",
@@ -446,11 +446,11 @@
     "faq": [
       {
         "q": "A operadora pode me descredenciar a qualquer momento?",
-        "a": "A rescisão deve seguir o contrato escrito, que precisa prever vigência, renovação, rescisão e prazo de notificação (Lei 9.656/1998, art. 17-A, §2º; RN ANS 503/2022, art. 16). O prestador deve identificar à operadora os pacientes em tratamento continuado, pré-natal ou pré-operatório, e a operadora deve garantir a continuidade do atendimento deles (RN ANS 503/2022, arts. 16 e 18)."
+        "a": "A rescisão deve seguir o contrato escrito, que precisa prever vigência, renovação, rescisão e prazo de notificação (Lei 9.656/1998, art. 17-A, §2º; RN ANS 503/2022, art. 16). O prestador deve informar formalmente à operadora quais pacientes estão em tratamento continuado, pré-natal ou pré-operatório, com laudo, e comunicá-los (RN ANS 503/2022, art. 16, II e III). A operadora deve garantir o atendimento desses pacientes em prestadores com os recursos necessários (art. 18)."
       },
       {
         "q": "Quem responde pelo prontuário na clínica?",
-        "a": "A responsabilidade é compartilhada. A Resolução CFM 1.638/2002 atribui o dever ao médico assistente e aos demais profissionais que atendem o paciente, à hierarquia médica da instituição e às chefias, até a direção técnica (art. 2º). Estabelecimentos devem manter Comissão de Revisão de Prontuários (art. 3º). A guarda mínima é de 20 anos a partir do último registro (Lei 13.787/2018, art. 6º)."
+        "a": "A responsabilidade é compartilhada. A Resolução CFM 1.638/2002 atribui o dever ao médico assistente e aos demais profissionais que atendem o paciente, à hierarquia médica da instituição e às chefias, até a direção técnica (art. 2º). Estabelecimentos devem manter Comissão de Revisão de Prontuários (art. 3º). A Lei 13.787/2018 prevê guarda mínima de 20 anos a partir do último registro (art. 6º). A Res. CFM 1.821/2007 previa guarda permanente para prontuários arquivados eletronicamente, por isso convém confirmar a orientação vigente."
       }
     ],
     "cuidado": "Formalize por escrito as regras entre os sócios antes de começar a atender."
@@ -500,7 +500,7 @@
       },
       {
         "titulo": "Escalas e condições de trabalho",
-        "texto": "Cabe ao diretor técnico assegurar condições de trabalho e os meios necessários ao exercício da medicina e organizar a escala de plantonistas, evitando lacunas (Res. CFM 2.147/2016, art. 2º, §3º). Falhas na escala devem ser comunicadas formalmente à direção."
+        "texto": "Cabe ao diretor técnico assegurar condições dignas de trabalho e os meios indispensáveis à prática médica e organizar a escala de plantonistas, zelando para que não haja lacunas (Res. CFM 2.147/2016, art. 2º, §3º, II e V). Falhas na escala devem ser comunicadas formalmente à direção."
       },
       {
         "titulo": "Atendimento de urgência",
@@ -514,7 +514,7 @@
       },
       {
         "nome": "Diretor técnico e escalas",
-        "ref": "Res. CFM 2.147/2016"
+        "ref": "Res. CFM 2.147/2016, alterada pela Res. CFM 2.448/2025 (parte suspensa judicialmente)"
       },
       {
         "nome": "Código de Ética Médica",
@@ -585,7 +585,7 @@
       },
       {
         "titulo": "Reforma tributária",
-        "texto": "A Lei Complementar 214/2025 regulamenta o IBS e a CBS. A transição prevê alíquotas de referência da CBS de 2027 a 2035 e do IBS de 2029 a 2035 (art. 18). A forma como cada atividade médica será tributada depende do enquadramento dos serviços e da regulamentação ainda em curso."
+        "texto": "A Lei Complementar 214/2025 institui o IBS e a CBS. As alíquotas de referência serão fixadas por resolução do Senado Federal: para a CBS, de 2027 a 2035; para o IBS, de 2029 a 2035 (art. 18). A forma como cada atividade médica será tributada depende do enquadramento dos serviços e da regulamentação ainda em curso."
       }
     ],
     "normas": [

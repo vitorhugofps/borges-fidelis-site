@@ -29,7 +29,7 @@ const fotos = { 'tuane-borges': tuane, 'flavia-fidelis': flavia };
       <div><dt>Atendimento</dt><dd>{site.atendimento}</dd></div>
     </dl>
     <div class="about__text" data-split>
-      <p>O escritório nasceu em Uberlândia com um recorte claro: atender quem trabalha com saúde. Esse recorte muda a defesa. Prontuário, escala de plantão e Código de Ética Médica fazem parte do trabalho de todo dia, ao lado das leis processuais.</p>
+      <p>O escritório nasceu em Uberlândia com um recorte claro: atender quem trabalha com saúde. Prontuário, escala de plantão e Código de Ética Médica fazem parte do trabalho de todo dia, ao lado das leis processuais.</p>
       <p>O mesmo episódio clínico pode chegar ao Conselho, à Justiça cível e à delegacia ao mesmo tempo. Por isso olhamos o caso inteiro desde a primeira conversa, para que o que se diz numa esfera não prejudique a outra.</p>
     </div>
   </section>
@@ -50,7 +50,7 @@ const fotos = { 'tuane-borges': tuane, 'flavia-fidelis': flavia };
   </section>
 
   <section class="profiles on-paper grid" aria-labelledby="socias-t">
-    <h2 class="t-l lines wrap" id="socias-t" style="grid-column:1/-1"><span class="line"><span data-line>As sócias</span></span></h2>
+    <h2 class="t-l lines" id="socias-t" style="grid-column:1/-1"><span class="line"><span data-line>As sócias</span></span></h2>
     {site.socias.map((s) => (
       <article class="profile" id={s.id}>
         <div class="ph" data-shutter><Image src={fotos[s.foto]} alt={`Retrato da ${s.tratamento}`} widths={[400, 610]} sizes="(max-width: 599px) 100vw, 24vw" loading="lazy" /></div>
@@ -60,7 +60,6 @@ const fotos = { 'tuane-borges': tuane, 'flavia-fidelis': flavia };
           <ul data-stagger>
             {s.formacao.map((f) => <li>{f.titulo}{f.instituicao && <span>{f.instituicao}</span>}</li>)}
           </ul>
-          <a class="arrow-link" href={s.instagram} target="_blank" rel="noopener">Instagram <Arrow /></a>
         </div>
       </article>
     ))}
@@ -85,7 +84,7 @@ const fotos = { 'tuane-borges': tuane, 'flavia-fidelis': flavia };
       </div>
       <div>
         <h3>Atenção a golpes</h3>
-        <p>O escritório não pede pagamentos, códigos ou dados bancários por mensagem de números desconhecidos, nem anuncia decisões por telefone. Na dúvida, confirme pelo {site.telefone} ou pelo {site.email}.</p>
+        <p>O escritório não pede pagamentos, códigos ou dados bancários por mensagem de números desconhecidos, nem anuncia decisões por telefone. Na dúvida, confirme pelo <span class="nw">{site.telefone}</span> ou pelo {site.email}.</p>
       </div>
     </div>
   </section>

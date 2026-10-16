@@ -21,7 +21,8 @@ const first = sits[0].id;
         </label>
       ))}
     </fieldset>
-    <div class="ficha" aria-live="polite" data-ficha>
+    <div class="ficha" data-ficha>
+      <p class="sr-only" aria-live="polite" data-ficha-live></p>
       {sits.map((s) => {
         const area = areaBySlug[s.area];
         return (
@@ -38,7 +39,8 @@ const first = sits[0].id;
                 <ul>{s.separe.map((x) => <li>{x}</li>)}</ul>
               </div>
             </div>
-            <a class="arrow-link ficha__arealink" href={`/areas/${s.area}`}>Ler sobre {area?.nome?.toLowerCase().startsWith('fies') ? area.nome : area?.nome} <Arrow /></a>
+            <a class="arrow-link ficha__arealink" href={`/areas/${s.area}`}>Ler sobre a área: {area?.nome} <Arrow /></a>
+            <a class="btn ficha__nojs" href={wa(s.mensagem)} target="_blank" rel="noopener">Enviar pelo WhatsApp <Arrow /></a>
           </article>
         );
       })}
@@ -62,7 +64,7 @@ const first = sits[0].id;
           </select>
         </div>
       </div>
-      <div class="ficha__acts">
+      <div class="ficha__acts ficha__js">
         <a class="btn" href={wa(sits[0].mensagem)} target="_blank" rel="noopener" data-wa>Enviar pelo WhatsApp <Arrow /></a>
       </div>
       <p class="ficha__note">Orientação geral, que não substitui a análise do caso. Não envie nomes, exames ou outros dados de pacientes pelo WhatsApp.</p>
