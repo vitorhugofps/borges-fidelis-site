@@ -1,0 +1,46 @@
+---
+import lockupRaw from '../assets/lockup.svg?raw';
+import { wa } from '../lib/util.js';
+import site from '../data/site.json';
+const { current = '', theme = 'light' } = Astro.props;
+const lockup = lockupRaw.replace('<svg ', '<svg aria-hidden="true" focusable="false" ');
+const links = [
+  { href: '/areas', label: 'Áreas' },
+  { href: '/escritorio', label: 'O escritório' },
+  { href: '/conteudos', label: 'Conteúdos' },
+  { href: '/duvidas', label: 'Dúvidas' },
+  { href: '/contato', label: 'Contato' },
+];
+const isCurrent = (href) => current === href || (href !== '/' && current.startsWith(href + '/'));
+---
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="hdr" data-hdr data-theme={theme}>
+  <a class="hdr__brand" href="/" aria-label="Borges & Fidélis, Advogando para Médicos: página inicial" set:html={lockup} />
+  <nav class="hdr__nav" aria-label="Principal">
+    <ul>
+      {links.map((l) => (
+        <li><a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+  <a class="hdr__cta" href={wa()} target="_blank" rel="noopener">Falar com o escritório</a>
+  <button class="hdr__menu" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>Menu</button>
+</header>
+<div class="menu on-dark" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden data-menu>
+  <div class="menu__top">
+    <span set:html={lockup} />
+    <button class="menu__close" type="button" data-menu-close>Fechar</button>
+  </div>
+  <nav class="menu__list" aria-label="Menu">
+    <ul>
+      <li><a href="/" aria-current={current === '/' ? 'page' : undefined}>Início</a></li>
+      {links.map((l) => (
+        <li><a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn" href={wa()} target="_blank" rel="noopener">Falar com o escritório</a>
+    <p>{site.telefone} · {site.email}</p>
+  </div>
+</div>

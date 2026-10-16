@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import FitTitle from '../components/FitTitle.astro';
+import site from '../data/site.json';
+import Atendimento from '../components/Atendimento.astro';
+---
+<Base title="Política de privacidade" description="Como o site Advogando para Médicos trata dados pessoais, de acordo com a Lei Geral de Proteção de Dados (Lei 13.709/2018)." current="/privacidade">
+  <section class="page-hero page-hero--short on-paper" data-page-hero>
+    <FitTitle text="Privacidade" class="page-hero__title" />
+    <div class="page-hero__foot">
+      <p class="page-hero__lede" data-rise style="--i:2">Como tratamos os seus dados.<span class="soft">Política de privacidade do site Advogando para Médicos, mantido pela Borges & Fidélis Advocacia, em linha com a Lei Geral de Proteção de Dados Pessoais (Lei 13.709/2018).</span></p>
+    </div>
+  </section>
+  <section class="prose on-paper grid">
+    <div class="prose__body" data-stagger>
+      <h2>O que este site coleta</h2>
+      <p>Este site não tem cadastro, área de login, formulário que envie dados a um servidor nem ferramentas de análise de visitantes. Os campos da página de contato e da triagem "O que aconteceu?" apenas montam uma mensagem no seu próprio aparelho, que você decide enviar pelo WhatsApp ou pelo seu e-mail.</p>
+      <p>Como qualquer site, a hospedagem (Vercel) registra dados técnicos de acesso, como endereço IP, data, hora e navegador, para segurança e funcionamento do serviço.</p>
+      <h2>Quando você entra em contato</h2>
+      <p>Ao enviar uma mensagem pelo WhatsApp ou por e-mail, o escritório passa a tratar os dados que você informar, como nome, telefone e o relato do caso, para responder ao contato e, se for o caso, prestar o serviço jurídico. A base legal é o procedimento preliminar a contrato a pedido do titular e, depois, a execução do contrato e o exercício regular de direitos (LGPD, art. 7º, V e VI).</p>
+      <h2>Dados de pacientes</h2>
+      <p>Dados de saúde são dados pessoais sensíveis (LGPD, art. 5º, II). Pedimos que você não envie nomes, exames, fotos ou outros dados de pacientes no primeiro contato. Quando forem necessários para a defesa, os documentos serão solicitados por um canal combinado com você.</p>
+      <h2>Sigilo</h2>
+      <p>Tudo o que for compartilhado com o escritório é protegido pelo sigilo profissional da advocacia, além das regras da LGPD.</p>
+      <h2>Compartilhamento e guarda</h2>
+      <ul>
+        <li>Não vendemos nem cedemos dados pessoais.</li>
+        <li>Os dados podem ser tratados por fornecedores necessários ao serviço, como provedores de e-mail, mensageria e armazenamento.</li>
+        <li>Os dados são guardados pelo tempo necessário ao atendimento, ao cumprimento de obrigações legais e ao exercício de direitos.</li>
+      </ul>
+      <h2>Seus direitos</h2>
+      <p>Você pode pedir confirmação de tratamento, acesso, correção, anonimização, portabilidade, eliminação e informações sobre compartilhamento, nos termos do art. 18 da LGPD, pelo e-mail <a class="link" href={`mailto:${site.email}`}>{site.email}</a>.</p>
+      <h2>Fontes e cookies</h2>
+      <p>As fontes do site são servidas pelo próprio domínio. O site não usa cookies de publicidade nem de rastreamento.</p>
+      <p class="soft" style="margin-top:2em">Atualizada em outubro de 2026.</p>
+    </div>
+  </section>
+  <Atendimento titulo="Dúvidas sobre seus dados?" texto="Fale com o escritório pelo WhatsApp ou pelo e-mail para exercer os seus direitos de titular." />
+</Base>

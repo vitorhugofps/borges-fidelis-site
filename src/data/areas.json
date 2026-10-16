@@ -1,0 +1,841 @@
+[
+  {
+    "slug": "defesa-no-crm",
+    "nome": "Defesa no CRM",
+    "titulo": "Sindicância e processo ético-profissional",
+    "grupo": "defesa",
+    "referencia": "Res. CFM 2.306/2022",
+    "resumo": "Acompanhamento do médico na sindicância, no processo ético-profissional e nos recursos ao CFM, com atenção aos prazos do Código.",
+    "lead": "Uma denúncia ao Conselho Regional de Medicina pode surgir de uma queixa de paciente, de uma representação institucional ou de uma apuração aberta pelo próprio CRM. O procedimento tem regras próprias, prazos curtos e tramita em sigilo. Atuamos desde a primeira manifestação na sindicância até o julgamento de recursos no Conselho Federal de Medicina.",
+    "quando": [
+      "Recebi um ofício do CRM pedindo esclarecimentos",
+      "Recebi a citação de um processo ético-profissional",
+      "Um paciente ou familiar fez uma denúncia contra mim",
+      "O hospital ou um colega encaminhou uma representação ao CRM",
+      "Recebi convocação da Codame por causa de uma publicação",
+      "Recebi proposta de conciliação ou de termo de ajustamento de conduta",
+      "Preciso recorrer ao CFM de uma decisão do CRM"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Leitura do ofício e dos prazos",
+        "texto": "Identificamos a fase do procedimento, o prazo aplicável e o que o Conselho está pedindo. A partir disso, definimos com o médico um cronograma de trabalho compatível com a data de resposta."
+      },
+      {
+        "titulo": "Reconstrução do atendimento",
+        "texto": "Organizamos prontuário, exames, termos de consentimento e registros em uma linha do tempo, para verificar o que está documentado, o que depende de testemunhas e onde há pontos a esclarecer."
+      },
+      {
+        "titulo": "Manifestação técnica",
+        "texto": "Redigimos a manifestação ou a defesa prévia com base nos documentos, nas normas do CFM e na literatura médica pertinente, em linguagem objetiva e sem ataques ao denunciante."
+      },
+      {
+        "titulo": "Acompanhamento até o fim",
+        "texto": "Acompanhamos depoimentos, sessões de julgamento e eventuais recursos ao CFM. Desde o início, avaliamos também se o mesmo fato pode ter reflexos nas esferas cível e criminal."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Sindicância não é processo",
+        "texto": "A sindicância apura se há indícios de infração e não exige contraditório e ampla defesa plenos (Res. CFM 2.306/2022, art. 15, §1º). Mesmo assim, o médico pode apresentar manifestação preliminar escrita (art. 15, §2º). A conclusão deve ocorrer em até 90 dias, prorrogáveis uma vez por igual período (art. 16, §2º)."
+      },
+      {
+        "titulo": "Desfechos possíveis",
+        "texto": "A sindicância pode terminar em conciliação, termo de ajustamento de conduta, arquivamento, abertura de processo ético-profissional ou procedimento para apurar doença incapacitante (art. 19). Conciliação e TAC não cabem em casos de lesão corporal grave, violação à dignidade sexual ou óbito do paciente (arts. 22 e 23)."
+      },
+      {
+        "titulo": "Prazos do processo ético",
+        "texto": "No processo ético-profissional, a defesa prévia deve ser apresentada em 30 dias, com até três testemunhas (art. 43). Da decisão cabe recurso em 30 dias, com efeito suspensivo (art. 100). Os prazos ficam suspensos entre 20 de dezembro e 20 de janeiro (art. 13)."
+      },
+      {
+        "titulo": "Penas previstas em lei",
+        "texto": "As penas estão no art. 22 da Lei 3.268/1957: advertência confidencial, censura confidencial, censura pública, suspensão do exercício profissional por até 30 dias e cassação, esta sujeita a referendo do CFM. Em regra, a aplicação segue essa gradação (§1º)."
+      },
+      {
+        "titulo": "Sigilo e prescrição",
+        "texto": "Sindicâncias e processos tramitam em sigilo (Res. CFM 2.306/2022, art. 1º). A pretensão punitiva prescreve em cinco anos, contados do efetivo conhecimento do fato pelo CRM (art. 116), observadas as causas de interrupção previstas no art. 117."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Código de Processo Ético-Profissional",
+        "ref": "Res. CFM 2.306/2022"
+      },
+      {
+        "nome": "Alterações do Código de Processo",
+        "ref": "Res. CFM 2.424/2025"
+      },
+      {
+        "nome": "Penas disciplinares",
+        "ref": "Lei 3.268/1957, art. 22"
+      },
+      {
+        "nome": "Código de Ética Médica",
+        "ref": "Res. CFM 2.217/2018"
+      }
+    ],
+    "faq": [
+      {
+        "q": "É obrigatório ter advogado no CRM?",
+        "a": "Não. O médico pode praticar os atos pessoalmente ou por advogado, e a ausência de advogado não anula os atos praticados (Res. CFM 2.306/2022, art. 6º). Se o médico citado não se defender, o Conselho nomeia defensor dativo (art. 49). Contar com advogado é uma escolha que ajuda a organizar a prova e a manter coerência entre as esferas ética, cível e criminal."
+      },
+      {
+        "q": "A denúncia ao CRM pode ser anônima?",
+        "a": "Não. O Código de Processo Ético-Profissional exige que a denúncia traga relato circunstanciado dos fatos e a identificação do denunciante, com documentos e meios de contato (Res. CFM 2.306/2022, art. 14). A norma é expressa: a denúncia anônima não será aceita (art. 14, §7º). O CRM, porém, pode instaurar sindicância de ofício quando toma conhecimento de um fato."
+      },
+      {
+        "q": "A citação pode chegar por WhatsApp?",
+        "a": "Pode. O Código admite citação preferencialmente por aplicativo de mensagens ou correspondência eletrônica, enviada de aparelho exclusivo do Conselho e com medidas para confirmar a identidade do destinatário (Res. CFM 2.306/2022, art. 41). Se não houver confirmação de recebimento em três dias, usam-se outras formas, como os Correios. Na dúvida sobre a autenticidade, confirme diretamente com o CRM."
+      }
+    ],
+    "cuidado": "Não altere o prontuário depois de receber a notificação."
+  },
+  {
+    "slug": "responsabilidade-civil",
+    "nome": "Responsabilidade civil",
+    "titulo": "Defesa em notificações e ações de indenização",
+    "grupo": "defesa",
+    "referencia": "CDC, art. 14, §4º",
+    "resumo": "Defesa do médico em notificações e ações que lhe atribuem danos ao paciente, da resposta inicial à perícia judicial.",
+    "lead": "Um resultado adverso não significa, por si só, que houve falha. Para que o médico seja condenado a indenizar, em regra é preciso demonstrar culpa, dano e relação de causa entre os dois. Atuamos na defesa em notificações extrajudiciais e ações judiciais, com atenção especial à prova documental e à perícia médica.",
+    "quando": [
+      "Recebi a citação de uma ação de indenização",
+      "Um paciente enviou notificação pedindo reparação",
+      "O hospital foi processado e me incluiu na ação",
+      "Recebi intimação para uma perícia judicial",
+      "Há ameaça de processo por insatisfação com um resultado estético",
+      "Quero avaliar uma proposta de acordo"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Análise da acusação e dos prazos",
+        "texto": "Lemos a petição ou a notificação, identificamos os prazos de resposta e o que exatamente se atribui ao médico. Separamos o que é alegação técnica do que é insatisfação com o resultado obtido."
+      },
+      {
+        "titulo": "Organização da prova documental",
+        "texto": "Reunimos prontuário, exames, termos de consentimento, mensagens e protocolos. Verificamos a coerência entre os registros e montamos a cronologia do atendimento que orienta toda a defesa."
+      },
+      {
+        "titulo": "Perícia e assistência técnica",
+        "texto": "Trabalhamos com assistente técnico médico, formulamos quesitos e acompanhamos a perícia judicial, que costuma ser a prova central nesse tipo de processo. Também analisamos o laudo e preparamos as manifestações sobre ele."
+      },
+      {
+        "titulo": "Visão das três esferas",
+        "texto": "Avaliamos se o mesmo fato pode gerar denúncia no CRM ou investigação criminal e alinhamos as manifestações, para que o que é dito em um processo não prejudique o outro."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Responsabilidade subjetiva",
+        "texto": "A responsabilidade pessoal do médico, como profissional liberal, depende da verificação de culpa (CDC, art. 14, §4º). O Código Civil prevê indenização quando o profissional, por negligência, imprudência ou imperícia, causa a morte do paciente, agrava-lhe o mal, causa-lhe lesão ou o inabilita para o trabalho (art. 951)."
+      },
+      {
+        "titulo": "Obrigação de meio e de resultado",
+        "texto": "Na maior parte dos atendimentos, o médico não pode garantir a cura. Na cirurgia plástica estética, o STJ entende que há obrigação de resultado, com culpa presumida e inversão do ônus da prova (REsp 2.173.636/MT, 2024). Em cirurgias mistas, a análise é fracionada entre a parte estética e a reparadora (REsp 1.097.955)."
+      },
+      {
+        "titulo": "Ônus da prova",
+        "texto": "Nas relações de consumo, o juiz pode inverter o ônus da prova quando a alegação for verossímil ou o paciente for hipossuficiente (CDC, art. 6º, VIII). O Código de Processo Civil também permite redistribuir o ônus por decisão fundamentada (art. 373, §1º). Por isso o prontuário tem tanto peso na defesa."
+      },
+      {
+        "titulo": "Dever de informar",
+        "texto": "O STJ decidiu que a falta de informação adequada sobre os riscos de um procedimento gera dever de indenizar, mesmo sem falha técnica, e que o consentimento não pode ser genérico (REsp 1.540.580/DF, 2018). Cabe ao médico demonstrar que informou o paciente."
+      },
+      {
+        "titulo": "Hospital e médico",
+        "texto": "O fornecedor de serviços responde independentemente de culpa pelos defeitos do serviço (CDC, art. 14), regra aplicada a hospitais e clínicas por falhas da própria estrutura. Ele não responde se provar que o defeito inexiste ou que houve culpa exclusiva do consumidor ou de terceiro (art. 14, §3º)."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Código Civil",
+        "ref": "Lei 10.406/2002, arts. 186, 927 e 951"
+      },
+      {
+        "nome": "Código de Defesa do Consumidor",
+        "ref": "Lei 8.078/1990, arts. 6º e 14"
+      },
+      {
+        "nome": "Código de Processo Civil",
+        "ref": "Lei 13.105/2015, art. 373"
+      },
+      {
+        "nome": "Cirurgia plástica estética",
+        "ref": "STJ, REsp 2.173.636/MT"
+      },
+      {
+        "nome": "Dever de informação",
+        "ref": "STJ, REsp 1.540.580/DF"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Se o paciente ficou insatisfeito, tenho de indenizar?",
+        "a": "Não necessariamente. Em regra, é preciso demonstrar culpa do médico, dano e relação de causa entre eles (CDC, art. 14, §4º; Código Civil, art. 951). Complicações descritas na literatura, ocorridas apesar da técnica adequada e informadas previamente, não se confundem com falha. Na cirurgia plástica estética, porém, o STJ presume a culpa quando o resultado é insatisfatório segundo o senso comum, e cabe ao médico afastar essa presunção."
+      },
+      {
+        "q": "O hospital responde junto com o médico?",
+        "a": "Pode responder. Hospitais e clínicas são fornecedores de serviços e, pelo Código de Defesa do Consumidor, respondem independentemente de culpa por defeitos na prestação do serviço (art. 14), como falhas de estrutura, equipamentos ou equipe. O médico, como profissional liberal, responde pessoalmente mediante verificação de culpa (art. 14, §4º). Em muitos processos, os dois figuram como réus, e as defesas precisam ser coerentes."
+      },
+      {
+        "q": "O que é perda de uma chance?",
+        "a": "É uma construção da jurisprudência para casos em que a conduta médica teria frustrado uma oportunidade de cura ou de evolução mais favorável. No REsp 1.254.141, o STJ tratou a chance perdida como dano autônomo e fixou indenização proporcional a ela, e não ao dano final. A discussão depende muito da prova técnica sobre qual era, de fato, a chance existente."
+      }
+    ],
+    "cuidado": "Não procure o paciente para discutir o caso nem comente o processo nas redes sociais."
+  },
+  {
+    "slug": "defesa-criminal",
+    "nome": "Defesa criminal",
+    "titulo": "Investigação policial e ação penal",
+    "grupo": "defesa",
+    "referencia": "Código Penal",
+    "resumo": "Acompanhamento do médico chamado a depor, investigado ou denunciado por fatos ligados ao exercício da medicina.",
+    "lead": "Um óbito ou uma complicação grave pode levar à abertura de investigação policial ou a um pedido de informações do Ministério Público. A esfera criminal é independente da ética e da cível, mas o que se diz em uma repercute nas outras. Atuamos desde a preparação para o primeiro depoimento até a eventual ação penal.",
+    "quando": [
+      "Recebi intimação para depor na delegacia",
+      "O Ministério Público pediu informações sobre um atendimento",
+      "A polícia requisitou o prontuário de um paciente",
+      "Um óbito durante o plantão virou investigação",
+      "Há acusação de omissão de socorro",
+      "Questionaram um atestado que emiti"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Preparação para depoimentos",
+        "texto": "Antes de qualquer depoimento, examinamos o que se investiga, a posição do médico no procedimento e os documentos disponíveis, para que ele compareça sabendo o que está sendo apurado."
+      },
+      {
+        "titulo": "Análise técnica do fato",
+        "texto": "Estudamos o prontuário e a literatura médica com apoio de assistente técnico, para distinguir intercorrência de falha e demonstrar se a conduta seguiu o padrão técnico aplicável."
+      },
+      {
+        "titulo": "Cuidado com o sigilo",
+        "texto": "Orientamos sobre requisições de prontuário e de informações de pacientes, para que o médico atenda às ordens legítimas sem violar o sigilo profissional previsto no Código de Ética Médica e no Código Penal."
+      },
+      {
+        "titulo": "Coordenação com outras frentes",
+        "texto": "Alinhamos a defesa criminal com eventuais processos no CRM e ações de indenização, porque declarações e documentos produzidos em uma esfera costumam ser usados nas demais."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Crimes culposos",
+        "texto": "O homicídio culposo tem pena de detenção de um a três anos (Código Penal, art. 121, §3º), e a lesão corporal culposa, de dois meses a um ano (art. 129, §6º). A pena aumenta quando o crime resulta de inobservância de regra técnica de profissão (art. 121, §4º, e art. 129, §7º)."
+      },
+      {
+        "titulo": "Crimes ligados ao atendimento",
+        "texto": "O Código Penal prevê a omissão de socorro (art. 135) e a exigência de cheque-caução, nota promissória ou qualquer garantia, ou do preenchimento prévio de formulários, como condição para o atendimento emergencial (art. 135-A, incluído pela Lei 12.653/2012)."
+      },
+      {
+        "titulo": "Sigilo profissional",
+        "texto": "Revelar, sem justa causa, segredo conhecido em razão da profissão, quando isso puder causar dano, é crime que depende de representação (Código Penal, art. 154). O Código de Ética Médica só admite liberar cópias do prontuário por ordem judicial, para a defesa do próprio médico ou com autorização escrita do paciente (art. 89)."
+      },
+      {
+        "titulo": "Documentos médicos",
+        "texto": "Dar o médico, no exercício da profissão, atestado falso é crime, com detenção de um mês a um ano (Código Penal, art. 302). No plano ético, o médico não pode expedir documento sem ato profissional que o justifique ou que não corresponda à verdade (Código de Ética Médica, art. 80)."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Homicídio e lesão culposos",
+        "ref": "CP, arts. 121 e 129"
+      },
+      {
+        "nome": "Omissão de socorro e caução",
+        "ref": "CP, arts. 135 e 135-A"
+      },
+      {
+        "nome": "Segredo profissional",
+        "ref": "CP, art. 154"
+      },
+      {
+        "nome": "Atestado falso",
+        "ref": "CP, art. 302"
+      },
+      {
+        "nome": "Código de Ética Médica",
+        "ref": "Res. CFM 2.217/2018, arts. 80 e 89"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Um resultado adverso é crime?",
+        "a": "Não, por si só. Para haver crime culposo, o resultado precisa decorrer de negligência, imprudência ou imperícia, e deve existir relação de causa entre a conduta e o dano. A investigação costuma depender de prova pericial. No homicídio e na lesão culposos, a pena aumenta quando há inobservância de regra técnica de profissão (Código Penal, arts. 121, §4º, e 129, §7º)."
+      },
+      {
+        "q": "Preciso entregar o prontuário à polícia?",
+        "a": "O Código de Ética Médica veda liberar cópias do prontuário, exceto por ordem judicial, para a defesa do próprio médico ou com autorização escrita do paciente (art. 89). Diante de uma requisição, verifique quem a assina e com que fundamento antes de entregar qualquer documento. Em caso de dúvida, busque orientação jurídica: o objetivo é atender às ordens legítimas sem violar o sigilo profissional."
+      },
+      {
+        "q": "Posso depor sem advogado?",
+        "a": "Pode, mas não é recomendável. O depoimento na fase de investigação fica registrado e pode ser usado no processo ético no CRM e em ações de indenização. Antes de depor, é importante saber em que condição o médico foi chamado, o que está sendo apurado e quais documentos já constam do procedimento. Leve apenas o que foi combinado com a defesa."
+      }
+    ],
+    "cuidado": "Não preste depoimento antes de entender o que está sendo investigado."
+  },
+  {
+    "slug": "publicidade-medica",
+    "nome": "Publicidade médica",
+    "titulo": "Redes sociais, anúncios e a Res. CFM 2.336/2023",
+    "grupo": "rotina",
+    "referencia": "Res. CFM 2.336/2023",
+    "resumo": "Orientação para divulgar o trabalho médico nas redes e em anúncios dentro das regras do CFM, e acompanhamento perante a Codame.",
+    "lead": "Desde março de 2024, a Resolução CFM 2.336/2023 permite ao médico divulgar seu trabalho com mais liberdade, inclusive preços e imagens de pacientes, mas mantém limites claros. Revisamos perfis, sites e campanhas, orientamos equipes de marketing e acompanhamos o médico quando a Comissão de Divulgação de Assuntos Médicos o convoca.",
+    "quando": [
+      "Quero publicar antes e depois da forma correta",
+      "Vou divulgar o valor das consultas ou uma campanha de desconto",
+      "Tenho pós-graduação, mas não tenho RQE",
+      "Uma agência de marketing vai cuidar do meu Instagram",
+      "Recebi convocação da Codame",
+      "Recebi convite para participar do anúncio de uma marca"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Diagnóstico dos canais",
+        "texto": "Revisamos perfis, site, anúncios e materiais impressos, verificando a identificação obrigatória, o uso de imagens, o tom dos textos e os conteúdos repostados de pacientes ou de terceiros."
+      },
+      {
+        "titulo": "Orientação para a equipe",
+        "texto": "Preparamos orientações práticas para o médico, a secretaria e a agência de marketing, com exemplos do que a resolução permite e do que continua vedado."
+      },
+      {
+        "titulo": "Revisão de campanhas",
+        "texto": "Analisamos antes da publicação as campanhas com preço, desconto, antes e depois ou parceria com empresas, para ajustar textos e imagens às regras do CFM."
+      },
+      {
+        "titulo": "Acompanhamento na Codame",
+        "texto": "Acompanhamos convocações da Comissão de Divulgação de Assuntos Médicos e eventuais desdobramentos na Corregedoria do CRM, com manifestação técnica e proposta de ajustes nas peças."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Identificação obrigatória",
+        "texto": "Toda peça deve trazer nome, número do CRM e a palavra “MÉDICO” (Res. CFM 2.336/2023, art. 4º, I). Ao mencionar especialidade ou área de atuação, é obrigatório informar o RQE (art. 4º, II). Esses dados devem constar da página principal do perfil (art. 6º)."
+      },
+      {
+        "titulo": "Antes e depois",
+        "texto": "Imagens de pacientes são admitidas com finalidade educativa, acompanhadas de texto sobre indicações, fatores que influenciam o resultado e complicações descritas na literatura (art. 14). O paciente não pode ser identificado e as imagens não podem ser editadas ou melhoradas. Continua vedado prometer ou insinuar bons resultados (art. 11, XII)."
+      },
+      {
+        "titulo": "Preços e descontos",
+        "texto": "O médico pode informar valores de consultas e formas de pagamento (art. 9º, VI) e anunciar descontos em campanhas, sem vinculação a vendas casadas ou premiações (art. 9º, VIII). Continuam vedadas a conduta sensacionalista e a autopromocional (art. 11, XVI)."
+      },
+      {
+        "titulo": "Pós-graduação sem RQE",
+        "texto": "Quem tem pós-graduação lato sensu sem especialidade registrada deve divulgar o título no formato “MÉDICO(A) com pós-graduação em…”, com a indicação expressa, em caixa alta, de que não se trata de especialidade registrada (art. 13, §1º, d)."
+      },
+      {
+        "titulo": "Repostagens e Codame",
+        "texto": "Conteúdo de pacientes ou de terceiros repostado pelo médico passa a ser considerado publicação dele (art. 8º, §3º). A Codame de cada CRM pode convocar o médico, orientar a imediata suspensão do anúncio e encaminhar o caso à Corregedoria (art. 16)."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Publicidade médica",
+        "ref": "Res. CFM 2.336/2023"
+      },
+      {
+        "nome": "Código de Ética Médica, publicidade",
+        "ref": "Res. CFM 2.217/2018, arts. 111 a 117"
+      },
+      {
+        "nome": "Manual de Publicidade Médica",
+        "ref": "CFM, março de 2024"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Posso postar antes e depois?",
+        "a": "Sim, desde março de 2024, com condições. A Resolução CFM 2.336/2023 exige finalidade educativa e texto sobre indicações, fatores que influenciam o resultado e complicações, com resultados satisfatórios e insatisfatórios (art. 14). O paciente não pode ser identificado, deve autorizar o uso das imagens do seu banco, e as imagens não podem ser editadas. Também é vedado prometer ou insinuar bons resultados (art. 11, XII)."
+      },
+      {
+        "q": "Posso divulgar o preço da consulta?",
+        "a": "Sim. A Resolução CFM 2.336/2023 permite informar valores de consultas e formas de pagamento (art. 9º, VI) e anunciar descontos em campanhas, desde que não haja venda casada ou premiação (art. 9º, VIII). A peça continua sujeita às demais regras: nome, CRM, RQE quando houver especialidade, e vedação de conduta sensacionalista ou autopromocional (art. 11)."
+      },
+      {
+        "q": "Repostar elogios de pacientes é permitido?",
+        "a": "Com cautela. Ao repostar, o conteúdo passa a ser considerado publicação do próprio médico (Res. CFM 2.336/2023, art. 8º, §3º). Depoimentos sobre a atuação do médico devem ser sóbrios, sem adjetivos que denotem superioridade ou sugiram promessa de resultado (art. 14). Elogios reiterados ou sistemáticos podem ser apurados pela Comissão de Divulgação de Assuntos Médicos (art. 8º, §4º)."
+      }
+    ],
+    "cuidado": "Revise a página principal do perfil: nome, CRM e, se houver especialidade, o RQE."
+  },
+  {
+    "slug": "clinicas-e-sociedades",
+    "nome": "Clínicas e sociedades",
+    "titulo": "Sócios, contratos, operadoras e dados da clínica",
+    "grupo": "rotina",
+    "referencia": "Res. CFM 2.147/2016",
+    "resumo": "Estruturação e rotina jurídica de clínicas e consultórios: sociedade, contratos, registro no CRM, operadoras, hospitais e proteção de dados.",
+    "lead": "Abrir, dividir ou reorganizar uma clínica envolve decisões societárias, registro no CRM, contratos com médicos parceiros, hospitais e operadoras, além do tratamento de dados de saúde. Atuamos na estruturação e na rotina jurídica do negócio médico, para que as regras fiquem claras e escritas antes que surjam divergências.",
+    "quando": [
+      "Vou abrir uma clínica com outros médicos",
+      "Quero dividir consultório ou ceder salas",
+      "Um sócio quer sair da sociedade",
+      "Recebi aviso de descredenciamento de uma operadora",
+      "As glosas do plano de saúde estão se repetindo",
+      "Preciso adequar a clínica à LGPD",
+      "Vou assumir a direção técnica de um serviço"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Desenho da estrutura",
+        "texto": "Entendemos como os médicos envolvidos trabalham e propomos a estrutura societária e contratual adequada, com regras de entrada, saída, divisão de resultados e tomada de decisão."
+      },
+      {
+        "titulo": "Contratos e registros",
+        "texto": "Elaboramos e revisamos contratos com sócios, médicos parceiros, hospitais e fornecedores, e orientamos sobre o registro da empresa e do diretor técnico no CRM, conforme a atividade exercida."
+      },
+      {
+        "titulo": "Operadoras e hospitais",
+        "texto": "Revisamos contratos de credenciamento, acompanhamos negociações de reajuste e analisamos glosas e descredenciamentos à luz da Lei 9.656/1998 e das normas da ANS sobre contratos com prestadores."
+      },
+      {
+        "titulo": "Proteção de dados",
+        "texto": "Mapeamos o fluxo de dados de pacientes, revisamos contratos com fornecedores de sistemas e orientamos a equipe sobre segurança, acesso ao prontuário e resposta a incidentes."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Registro no CRM",
+        "texto": "O registro de empresas e a anotação dos profissionais responsáveis devem ser feitos no conselho que fiscaliza a atividade básica da empresa (Lei 6.839/1980, art. 1º). Cabe ao diretor técnico zelar pelo registro, no CRM, das pessoas jurídicas que atuam na instituição (Res. CFM 2.147/2016, art. 2º, §3º)."
+      },
+      {
+        "titulo": "Contrato com a operadora",
+        "texto": "A relação entre operadora e prestador, inclusive o médico pessoa física, deve ser regulada por contrato escrito, com objeto, valores, critérios de reajuste, prazos de faturamento e pagamento, rescisão e penalidades (Lei 9.656/1998, art. 17-A). O reajuste é anual, negociado nos primeiros 90 dias de cada ano (§3º)."
+      },
+      {
+        "titulo": "Glosas e rescisão",
+        "texto": "O contrato deve prever a rotina de auditoria, as hipóteses de glosa e os prazos de contestação e resposta, e o prazo para contestar deve ser igual ao prazo de resposta da operadora (RN ANS 503/2022, art. 14). A rescisão segue o prazo de notificação previsto no contrato (art. 16)."
+      },
+      {
+        "titulo": "Dados de saúde",
+        "texto": "Dados de saúde são dados pessoais sensíveis (LGPD, art. 5º, II). O tratamento é admitido para tutela da saúde em procedimento realizado por profissionais de saúde (art. 11, II, f). A clínica deve adotar medidas de segurança (art. 46) e comunicar incidentes relevantes à autoridade nacional e aos titulares (art. 48)."
+      },
+      {
+        "titulo": "Publicidade da clínica",
+        "texto": "Anúncios de estabelecimentos de saúde devem informar o registro no CRM e o nome do diretor técnico-médico, com sua inscrição e, quando exigível, o RQE (Res. CFM 2.336/2023, art. 5º). Pela publicidade do estabelecimento responde o diretor técnico-médico (art. 3º)."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Registro de empresas nos conselhos",
+        "ref": "Lei 6.839/1980"
+      },
+      {
+        "nome": "Diretor técnico",
+        "ref": "Res. CFM 2.147/2016"
+      },
+      {
+        "nome": "Contratos com operadoras",
+        "ref": "Lei 9.656/1998, art. 17-A"
+      },
+      {
+        "nome": "Contratos escritos com prestadores",
+        "ref": "RN ANS 503/2022"
+      },
+      {
+        "nome": "Lei Geral de Proteção de Dados",
+        "ref": "Lei 13.709/2018"
+      },
+      {
+        "nome": "Prontuário",
+        "ref": "Res. CFM 1.638/2002"
+      }
+    ],
+    "faq": [
+      {
+        "q": "A operadora pode me descredenciar a qualquer momento?",
+        "a": "A rescisão deve seguir o contrato escrito, que precisa prever vigência, renovação, rescisão e prazo de notificação (Lei 9.656/1998, art. 17-A, §2º; RN ANS 503/2022, art. 16). O prestador deve identificar à operadora os pacientes em tratamento continuado, pré-natal ou pré-operatório, e a operadora deve garantir a continuidade do atendimento deles (RN ANS 503/2022, arts. 16 e 18)."
+      },
+      {
+        "q": "Quem responde pelo prontuário na clínica?",
+        "a": "A responsabilidade é compartilhada. A Resolução CFM 1.638/2002 atribui o dever ao médico assistente e aos demais profissionais que atendem o paciente, à hierarquia médica da instituição e às chefias, até a direção técnica (art. 2º). Estabelecimentos devem manter Comissão de Revisão de Prontuários (art. 3º). A guarda mínima é de 20 anos a partir do último registro (Lei 13.787/2018, art. 6º)."
+      }
+    ],
+    "cuidado": "Formalize por escrito as regras entre os sócios antes de começar a atender."
+  },
+  {
+    "slug": "trabalho-medico",
+    "nome": "Trabalho médico",
+    "titulo": "Plantões, vínculos e contratos de trabalho",
+    "grupo": "rotina",
+    "referencia": "STF, Tema 1389",
+    "resumo": "Orientação sobre plantões, contratação como empregado ou como pessoa jurídica, escalas e encerramento de vínculos com hospitais e clínicas.",
+    "lead": "Boa parte dos médicos trabalha em plantões, muitas vezes contratados como pessoa jurídica. A forma do contrato tem efeitos sobre remuneração, tributos, responsabilidades e direitos, e a validade da chamada pejotização está em discussão no Supremo Tribunal Federal. Analisamos contratos, escalas e vínculos, e atuamos em conflitos com hospitais e empresas de gestão.",
+    "quando": [
+      "Trabalho como PJ, mas tenho horário e chefia fixos",
+      "Cortaram meus plantões sem aviso",
+      "Há plantões trabalhados e não pagos",
+      "Vou assinar contrato com hospital ou empresa de gestão",
+      "Quero deixar uma escala sem prejudicar os pacientes",
+      "O hospital quer mudar meu contrato de CLT para PJ"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Leitura do contrato e da rotina",
+        "texto": "Comparamos o que está escrito no contrato com a forma como o trabalho é de fato prestado: escala, subordinação, exclusividade, remuneração e responsabilidades assumidas pelo médico."
+      },
+      {
+        "titulo": "Revisão antes da assinatura",
+        "texto": "Revisamos contratos de plantão e de prestação de serviços antes da assinatura, com atenção a prazos, multas, rescisão, responsabilidade por faltas e regras de substituição na escala."
+      },
+      {
+        "titulo": "Cobrança e negociação",
+        "texto": "Organizamos a documentação dos plantões realizados, conferimos os valores combinados e conduzimos a negociação ou a cobrança do que estiver em aberto, pela via extrajudicial ou judicial."
+      },
+      {
+        "titulo": "Saída organizada",
+        "texto": "Orientamos o encerramento de vínculos e a saída de escalas de forma compatível com o contrato e com o dever ético de não abandonar pacientes sob cuidados."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Pejotização no STF",
+        "texto": "A validade da contratação de profissionais como pessoa jurídica é tema de repercussão geral no STF (Tema 1389). Em abril de 2025, os processos foram suspensos em todo o país. Em junho de 2026, o relator permitiu que tramitem até o segundo grau. Até agosto de 2026, o mérito não havia sido julgado."
+      },
+      {
+        "titulo": "Saída da escala",
+        "texto": "O Código de Ética Médica veda abandonar paciente sob cuidados. O médico pode renunciar ao atendimento, desde que avise previamente, assegure a continuidade dos cuidados e forneça as informações necessárias ao sucessor (Res. CFM 2.217/2018, art. 36, §1º). Saídas de escala precisam respeitar essa regra."
+      },
+      {
+        "titulo": "Escalas e condições de trabalho",
+        "texto": "Cabe ao diretor técnico assegurar condições de trabalho e os meios necessários ao exercício da medicina e organizar a escala de plantonistas, evitando lacunas (Res. CFM 2.147/2016, art. 2º, §3º). Falhas na escala devem ser comunicadas formalmente à direção."
+      },
+      {
+        "titulo": "Atendimento de urgência",
+        "texto": "O médico não pode deixar de atender paciente em urgência ou emergência quando não houver outro médico ou serviço em condições de fazê-lo (Código de Ética Médica, art. 33). No plano penal, a omissão de socorro é crime, com pena de detenção de um a seis meses ou multa (Código Penal, art. 135)."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Pejotização, repercussão geral",
+        "ref": "STF, Tema 1389"
+      },
+      {
+        "nome": "Diretor técnico e escalas",
+        "ref": "Res. CFM 2.147/2016"
+      },
+      {
+        "nome": "Código de Ética Médica",
+        "ref": "Res. CFM 2.217/2018, arts. 33 e 36"
+      },
+      {
+        "nome": "Omissão de socorro",
+        "ref": "Código Penal, art. 135"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Trabalho como PJ. Posso pedir vínculo de emprego?",
+        "a": "A discussão depende de como o trabalho é efetivamente prestado, e não só do nome do contrato. Além disso, a validade da contratação por pessoa jurídica está em julgamento no STF, no Tema 1389, com efeitos sobre processos em todo o país. Antes de qualquer medida, vale reunir contrato, escalas, mensagens e comprovantes de pagamento e avaliar o momento processual adequado."
+      },
+      {
+        "q": "Posso sair de uma escala de uma hora para outra?",
+        "a": "O Código de Ética Médica permite renunciar ao atendimento, mas exige aviso prévio, garantia de continuidade dos cuidados e repasse das informações necessárias ao sucessor (art. 36, §1º). O contrato também costuma prever prazo de aviso e penalidades. Comunique a saída por escrito à coordenação e à direção técnica, com antecedência, e guarde o comprovante do envio."
+      }
+    ],
+    "cuidado": "Guarde escalas, mensagens e comprovantes de todos os plantões realizados."
+  },
+  {
+    "slug": "tributario",
+    "nome": "Tributário",
+    "titulo": "Tributos do médico pessoa física e da PJ",
+    "grupo": "rotina",
+    "referencia": "LC 123/2006",
+    "resumo": "Análise do enquadramento tributário do médico e da clínica, revisão de regime e acompanhamento da reforma tributária.",
+    "lead": "A carga tributária do médico depende de como ele atua: como pessoa física, como sócio de uma pessoa jurídica ou por meio de clínica com estrutura própria. Regime, atividade declarada e folha de pagamento mudam o valor final. Analisamos o enquadramento em conjunto com a contabilidade e acompanhamos as mudanças da reforma tributária.",
+    "quando": [
+      "Vou abrir uma PJ e não sei qual regime escolher",
+      "Minha clínica faz procedimentos e é tributada como consultório",
+      "Quero entender o Fator R do Simples Nacional",
+      "Recebi uma notificação ou autuação fiscal",
+      "Quero saber como a reforma tributária afeta minha atividade"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Diagnóstico da atividade",
+        "texto": "Levantamos o que a pessoa jurídica efetivamente faz, onde e com que estrutura, porque o tratamento tributário depende da natureza dos serviços prestados, e não apenas do nome da empresa."
+      },
+      {
+        "titulo": "Trabalho com a contabilidade",
+        "texto": "Atuamos junto com o contador do médico ou da clínica, analisando regime, folha, pró-labore e documentos societários, para que as decisões tenham base jurídica e contábil."
+      },
+      {
+        "titulo": "Revisão e recuperação",
+        "texto": "Quando o enquadramento anterior não refletia a atividade, avaliamos a viabilidade de revisão e de pedidos de restituição ou compensação, nas vias administrativa e judicial."
+      },
+      {
+        "titulo": "Acompanhamento da reforma",
+        "texto": "Acompanhamos a regulamentação da reforma tributária e seus prazos de transição, para que o médico e a clínica planejem contratos e preços com antecedência e ajustem a estrutura quando necessário."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Fator R no Simples Nacional",
+        "texto": "A medicina está sujeita ao chamado Fator R. Quando a folha de salários, incluído o pró-labore, dos últimos 12 meses é igual ou superior a 28% da receita bruta do mesmo período, a tributação segue o Anexo III; abaixo disso, o Anexo V (LC 123/2006, art. 18, §§5º-J e 5º-M)."
+      },
+      {
+        "titulo": "Serviços hospitalares",
+        "texto": "No lucro presumido, a Lei 9.249/1995 prevê base de cálculo de 8% para o IRPJ (art. 15, §1º, III, a) e de 12% para a CSLL (art. 20) em serviços hospitalares, em vez dos 32% aplicáveis aos serviços em geral. A aplicação exige, entre outros requisitos, sociedade empresária e cumprimento das normas da Anvisa."
+      },
+      {
+        "titulo": "Interpretação do STJ",
+        "texto": "O STJ definiu que a expressão serviços hospitalares deve ser interpretada de forma objetiva, pela natureza da atividade, e não pelo local onde é prestada (Tema 217, REsp 1.116.399/BA). Consultas médicas simples, em regra, não se enquadram nesse conceito."
+      },
+      {
+        "titulo": "Reforma tributária",
+        "texto": "A Lei Complementar 214/2025 regulamenta o IBS e a CBS. A transição prevê alíquotas de referência da CBS de 2027 a 2035 e do IBS de 2029 a 2035 (art. 18). A forma como cada atividade médica será tributada depende do enquadramento dos serviços e da regulamentação ainda em curso."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Simples Nacional",
+        "ref": "LC 123/2006, art. 18"
+      },
+      {
+        "nome": "Lucro presumido",
+        "ref": "Lei 9.249/1995, arts. 15 e 20"
+      },
+      {
+        "nome": "Serviços hospitalares",
+        "ref": "STJ, Tema 217"
+      },
+      {
+        "nome": "IBS e CBS",
+        "ref": "LC 214/2025"
+      }
+    ],
+    "faq": [
+      {
+        "q": "A clínica pode pagar menos IRPJ por prestar serviços hospitalares?",
+        "a": "Pode, se a atividade se enquadrar. A Lei 9.249/1995 prevê bases de cálculo reduzidas no lucro presumido para serviços hospitalares (arts. 15 e 20), e o STJ definiu que o conceito deve ser interpretado pela natureza do serviço, e não pelo local onde é prestado (Tema 217). Consultas simples, em regra, não se enquadram. A análise depende da atividade, da forma societária e do cumprimento das normas sanitárias."
+      },
+      {
+        "q": "O que é o Fator R?",
+        "a": "É a relação entre a folha de salários, incluído o pró-labore, e a receita bruta dos últimos 12 meses. Para atividades como a medicina, se essa relação for igual ou superior a 28%, a empresa do Simples Nacional é tributada pelo Anexo III; se for menor, pelo Anexo V (LC 123/2006, art. 18, §§5º-J e 5º-M). O acompanhamento deve ser feito mês a mês com a contabilidade."
+      }
+    ],
+    "cuidado": "Confira se a atividade descrita no contrato social corresponde ao que a empresa de fato faz."
+  },
+  {
+    "slug": "residencia-medica",
+    "nome": "Residência médica",
+    "titulo": "Direitos do médico residente",
+    "grupo": "carreira",
+    "referencia": "Lei 6.932/1981, art. 4º",
+    "resumo": "Orientação ao médico residente sobre carga horária, condições nos plantões, alimentação e moradia previstas em lei.",
+    "lead": "A residência médica é treinamento em serviço, com carga horária intensa e regras próprias. A lei assegura ao residente condições durante todo o programa, como repouso adequado nos plantões, alimentação e moradia na forma do regulamento. Orientamos residentes sobre esses direitos e sobre como formalizar pedidos à instituição responsável pelo programa.",
+    "quando": [
+      "A instituição não oferece moradia nem alternativa",
+      "Não há local adequado para repouso nos plantões",
+      "A alimentação nos plantões não é fornecida",
+      "Minha carga horária passa do regime previsto",
+      "Quero formalizar um pedido à coordenação do programa",
+      "Tenho dúvidas sobre minha responsabilidade nos atendimentos"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Análise do programa",
+        "texto": "Examinamos o edital, o regulamento do programa e as condições oferecidas pela instituição, comparando-os com o que a Lei 6.932/1981 assegura ao médico residente durante todo o período do programa."
+      },
+      {
+        "titulo": "Pedido formal",
+        "texto": "Ajudamos a redigir pedidos à coordenação do programa e à instituição, com registro das datas de envio e das respostas recebidas, para que tudo fique documentado."
+      },
+      {
+        "titulo": "Organização das provas",
+        "texto": "Orientamos o residente a reunir escalas, comunicações, comprovantes de despesas e registros de jornada, que servem de base para qualquer pedido administrativo ou judicial e precisam ser guardados."
+      },
+      {
+        "titulo": "Avaliação de medidas",
+        "texto": "Quando o pedido administrativo não resolve, avaliamos com o residente a medida adequada, considerando o momento do programa, a relação com a instituição e os reflexos para a formação."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Regime de 60 horas",
+        "texto": "A residência é treinamento em serviço em regime especial de 60 horas semanais, com bolsa paga ao residente (Lei 6.932/1981, art. 4º, com redação da Lei 12.514/2011). Escalas que extrapolam esse regime devem ser documentadas pelo residente, com datas e horários."
+      },
+      {
+        "titulo": "Repouso, alimentação e moradia",
+        "texto": "A instituição responsável pelo programa deve oferecer ao residente, durante todo o período de residência, condições adequadas de repouso e higiene pessoal nos plantões, alimentação e moradia, esta conforme estabelecido em regulamento (Lei 6.932/1981, art. 4º, §5º)."
+      },
+      {
+        "titulo": "Responsabilidade do residente",
+        "texto": "O residente responde eticamente por seus atos. O Código de Ética Médica afirma que a responsabilidade médica é sempre pessoal e não pode ser presumida (Res. CFM 2.217/2018, art. 1º, parágrafo único). Registrar no prontuário quem participou de cada conduta protege residente e preceptor."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Residência médica",
+        "ref": "Lei 6.932/1981"
+      },
+      {
+        "nome": "Redação do art. 4º",
+        "ref": "Lei 12.514/2011"
+      },
+      {
+        "nome": "Código de Ética Médica",
+        "ref": "Res. CFM 2.217/2018"
+      }
+    ],
+    "faq": [
+      {
+        "q": "A instituição é obrigada a fornecer moradia?",
+        "a": "A Lei 6.932/1981 determina que a instituição responsável pelo programa ofereça ao residente, durante todo o período, condições de repouso e higiene nos plantões, alimentação e moradia, esta conforme estabelecido em regulamento (art. 4º, §5º). Como a forma de cumprimento depende do regulamento e do caso, o primeiro passo é formalizar o pedido à coordenação do programa e guardar a resposta."
+      },
+      {
+        "q": "Qual é a carga horária da residência?",
+        "a": "A lei descreve a residência como treinamento em serviço em regime especial de 60 horas semanais (Lei 6.932/1981, art. 4º). Escalas que excedem esse regime, ou que não garantem repouso adequado nos plantões, devem ser registradas: guarde as escalas publicadas, as mensagens de convocação e os registros de presença. Esses documentos sustentam qualquer pedido à instituição."
+      }
+    ],
+    "cuidado": "Faça os pedidos à instituição por escrito e guarde as respostas."
+  },
+  {
+    "slug": "aposentadoria-especial",
+    "nome": "Aposentadoria especial",
+    "titulo": "Aposentadoria especial e continuidade do trabalho",
+    "grupo": "carreira",
+    "referencia": "STF, Tema 709",
+    "resumo": "Orientação ao médico sobre aposentadoria especial e sobre os efeitos de continuar em atividade especial depois do benefício.",
+    "lead": "A aposentadoria especial é um benefício previdenciário ligado ao exercício de atividade especial, com exposição a agentes nocivos. Uma das dúvidas mais frequentes é se o médico pode continuar atendendo depois de aposentado. O Supremo Tribunal Federal já decidiu essa questão, e a resposta tem efeitos práticos no planejamento da carreira.",
+    "quando": [
+      "Quero saber se meus períodos de trabalho contam como especiais",
+      "Já me aposentei e quero continuar atendendo",
+      "Vou pedir o benefício e ainda trabalho em hospital",
+      "Recebi aviso do INSS sobre a cessação do benefício",
+      "Quero planejar a transição para outra forma de atuação"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Levantamento do histórico",
+        "texto": "Reunimos o histórico de vínculos, contribuições e locais de trabalho do médico e identificamos, período a período, os que podem ser discutidos como atividade especial."
+      },
+      {
+        "titulo": "Documentação",
+        "texto": "Orientamos a obtenção dos documentos que comprovam as condições de trabalho em cada período, junto aos hospitais, clínicas e empresas em que o médico atuou."
+      },
+      {
+        "titulo": "Planejamento da transição",
+        "texto": "Avaliamos com o médico, antes do pedido, como ficará a rotina profissional depois do benefício, considerando a decisão do STF sobre a continuidade em atividade especial."
+      },
+      {
+        "titulo": "Pedido e acompanhamento",
+        "texto": "Acompanhamos o pedido administrativo e, se necessário, a discussão judicial, com atenção à data do requerimento, aos documentos apresentados e aos efeitos financeiros do benefício."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Continuar em atividade especial",
+        "texto": "O STF decidiu que é constitucional vedar a continuidade do recebimento da aposentadoria especial quando o beneficiário continua ou volta a trabalhar em atividade especial, seja ou não a mesma que motivou o benefício (Tema 709, julgado em 2020, sobre o art. 57, §8º, da Lei 8.213/1991)."
+      },
+      {
+        "titulo": "Data de início e efeitos",
+        "texto": "Pela mesma tese, se o segurado pede a aposentadoria especial e segue trabalhando na atividade nociva, a data de início do benefício é a do requerimento, com efeitos financeiros desde então. Uma vez implantado o benefício, o pagamento cessa se houver retorno ou continuidade na atividade especial (STF, Tema 709)."
+      },
+      {
+        "titulo": "Encerrar atendimentos com cuidado",
+        "texto": "Se a aposentadoria exigir deixar a atividade especial, a saída precisa respeitar o Código de Ética Médica: o médico pode renunciar ao atendimento, desde que avise previamente o paciente, assegure a continuidade dos cuidados e forneça as informações necessárias ao sucessor (Res. CFM 2.217/2018, art. 36, §1º)."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Aposentadoria especial e atividade especial",
+        "ref": "STF, Tema 709"
+      },
+      {
+        "nome": "Lei de Benefícios da Previdência",
+        "ref": "Lei 8.213/1991, art. 57, §8º"
+      },
+      {
+        "nome": "Código de Ética Médica",
+        "ref": "Res. CFM 2.217/2018, art. 36"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Aposentado pela especial, posso continuar atendendo?",
+        "a": "Depende do tipo de atividade. O STF decidiu que é constitucional cessar o pagamento da aposentadoria especial quando o beneficiário continua ou volta a trabalhar em atividade especial, mesmo que diferente daquela que deu origem ao benefício (Tema 709). A vedação alcança a atividade especial, e não qualquer trabalho. Por isso, a análise deve ser feita caso a caso, antes do pedido."
+      },
+      {
+        "q": "Quando começa o benefício se ainda estou trabalhando?",
+        "a": "Segundo a tese do Tema 709 do STF, se o segurado pede a aposentadoria especial e continua na atividade nociva, a data de início do benefício é a do requerimento, e os efeitos financeiros retroagem a essa data. Depois que o benefício é implantado, o pagamento cessa se houver continuidade ou retorno à atividade especial. Por isso, o planejamento deve vir antes do pedido."
+      }
+    ],
+    "cuidado": "Planeje a rotina profissional antes de pedir o benefício, e não depois."
+  },
+  {
+    "slug": "fies",
+    "nome": "FIES",
+    "titulo": "Condições especiais do FIES para médicos",
+    "grupo": "carreira",
+    "referencia": "Lei 10.260/2001",
+    "resumo": "Orientação a médicos com financiamento estudantil sobre abatimento do saldo devedor e condições especiais durante a residência.",
+    "lead": "A legislação do FIES prevê condições especiais para médicos, ligadas à atuação em áreas e especialidades consideradas prioritárias pelo Ministério da Saúde. Os requisitos são técnicos e dependem de atos do próprio Ministério. Orientamos o médico a verificar se se enquadra, a reunir a documentação necessária e a formalizar os pedidos.",
+    "quando": [
+      "Trabalho em equipe de saúde da família e tenho FIES",
+      "Vou começar a residência e ainda pago o financiamento",
+      "Meu pedido de abatimento foi negado",
+      "Não sei se minha área de atuação é considerada prioritária",
+      "Quero entender o saldo devedor antes de mudar de emprego"
+    ],
+    "comoAtuamos": [
+      {
+        "titulo": "Verificação de requisitos",
+        "texto": "Analisamos o contrato de financiamento, o vínculo de trabalho ou o programa de residência e os atos do Ministério da Saúde que definem áreas e especialidades prioritárias."
+      },
+      {
+        "titulo": "Documentação",
+        "texto": "Orientamos o médico a reunir comprovantes de vínculo, declarações da instituição, matrícula na residência e histórico do contrato, que costumam ser exigidos nos pedidos e nas eventuais revisões."
+      },
+      {
+        "titulo": "Pedido administrativo",
+        "texto": "Acompanhamos o pedido junto ao agente financeiro e ao programa, com registro de prazos, protocolos e respostas recebidas em cada etapa, para que nada se perca."
+      },
+      {
+        "titulo": "Revisão de negativas",
+        "texto": "Quando o pedido é negado, examinamos os fundamentos da negativa e avaliamos com o médico, de forma objetiva, a revisão administrativa ou a medida judicial adequada."
+      }
+    ],
+    "pontos": [
+      {
+        "titulo": "Atuação em saúde da família",
+        "texto": "A legislação do FIES (Lei 10.260/2001) prevê abatimento do saldo devedor para médicos que integram equipes de saúde da família em áreas definidas como prioritárias pelo Ministério da Saúde. O enquadramento depende do vínculo e da localidade de atuação."
+      },
+      {
+        "titulo": "Residência em especialidade prioritária",
+        "texto": "A mesma lei prevê condição especial de carência para médicos matriculados em residência médica credenciada, em especialidades definidas como prioritárias pelo Ministério da Saúde. A lista de especialidades é fixada por ato do Ministério e deve ser conferida no momento do pedido."
+      },
+      {
+        "titulo": "Regulamentação e documentos",
+        "texto": "Os pedidos baseados na Lei 10.260/2001 dependem de comprovação do vínculo, da localidade e, na residência, da matrícula ativa no programa. Como a regulamentação é feita por atos do Ministério da Saúde e do programa, convém conferir a norma vigente na data do pedido e guardar todos os protocolos."
+      }
+    ],
+    "normas": [
+      {
+        "nome": "Fundo de Financiamento Estudantil",
+        "ref": "Lei 10.260/2001"
+      },
+      {
+        "nome": "Áreas e especialidades prioritárias",
+        "ref": "Atos do Ministério da Saúde"
+      },
+      {
+        "nome": "Residência médica",
+        "ref": "Lei 6.932/1981"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quem trabalha em saúde da família tem abatimento no FIES?",
+        "a": "A legislação do FIES prevê abatimento do saldo devedor para médicos que integram equipes de saúde da família em áreas definidas como prioritárias pelo Ministério da Saúde. O direito depende do vínculo, do local de atuação e do cumprimento dos requisitos fixados na regulamentação. Antes de pedir, reúna comprovantes do vínculo e confira se a localidade consta dos atos do Ministério."
+      },
+      {
+        "q": "A residência altera o pagamento do FIES?",
+        "a": "A legislação prevê condição especial de carência para médicos em residência credenciada em especialidades definidas como prioritárias pelo Ministério da Saúde. Nem toda especialidade se enquadra, e o pedido exige comprovação da matrícula ativa no programa. Confira a lista vigente antes de começar a residência e formalize o pedido assim que tiver os documentos em mãos."
+      }
+    ],
+    "cuidado": "Guarde protocolos e respostas de todos os pedidos feitos ao programa."
+  }
+]

@@ -1,0 +1,40 @@
+---
+import lockupRaw from '../assets/lockup.svg?raw';
+import Arrow from './Arrow.astro';
+import site from '../data/site.json';
+import { wa, ano } from '../lib/util.js';
+const lockup = lockupRaw.replace('<svg ', '<svg aria-hidden="true" focusable="false" ');
+---
+<footer class="ftr on-brass" data-footer>
+  <div class="ftr__top">
+    <a href="/" aria-label="Borges & Fidélis, página inicial" set:html={lockup} />
+    <p>{site.endereco.linha1}<br />{site.endereco.bairro}, {site.endereco.cidade}, {site.endereco.uf}</p>
+    <p>Filial em {site.filial}<br />{site.atendimento}</p>
+    <p>Advocacia dedicada a médicos, dentistas, clínicas e profissionais da saúde.</p>
+    <a class="link" href="#topo">Voltar ao topo</a>
+  </div>
+  <div class="ftr__big">
+    <span class="ftr__hint">WhatsApp do escritório</span>
+    <a href={wa()} target="_blank" rel="noopener" aria-label={`Conversar pelo WhatsApp: ${site.telefone}`}><span class="lines"><span class="line"><span data-line>{site.telefone}</span></span></span></a>
+  </div>
+  <p class="ftr__oab">
+    Borges & Fidélis Advocacia · {site.socias.map((s) => `${s.tratamento}, ${s.oab.join(', ')}`).join(' · ')}.
+    Conteúdo de caráter informativo, que não substitui a análise individual do caso.
+  </p>
+  <p class="ftr__oab notice">
+    Atenção a golpes: o escritório não pede pagamentos, códigos ou dados bancários por mensagem de números desconhecidos. Na dúvida, confirme pelo {site.telefone} ou pelo {site.email}.
+  </p>
+  <div class="ftr__bottom">
+    <ul class="ftr__links">
+      <li><a class="link" href="/areas">Áreas</a></li>
+      <li><a class="link" href="/escritorio">O escritório</a></li>
+      <li><a class="link" href="/conteudos">Conteúdos</a></li>
+      <li><a class="link" href="/duvidas">Dúvidas</a></li>
+      <li><a class="link" href="/contato">Contato</a></li>
+      <li><a class="link" href="/privacidade">Privacidade</a></li>
+      <li><a class="link" href={site.instagram} target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+    <p><a class="link" href={`mailto:${site.email}`}>{site.email}</a></p>
+    <p>Uberlândia, {ano}</p>
+  </div>
+</footer>

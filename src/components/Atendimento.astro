@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import Arrow from './Arrow.astro';
+import site from '../data/site.json';
+import { wa } from '../lib/util.js';
+import tuane from '../assets/img/tuane-borges.jpg';
+import flavia from '../assets/img/flavia-fidelis.jpg';
+const { titulo = 'Vamos conversar?', texto = 'Conte o que aconteceu pelo WhatsApp ou pelo e-mail, sem dados de pacientes. Respondemos para combinar o atendimento, presencial ou online.', msg } = Astro.props;
+const fotos = { tuane, flavia };
+---
+<section class="atend on-dark grid" aria-labelledby="atend-t">
+  <div class="atend__txt">
+    <h2 class="t-l lines" id="atend-t"><span class="line"><span data-line>{titulo}</span></span></h2>
+    <p data-reveal>{texto}</p>
+    <a class="btn" href={wa(msg)} target="_blank" rel="noopener" data-reveal style="--d:120" data-magnetic>Falar com o escritório <Arrow /></a>
+  </div>
+  <div class="atend__people">
+    {site.socias.map((s, i) => (
+      <figure class="atend__p">
+        <div class="ph" data-shutter style={`--d:${i * 120}`}><Image src={fotos[s.id]} alt={`Retrato da ${s.tratamento}`} widths={[320, 480, 610]} sizes="(max-width: 899px) 45vw, 18vw" loading="lazy" /></div>
+        <figcaption><strong>{s.tratamento}</strong><span>{s.oab[0]}</span></figcaption>
+      </figure>
+    ))}
+  </div>
+</section>

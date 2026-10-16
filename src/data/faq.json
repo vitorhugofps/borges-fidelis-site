@@ -1,0 +1,50 @@
+[
+  {
+    "q": "Recebi uma notificação do CRM. O que faço?",
+    "a": "Leia o ofício com calma e anote a data de recebimento e o prazo indicado. Em geral, a primeira etapa é a sindicância, fase de apuração em que o Código de Processo Ético-Profissional (Res. CFM 2.306/2022, art. 15, §2º) admite uma manifestação preliminar escrita do médico. Separe o prontuário, os termos de consentimento e os registros do atendimento, sem alterar nada. Evite procurar o denunciante e comentar o caso em redes sociais: o procedimento é sigiloso (art. 1º). Uma resposta técnica, objetiva e coerente com os documentos costuma ser mais útil do que um relato longo ou emocional."
+  },
+  {
+    "q": "Preciso de advogado na sindicância?",
+    "a": "Não é obrigatório. O Código de Processo Ético-Profissional permite que o médico atue pessoalmente ou por advogado e afirma que a ausência de advogado não anula os atos praticados (Res. CFM 2.306/2022, art. 6º). Mesmo assim, é na sindicância que se decide se o caso será arquivado, se haverá conciliação ou termo de ajustamento de conduta, ou se será aberto processo ético-profissional (art. 19). O acompanhamento jurídico ajuda a organizar as provas, evitar contradições e avaliar, desde o início, os possíveis reflexos do mesmo fato nas esferas cível e criminal."
+  },
+  {
+    "q": "Qual a diferença entre sindicância e processo ético-profissional?",
+    "a": "A sindicância é uma apuração preliminar, sem contraditório pleno (Res. CFM 2.306/2022, art. 15, §1º), que deve terminar em até 90 dias, prorrogáveis uma vez (art. 16, §2º). Se houver indícios de autoria e materialidade, instaura-se o processo ético-profissional (PEP). No PEP, o médico é citado e tem 30 dias para apresentar defesa prévia, com até três testemunhas (art. 43). Ao final, pode ser absolvido ou receber uma das penas do art. 22 da Lei 3.268/1957: advertência ou censura confidenciais, censura pública, suspensão por até 30 dias ou cassação. Da decisão cabe recurso em 30 dias (art. 100)."
+  },
+  {
+    "q": "O médico responde por erro mesmo sem culpa?",
+    "a": "Em regra, não. O Código de Defesa do Consumidor determina que a responsabilidade pessoal dos profissionais liberais seja apurada mediante verificação de culpa (art. 14, §4º), e o Código Civil prevê indenização quando o profissional, por negligência, imprudência ou imperícia, causa dano ao paciente (art. 951). Hospitais e clínicas, como fornecedores de serviços, podem responder independentemente de culpa por falhas da própria estrutura. Há nuances: o juiz pode inverter o ônus da prova (CDC, art. 6º, VIII) e, na cirurgia plástica estética, o STJ entende que há obrigação de resultado, com culpa presumida."
+  },
+  {
+    "q": "Fui processado por um paciente. E agora?",
+    "a": "Procure orientação jurídica assim que receber a citação, porque os prazos processuais são curtos e a forma de contagem depende do caso. Reúna prontuário, exames, termos de consentimento, mensagens trocadas e o nome de quem participou do atendimento. Se tiver seguro de responsabilidade civil profissional, comunique a seguradora conforme a apólice. Não procure o paciente para discutir o caso nem publique nada a respeito. Nessas ações, a perícia médica costuma ser decisiva, e a escolha de um assistente técnico qualificado faz diferença. O mesmo fato pode gerar, em paralelo, denúncia no CRM e investigação criminal."
+  },
+  {
+    "q": "O médico pode responder criminalmente por um resultado adverso?",
+    "a": "Pode, quando o fato se enquadra em um crime, em geral na forma culposa: homicídio culposo (Código Penal, art. 121, §3º) ou lesão corporal culposa (art. 129, §6º), com aumento de pena se houver inobservância de regra técnica da profissão. Há ainda crimes ligados à prática, como omissão de socorro (art. 135), exigência de cheque-caução para atendimento de emergência (art. 135-A), violação de segredo profissional (art. 154) e atestado falso (art. 302). Um resultado adverso, por si só, não é crime. Depoimentos na delegacia exigem preparo, porque podem repercutir nos processos ético e cível."
+  },
+  {
+    "q": "Posso postar \"antes e depois\" no Instagram?",
+    "a": "Desde 11 de março de 2024, com a Resolução CFM 2.336/2023, sim, mas com condições (art. 14). A publicação deve ter finalidade educativa e vir acompanhada de texto sobre indicações, fatores que influenciam o resultado e possíveis complicações, mostrando também resultados menos favoráveis quando for o caso. O paciente não pode ser identificado, precisa autorizar o uso, e a imagem não pode ser editada ou melhorada. Continua proibido garantir, prometer ou insinuar bons resultados (art. 11, XII). A publicação deve trazer nome, CRM e, se houver menção a especialidade, o RQE (art. 4º)."
+  },
+  {
+    "q": "Posso divulgar o valor da consulta?",
+    "a": "Sim. A Resolução CFM 2.336/2023 passou a permitir que o médico informe valores de consultas e formas de pagamento (art. 9º, VI) e anuncie descontos em campanhas, desde que não haja venda casada ou premiação (art. 9º, VIII). Isso não libera o tom comercial: continuam vedados o sensacionalismo, a autopromoção e a concorrência desleal (art. 11). A peça também precisa trazer nome, CRM e, quando houver especialidade, o RQE. Antes de impulsionar anúncios com preço, vale revisar o texto à luz da resolução e do Código de Ética Médica."
+  },
+  {
+    "q": "O que deve constar no prontuário?",
+    "a": "O Código de Ética Médica exige prontuário legível, preenchido em ordem cronológica, com data, hora, assinatura e número do CRM (art. 87). A Resolução CFM 1.638/2002 (art. 5º) lista identificação do paciente, anamnese, exame físico, exames complementares e resultados, hipóteses diagnósticas, diagnóstico definitivo, tratamento realizado e evolução diária. Na prática, também vale registrar as orientações dadas, as recusas do paciente e o motivo de cada conduta. Em uma defesa, o que não está escrito é difícil de demonstrar. A guarda mínima é de 20 anos a partir do último registro (Lei 13.787/2018, art. 6º)."
+  },
+  {
+    "q": "O TCLE protege o médico?",
+    "a": "Protege em parte, e só quando reflete uma conversa real. Obter o consentimento é dever ético (Código de Ética Médica, art. 22), e o STJ já decidiu que termos genéricos não bastam: a informação deve ser individualizada, e cabe ao médico provar que informou (REsp 1.540.580/DF, 2018). Um bom TCLE descreve o procedimento, os benefícios, os riscos, as alternativas e a liberdade de recusar, em linguagem clara (Recomendação CFM 1/2016). Ele não afasta a responsabilidade por falha técnica, mas demonstra que o paciente decidiu ciente dos riscos inerentes ao procedimento."
+  },
+  {
+    "q": "O paciente pode pedir cópia do prontuário?",
+    "a": "Sim. O Código de Ética Médica proíbe negar ao paciente acesso ao prontuário, deixar de fornecer cópia quando solicitada ou deixar de explicar o que for necessário à compreensão, salvo quando isso trouxer risco ao paciente ou a terceiros (art. 88). Para terceiros, a liberação depende de autorização escrita do paciente, ordem judicial ou necessidade da defesa do próprio médico (art. 89). No caso de paciente falecido, a Recomendação CFM 3/2014 orienta o fornecimento ao cônjuge ou companheiro e, na falta destes, aos sucessores, com vínculo comprovado. Registre sempre o pedido e a entrega."
+  },
+  {
+    "q": "Quais cuidados devo ter ao atender por telemedicina?",
+    "a": "A telemedicina está autorizada pela Lei 14.510/2022 e regulamentada pela Resolução CFM 2.314/2022. O médico tem autonomia para decidir se a usa e pode indicar atendimento presencial sempre que necessário (art. 4º). O paciente deve consentir de forma livre e esclarecida (art. 15). O atendimento precisa ser registrado em prontuário, e os documentos emitidos a distância devem ter assinatura digital no padrão ICP-Brasil e menção à telemedicina (arts. 3º e 13). Em doenças crônicas, a resolução exige consulta presencial em intervalos de no máximo 180 dias (art. 6º, §2º)."
+  }
+]

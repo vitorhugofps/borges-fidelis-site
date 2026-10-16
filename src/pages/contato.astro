@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import FitTitle from '../components/FitTitle.astro';
+import Arrow from '../components/Arrow.astro';
+import Atendimento from '../components/Atendimento.astro';
+import Band from '../components/Band.astro';
+import site from '../data/site.json';
+import areas from '../data/areas.json';
+import { wa } from '../lib/util.js';
+---
+<Base title="Contato" description="Fale com a Borges & Fidélis pelo WhatsApp (34) 99905-3289 ou pelo e-mail contato@borgesefidelis.com.br. Uberlândia, São Paulo e atendimento online." current="/contato">
+  <section class="page-hero page-hero--short on-paper" data-page-hero>
+    <FitTitle text="Contato" class="page-hero__title" />
+    <div class="page-hero__foot">
+      <p class="page-hero__lede" data-rise style="--i:2">Conte o que aconteceu.<span class="soft">Preencha os campos e escolha por onde enviar: a mensagem abre pronta no WhatsApp ou no seu e-mail. Nada fica gravado neste site.</span></p>
+      <div class="page-hero__act" data-rise style="--i:3"><a class="btn" href={wa()} target="_blank" rel="noopener">WhatsApp direto <Arrow /></a></div>
+    </div>
+  </section>
+
+  <section class="form on-paper-2 grid" aria-labelledby="form-t">
+    <div class="form__head">
+      <h2 class="t-l lines" id="form-t"><span class="line"><span data-line>Mensagem</span></span></h2>
+      <p>Não inclua nomes, exames ou outros dados de pacientes. Os documentos do caso são pedidos depois, por um canal seguro.</p>
+    </div>
+    <form class="form__body" data-stagger data-contact-form data-whatsapp={site.whatsapp} data-email={site.email} novalidate>
+      <div class="field full">
+        <label for="f-nome">Seu nome</label>
+        <input class="input" id="f-nome" name="nome" type="text" autocomplete="name" required maxlength="80" />
+      </div>
+      <div class="field">
+        <label for="f-perfil">Você é</label>
+        <select class="select" id="f-perfil" name="perfil">
+          <option value="">Selecione</option>
+          <option>Médico(a)</option>
+          <option>Cirurgião(ã)-dentista</option>
+          <option>Outro profissional da saúde</option>
+          <option>Clínica ou hospital</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-assunto">Assunto</label>
+        <select class="select" id="f-assunto" name="assunto">
+          <option value="">Selecione</option>
+          {areas.map((a) => <option>{a.nome}</option>)}
+          <option>Outro assunto</option>
+        </select>
+      </div>
+      <fieldset class="field full">
+        <legend>Há prazo correndo?</legend>
+        <div class="radios">
+          <label><input type="radio" name="prazo" value="sim" /><span>Sim</span></label>
+          <label><input type="radio" name="prazo" value="nao" /><span>Não</span></label>
+          <label><input type="radio" name="prazo" value="nao-sei" checked /><span>Não sei</span></label>
+        </div>
+      </fieldset>
+      <div class="field full">
+        <label for="f-msg">O que aconteceu</label>
+        <textarea class="textarea" id="f-msg" name="mensagem" maxlength="700" aria-describedby="f-msg-hint"></textarea>
+        <p class="form__hint" id="f-msg-hint">Em poucas linhas, sem dados de pacientes. Até 700 caracteres.</p>
+      </div>
+      <div class="form__acts full">
+        <button class="btn" type="submit" name="via" value="whatsapp">Enviar pelo WhatsApp <Arrow /></button>
+        <button class="btn" type="submit" name="via" value="email" style="--btn-bg:var(--paper);--btn-fg:var(--ink);--btn-bg-hover:var(--oak)">Enviar por e-mail <Arrow /></button>
+      </div>
+      <p class="form__privacy full" role="status" data-form-status></p>
+      <p class="form__privacy full">Este formulário não envia nem armazena dados: ele apenas monta a mensagem no seu aparelho. O tratamento posterior segue a nossa <a class="link" href="/privacidade">política de privacidade</a>.</p>
+    </form>
+  </section>
+
+  <section class="contact on-paper" aria-labelledby="contato-t">
+    <h2 class="sr-only" id="contato-t">Endereço e canais</h2>
+    <div class="contact__rows">
+      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>Av. dos Vinhedos, 71, sala 404</span></a>
+      <p data-wipe style="--d:80"><span>{site.endereco.bairro}, {site.endereco.cidade}</span></p>
+      <p data-wipe style="--d:160"><span>Filial em {site.filial}</span></p>
+      <p data-wipe style="--d:240"><span>Presencial e online, com hora marcada</span></p>
+      <a href={wa()} target="_blank" rel="noopener" data-wipe style="--d:320"><span class="num">WhatsApp {site.telefone}</span></a>
+      <a href={`mailto:${site.email}`} data-wipe style="--d:400"><span>{site.email.replace('@', '\u200B@')}</span></a>
+    </div>
+  </section>
+
+  <Band i={2} />
+
+  <Atendimento titulo="Com quem você fala" texto="As duas sócias acompanham os casos desde a primeira conversa. Atenção a golpes: o escritório não pede pagamentos nem dados bancários por mensagem. Na dúvida, ligue para o número oficial." />
+</Base>

@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import Arrow from '../../components/Arrow.astro';
+import Atendimento from '../../components/Atendimento.astro';
+import Band from '../../components/Band.astro';
+import artigos from '../../data/artigos.json';
+import site from '../../data/site.json';
+import { wa, dataBR } from '../../lib/util.js';
+
+export function getStaticPaths() {
+  return artigos.map((a, i) => ({ params: { slug: a.slug }, props: { a, i, next: artigos[(i + 1) % artigos.length] } }));
+}
+const { a, i, next } = Astro.props;
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: a.titulo,
+    description: a.resumo,
+    datePublished: a.publicado,
+    inLanguage: 'pt-BR',
+    author: { '@type': 'Organization', name: 'Borges & Fidélis Advocacia', url: site.url },
+    publisher: { '@type': 'Organization', name: 'Borges & Fidélis Advocacia', logo: { '@type': 'ImageObject', url: `${site.url}/brand/mark.svg` } },
+    mainEntityOfPage: `${site.url}/conteudos/${a.slug}`,
+  },
+];
+---
+<Base title={a.titulo} description={a.resumo} current={`/conteudos/${a.slug}`} jsonld={jsonld}>
+  <section class="page-hero page-hero--short on-paper" data-page-hero>
+    <div class="page-hero__title">
+      <h1 class="t-l lines" style="font-size:clamp(40px, 7.4vw, 132px)"><span class="line"><span data-line>{a.h1}</span></span></h1>
+      <p class="t-m" data-rise style="--i:1;margin-top:18px;max-width:30ch">{a.sub}</p>
+    </div>
+    <div class="page-hero__foot"><p class="page-hero__lede" data-rise style="--i:2"><span class="soft" style="margin-top:0">{a.resumo}</span></p></div>
+  </section>
+  <Band i={i + 1} />
+  <article class="article on-paper grid">
+    <dl class="article__meta" data-stagger>
+      <div><dt>Categoria</dt><dd>{a.categoria}</dd></div>
+      <div><dt>Leitura</dt><dd>{a.tempoLeitura}</dd></div>
+      <div><dt>Publicado em</dt><dd>{dataBR(a.publicado)}</dd></div>
+      <div><dt>Autoria</dt><dd>Borges & Fidélis Advocacia</dd></div>
+    </dl>
+    <div class="article__body">
+      {a.corpo.map((b) => {
+        if (b.tipo === 'h2') return <h2 data-reveal>{b.texto}</h2>;
+        if (b.tipo === 'lista') return <ul data-stagger>{b.itens.map((x) => <li>{x}</li>)}</ul>;
+        if (b.tipo === 'citacao') return <blockquote data-reveal>{b.texto}</blockquote>;
+        return <p data-reveal>{b.texto}</p>;
+      })}
+      <p class="article__note">Este texto tem caráter informativo e reflete as normas vigentes na data de publicação. Ele não substitui a análise individual do caso. {site.socias.map((s) => `${s.tratamento}, ${s.oab[0]}`).join(' · ')}.</p>
+    </div>
+  </article>
+  <Atendimento titulo="Ficou alguma dúvida?" texto="Conte o que aconteceu, sem dados de pacientes, e combinamos o atendimento com uma das sócias." msg={`Olá. Li o artigo "${a.titulo}" e gostaria de conversar com o escritório.`} />
+  <nav class="next on-paper-2" aria-label="Próximo artigo">
+    <a href={`/conteudos/${next.slug}`}>
+      <small>Próximo artigo</small>
+      <span class="t-l">{next.h1} <Arrow class="next__arrow" /></span>
+    </a>
+  </nav>
+</Base>

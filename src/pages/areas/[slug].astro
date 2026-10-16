@@ -1,0 +1,111 @@
+---
+import Base from '../../layouts/Base.astro';
+import FitTitle from '../../components/FitTitle.astro';
+import Arrow from '../../components/Arrow.astro';
+import Atendimento from '../../components/Atendimento.astro';
+import Band from '../../components/Band.astro';
+import areas from '../../data/areas.json';
+import site from '../../data/site.json';
+import { wa } from '../../lib/util.js';
+
+export function getStaticPaths() {
+  return areas.map((a, i) => ({ params: { slug: a.slug }, props: { a, i, next: areas[(i + 1) % areas.length] } }));
+}
+const { a, i, next } = Astro.props;
+const grupo = site.grupos[a.grupo];
+const msg = `Olá. Gostaria de falar com o escritório sobre ${a.nome.toLowerCase().replace('fies', 'FIES').replace('crm', 'CRM')}.`;
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: a.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: site.url },
+      { '@type': 'ListItem', position: 2, name: 'Áreas de atuação', item: `${site.url}/areas` },
+      { '@type': 'ListItem', position: 3, name: a.nome, item: `${site.url}/areas/${a.slug}` },
+    ],
+  },
+];
+---
+<Base title={`${a.nome}: ${a.titulo}`} description={a.resumo} current={`/areas/${a.slug}`} jsonld={jsonld}>
+  <section class="page-hero on-paper" data-page-hero>
+    <FitTitle text={a.nome} class="page-hero__title" />
+    <div class="page-hero__foot">
+      <p class="page-hero__lede" data-rise style="--i:2">{a.titulo}.<span class="soft">{a.lead}</span><a class="link page-hero__back" href="/areas">Todas as áreas de atuação</a></p>
+      <div class="page-hero__act" data-rise style="--i:3">
+        <a class="btn" href={wa(msg)} target="_blank" rel="noopener" data-magnetic>Falar sobre este tema <Arrow /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="when on-dark grid" aria-labelledby="when-t">
+    <div class="when__head">
+      <h2 class="t-l lines" id="when-t"><span class="line"><span data-line>Quando procurar</span></span></h2>
+      <p data-reveal>Situações em que o escritório costuma ser chamado nesta área.</p>
+    </div>
+    <ul class="when__list" data-stagger>
+      {a.quando.map((q) => <li>{q}</li>)}
+    </ul>
+  </section>
+
+  <Band i={i} />
+
+  <section class="points on-paper grid" aria-labelledby="points-t">
+    <div class="points__head">
+      <h2 class="t-m" id="points-t" data-reveal>O que você precisa saber</h2>
+    </div>
+    <div class="points__text" data-stagger>
+      {a.pontos.map((p) => <p><strong>{p.titulo}.</strong> {p.texto}</p>)}
+    </div>
+  </section>
+
+  <section class="steps steps--tight on-paper-2" aria-labelledby="como-t">
+    <h2 class="t-m wrap" id="como-t" style="margin-bottom:56px" data-reveal>Como atuamos</h2>
+    <ol class="steps__list">
+      {a.comoAtuamos.map((c, k) => (
+        <li style={`--i:${k}`} data-step>
+          <h3 class="steps__line lines"><span class="line"><span data-line>{c.titulo}.</span></span></h3>
+          <p class="steps__text" data-reveal style="--d:160">{c.texto}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="norms on-paper grid" aria-labelledby="normas-t">
+    <div class="norms__col">
+      <h2 class="t-m" id="normas-t">Normas de referência</h2>
+      <ul data-stagger>
+        {a.normas.map((n) => <li><span>{n.nome}</span><span>{n.ref}</span></li>)}
+      </ul>
+    </div>
+  </section>
+
+  {a.cuidado && (
+    <section class="caution on-oak grid" aria-label="Um cuidado importante">
+      <p data-split>{a.cuidado}</p>
+    </section>
+  )}
+
+  <section class="faq on-paper grid" aria-labelledby="faq-t">
+    <div class="faq__head">
+      <h2 class="t-m" id="faq-t">Perguntas frequentes</h2>
+      <a class="arrow-link" href="/duvidas">Todas as dúvidas <Arrow /></a>
+    </div>
+    <div class="faq__text" data-stagger>
+      {a.faq.map((f) => <p><strong>{f.q}</strong> {f.a}</p>)}
+    </div>
+  </section>
+
+  <Atendimento msg={msg} />
+
+  <nav class="next on-paper-2" aria-label="Próxima área">
+    <a href={`/areas/${next.slug}`}>
+      <small>Próxima área</small>
+      <span class="t-l">{next.nome} <Arrow class="next__arrow" /></span>
+    </a>
+  </nav>
+</Base>

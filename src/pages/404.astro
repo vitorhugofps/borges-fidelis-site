@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import FitTitle from '../components/FitTitle.astro';
+import Arrow from '../components/Arrow.astro';
+---
+<Base title="Página não encontrada" noindex>
+  <section class="page-hero on-paper" data-page-hero>
+    <FitTitle text="Página não encontrada" max={11} class="page-hero__title" />
+    <div class="page-hero__foot">
+      <p class="page-hero__lede" data-rise style="--i:2">O endereço pode ter mudado com o novo site.<span class="soft">Volte ao início, veja as áreas de atuação ou fale com o escritório.</span></p>
+      <div class="page-hero__act" data-rise style="--i:3"><a class="btn" href="/">Ir para o início <Arrow /></a></div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,65 @@
+{
+  "nomeSite": "Advogando para Médicos",
+  "marca": "Borges & Fidélis",
+  "marcaCompleta": "Borges & Fidélis Advocacia",
+  "url": "https://advogandoparamedicos.com.br",
+  "descricao": "Borges & Fidélis: advocacia dedicada a médicos, dentistas, clínicas e profissionais da saúde. Defesa no CRM, ações de indenização, defesa criminal, publicidade médica, clínicas, trabalho e tributos. Uberlândia, São Paulo e online.",
+  "desde": 2013,
+  "whatsapp": "5534999053289",
+  "telefone": "(34) 99905-3289",
+  "email": "contato@borgesefidelis.com.br",
+  "mensagemPadrao": "Olá. Gostaria de agendar um atendimento com o escritório Borges & Fidélis.",
+  "endereco": {
+    "linha1": "Av. dos Vinhedos, 71, sala 404",
+    "bairro": "Morada da Colina",
+    "cidade": "Uberlândia",
+    "uf": "MG",
+    "mapa": "https://www.google.com/maps/search/?api=1&query=Av.+dos+Vinhedos%2C+71%2C+Morada+da+Colina%2C+Uberl%C3%A2ndia+-+MG"
+  },
+  "filial": "São Paulo, SP",
+  "atendimento": "Presencial e online, com hora marcada",
+  "instagram": "https://www.instagram.com/borgesefidelis",
+  "socias": [
+    {
+      "id": "tuane",
+      "nome": "Tuane Borges",
+      "tratamento": "Dra. Tuane Borges",
+      "oab": ["OAB/MG 26.658", "OAB/SP 422.277", "OAB/GO 59.163"],
+      "instagram": "https://www.instagram.com/tuaneborgesmatozo",
+      "foto": "tuane-borges",
+      "formacao": [
+        { "titulo": "Graduação em Direito", "instituicao": "UFU" },
+        { "titulo": "Pós-graduação em Processo do Trabalho", "instituicao": "Faculdade Anhanguera" },
+        { "titulo": "Pós-graduação em Direito Médico e Hospitalar", "instituicao": "Faculdade Paulista de Direito" },
+        { "titulo": "Especialização em Direito da Saúde e Bioética", "instituicao": "Universidade de Coimbra" }
+      ]
+    },
+    {
+      "id": "flavia",
+      "nome": "Flávia Fidélis",
+      "tratamento": "Dra. Flávia Fidélis",
+      "oab": ["OAB/MG 124.385"],
+      "instagram": "https://www.instagram.com/flaviafidelis",
+      "foto": "flavia-fidelis",
+      "formacao": [
+        { "titulo": "Graduação em Direito", "instituicao": "Uniminas" },
+        { "titulo": "Pós-graduação em Processo Civil", "instituicao": "UFU" },
+        { "titulo": "Especialização em Direito Empresarial", "instituicao": "FGV" },
+        { "titulo": "Pós-graduação em Direito Médico e Hospitalar", "instituicao": "Faculdade Paulista de Direito" },
+        { "titulo": "Especialização em Direito Médico", "instituicao": "Universidade de Coimbra" },
+        { "titulo": "Professora de pós-graduação", "instituicao": "" }
+      ]
+    }
+  ],
+  "grupos": {
+    "defesa": "Quando algo aconteceu",
+    "rotina": "Na rotina do consultório",
+    "carreira": "Ao longo da carreira"
+  },
+  "passos": [
+    { "linha": "Primeiro, você nos conta.", "texto": "Por WhatsApp, e-mail ou no escritório. Ouvimos o que aconteceu e verificamos logo se há prazo correndo." },
+    { "linha": "Depois, lemos tudo.", "texto": "Ofício, prontuário, contratos, mensagens. O caso ganha uma linha do tempo feita a partir dos documentos." },
+    { "linha": "Então, traçamos o caminho.", "texto": "Você conhece as alternativas, os riscos de cada uma e o que depende de você. A decisão é sempre sua." },
+    { "linha": "E seguimos até o fim.", "texto": "Audiências, sessões de julgamento e recursos, com notícia a cada fase. Em sigilo, do primeiro ao último dia." }
+  ]
+}

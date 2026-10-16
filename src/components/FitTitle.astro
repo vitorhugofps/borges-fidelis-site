@@ -1,0 +1,11 @@
+---
+import { breakTitle, fit } from '../lib/util.js';
+const { text, tag = 'h1', max = 14, class: cls = '', id } = Astro.props;
+const lines = breakTitle(text, max);
+const Tag = tag;
+---
+<Tag class:list={['fit lines', cls]} style={`--fit:${fit(lines)}`} aria-label={text} id={id}>
+  {lines.map((l, i) => (
+    <span class="line" aria-hidden="true"><span data-line style={`--i:${i}`}>{l}</span></span>
+  ))}
+</Tag>

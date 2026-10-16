@@ -1,0 +1,102 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import FitTitle from '../components/FitTitle.astro';
+import Arrow from '../components/Arrow.astro';
+import site from '../data/site.json';
+import { wa } from '../lib/util.js';
+import sala from '../assets/img/sala-reunioes.jpg';
+import corredor from '../assets/img/corredor.jpg';
+import placaFidelis from '../assets/img/placa-fidelis.jpg';
+import tuane from '../assets/img/tuane-borges.jpg';
+import flavia from '../assets/img/flavia-fidelis.jpg';
+const fotos = { 'tuane-borges': tuane, 'flavia-fidelis': flavia };
+---
+<Base title="O escritório" description="Borges & Fidélis Advocacia: sede em Uberlândia, filial em São Paulo e atendimento online. As sócias Dra. Tuane Borges e Dra. Flávia Fidélis, formação, ética e sigilo." current="/escritorio">
+  <section class="page-hero page-hero--short on-paper" data-page-hero>
+    <FitTitle text="O escritório" class="page-hero__title" />
+    <div class="page-hero__foot">
+      <p class="page-hero__lede" data-rise style="--i:2">Borges & Fidélis Advocacia.<span class="soft">Sede em Uberlândia, filial em São Paulo e atendimento online. Desde {site.desde}, dedicado a médicos, cirurgiões-dentistas, enfermeiros, clínicas e hospitais.</span></p>
+      <div class="page-hero__act" data-rise style="--i:3"><a class="btn" href={wa()} target="_blank" rel="noopener">Falar com o escritório <Arrow /></a></div>
+    </div>
+  </section>
+
+  <section class="about on-paper-2 grid" aria-label="Sobre o escritório">
+    <dl class="about__facts" data-stagger>
+      <div><dt>Desde</dt><dd class="num">{site.desde}</dd></div>
+      <div><dt>Sede</dt><dd>{site.endereco.linha1}<br />{site.endereco.bairro}, {site.endereco.cidade}, {site.endereco.uf}</dd></div>
+      <div><dt>Filial</dt><dd>{site.filial}</dd></div>
+      <div><dt>Atendimento</dt><dd>{site.atendimento}</dd></div>
+    </dl>
+    <div class="about__text" data-split>
+      <p>O escritório nasceu em Uberlândia com um recorte claro: atender quem trabalha com saúde. Esse recorte muda a defesa. Prontuário, escala de plantão e Código de Ética Médica fazem parte do trabalho de todo dia, ao lado das leis processuais.</p>
+      <p>O mesmo episódio clínico pode chegar ao Conselho, à Justiça cível e à delegacia ao mesmo tempo. Por isso olhamos o caso inteiro desde a primeira conversa, para que o que se diz numa esfera não prejudique a outra.</p>
+    </div>
+  </section>
+
+  <section class="gallery on-paper grid" aria-label="Fotos do escritório">
+    <figure class="g1">
+      <div class="ph" data-shutter><Image src={sala} alt="Sala de reuniões do escritório, com mesa de mármore e cadeiras em couro caramelo" widths={[480, 720, 1080]} sizes="(max-width: 899px) 100vw, 40vw" loading="lazy" /></div>
+      <figcaption>Sala de reuniões</figcaption>
+    </figure>
+    <figure class="g2">
+      <div class="ph" data-shutter><Image src={corredor} alt="Corredor do escritório com divisórias de vidro e vasos de plantas" widths={[640, 960, 1440, 2200]} sizes="(max-width: 899px) 100vw, 56vw" loading="lazy" /></div>
+      <figcaption>Corredor das salas</figcaption>
+    </figure>
+    <figure class="g3">
+      <div class="ph" data-shutter><Image src={placaFidelis} alt="Placa iluminada com o nome Fidélis na sala da Dra. Flávia Fidélis" widths={[480, 720, 1080]} sizes="(max-width: 899px) 100vw, 40vw" loading="lazy" /></div>
+      <figcaption>Sala da Dra. Flávia Fidélis</figcaption>
+    </figure>
+  </section>
+
+  <section class="profiles on-paper grid" aria-labelledby="socias-t">
+    <h2 class="t-l lines wrap" id="socias-t" style="grid-column:1/-1"><span class="line"><span data-line>As sócias</span></span></h2>
+    {site.socias.map((s) => (
+      <article class="profile" id={s.id}>
+        <div class="ph" data-shutter><Image src={fotos[s.foto]} alt={`Retrato da ${s.tratamento}`} widths={[400, 610]} sizes="(max-width: 599px) 100vw, 24vw" loading="lazy" /></div>
+        <div>
+          <h3>{s.tratamento}</h3>
+          <p class="profile__oab">{s.oab.join(' · ')}</p>
+          <ul data-stagger>
+            {s.formacao.map((f) => <li>{f.titulo}{f.instituicao && <span>{f.instituicao}</span>}</li>)}
+          </ul>
+          <a class="arrow-link" href={s.instagram} target="_blank" rel="noopener">Instagram <Arrow /></a>
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <section class="ethics on-dark grid" aria-labelledby="etica-t">
+    <div class="ethics__head">
+      <h2 class="t-l lines" id="etica-t"><span class="line"><span data-line>Ética e sigilo</span></span></h2>
+    </div>
+    <div class="ethics__list" data-stagger>
+      <div>
+        <h3>Sigilo profissional</h3>
+        <p>Tudo o que o cliente conta ao escritório é protegido pelo sigilo profissional do advogado, previsto no Estatuto da Advocacia e no Código de Ética e Disciplina da OAB. O mesmo cuidado vale para prontuários, exames e qualquer documento do caso.</p>
+      </div>
+      <div>
+        <h3>Sem promessas de resultado</h3>
+        <p>A advocacia é uma atividade de meio. Explicamos riscos, prazos e caminhos possíveis, mas não prometemos desfechos, como determinam as regras de publicidade da OAB (Provimento 205/2021).</p>
+      </div>
+      <div>
+        <h3>Dados de pacientes</h3>
+        <p>Dados de saúde são dados pessoais sensíveis (Lei 13.709/2018, art. 5º, II). No primeiro contato, conte o que aconteceu sem nomes, exames ou fotos de pacientes; os documentos são pedidos depois, por um canal seguro.</p>
+      </div>
+      <div>
+        <h3>Atenção a golpes</h3>
+        <p>O escritório não pede pagamentos, códigos ou dados bancários por mensagem de números desconhecidos, nem anuncia decisões por telefone. Na dúvida, confirme pelo {site.telefone} ou pelo {site.email}.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta on-paper" aria-labelledby="cta-t">
+    <div class="cta__inner">
+      <div>
+        <h2 class="t-l lines" id="cta-t"><span class="line"><span data-line>Vamos conversar?</span></span></h2>
+        <p>Atendimento presencial em Uberlândia e em São Paulo, ou online, sempre com hora marcada.</p>
+      </div>
+      <a class="btn" href={wa()} target="_blank" rel="noopener">Falar com o escritório <Arrow /></a>
+    </div>
+  </section>
+</Base>

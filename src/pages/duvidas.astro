@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import FitTitle from '../components/FitTitle.astro';
+import Arrow from '../components/Arrow.astro';
+import Atendimento from '../components/Atendimento.astro';
+import Band from '../components/Band.astro';
+import faq from '../data/faq.json';
+import areas from '../data/areas.json';
+const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').slice(0, 60);
+const all = [...faq, ...areas.flatMap((a) => a.faq)];
+const jsonld = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: all.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }];
+---
+<Base title="Dúvidas frequentes" description="Respostas sobre notificação do CRM, sindicância, processo ético, responsabilidade civil, publicidade médica, prontuário, TCLE e telemedicina." current="/duvidas" jsonld={jsonld}>
+  <section class="page-hero page-hero--short on-paper" data-page-hero>
+    <FitTitle text="Dúvidas" class="page-hero__title" />
+    <div class="page-hero__foot">
+      <p class="page-hero__lede" data-rise style="--i:2">As perguntas que mais chegam ao escritório.<span class="soft">Respostas gerais, com a norma ao lado. Para o seu caso, fale com o escritório.</span></p>
+    </div>
+  </section>
+
+  <Band i={2} />
+  <section class="faq on-paper grid" aria-labelledby="geral-t">
+    <div class="faq__head"><h2 class="t-m" id="geral-t">Perguntas gerais</h2></div>
+    <div class="faq__text" data-stagger>
+      {faq.map((f) => <p id={slugify(f.q)}><strong>{f.q}</strong> {f.a}</p>)}
+    </div>
+  </section>
+
+  {areas.map((a, i) => (
+    <section class:list={['faq grid', i % 2 === 0 ? 'on-paper-2' : 'on-paper']} aria-labelledby={`faq-${a.slug}`}>
+      <div class="faq__head">
+        <h2 class="t-m" id={`faq-${a.slug}`}>{a.nome}</h2>
+        <a class="arrow-link" href={`/areas/${a.slug}`}>Sobre a área <Arrow /></a>
+      </div>
+      <div class="faq__text" data-stagger>
+        {a.faq.map((f) => <p id={slugify(f.q)}><strong>{f.q}</strong> {f.a}</p>)}
+      </div>
+    </section>
+  ))}
+  <Atendimento />
+</Base>

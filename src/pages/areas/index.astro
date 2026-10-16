@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import FitTitle from '../../components/FitTitle.astro';
+import Arrow from '../../components/Arrow.astro';
+import Atendimento from '../../components/Atendimento.astro';
+import Band from '../../components/Band.astro';
+import { grupos, wa } from '../../lib/util.js';
+---
+<Base title="Áreas de atuação" description="As dez áreas em que a Borges & Fidélis atua para médicos, dentistas, clínicas e profissionais da saúde: CRM, responsabilidade civil, criminal, publicidade médica, clínicas, trabalho, tributos, residência, aposentadoria especial e FIES." current="/areas">
+  <section class="page-hero page-hero--short on-paper" data-page-hero>
+    <FitTitle text="Áreas de atuação" max={20} class="page-hero__title" />
+    <div class="page-hero__foot">
+      <p class="page-hero__lede" data-rise style="--i:2">Dez frentes e um único público: quem trabalha com saúde.<span class="soft">Organizamos as áreas pelo momento em que o médico costuma precisar delas: quando algo já aconteceu, na rotina do consultório e ao longo da carreira.</span></p>
+      <div class="page-hero__act" data-rise style="--i:3"><a class="btn" href={wa()} target="_blank" rel="noopener">Falar com o escritório <Arrow /></a></div>
+    </div>
+  </section>
+  <Band i={0} />
+  <section class="area-index on-paper grid">
+    {grupos.map((g) => (
+      <div class="area-index__group">
+        <h2 class="area-index__label" data-reveal>{g.label}</h2>
+        <div class="area-index__items" data-stagger>
+          {g.areas.map((a) => (
+            <a class="area-card" href={`/areas/${a.slug}`}>
+              <h3>{a.nome}</h3>
+              <p>{a.resumo}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+  <Atendimento />
+</Base>

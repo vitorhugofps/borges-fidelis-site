@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import corredor from '../assets/img/corredor.jpg';
+import estacao from '../assets/img/estacao-de-trabalho.jpg';
+import sala from '../assets/img/sala-reunioes.jpg';
+import placaBorges from '../assets/img/placa-borges.jpg';
+import placaFidelis from '../assets/img/placa-fidelis.jpg';
+const fotos = [
+  { src: corredor, alt: 'Corredor do escritório Borges & Fidélis, com divisórias de vidro e plantas', cap: 'Corredor das salas', pos: '50% 50%' },
+  { src: placaBorges, alt: 'Placa iluminada com o nome Borges, na sala da Dra. Tuane Borges', cap: 'Sala da Dra. Tuane Borges', pos: '62% 50%' },
+  { src: sala, alt: 'Sala de reuniões do escritório, com mesa de mármore e cadeiras caramelo', cap: 'Sala de reuniões', pos: '50% 62%' },
+  { src: placaFidelis, alt: 'Placa iluminada com o nome Fidélis, na sala da Dra. Flávia Fidélis', cap: 'Sala da Dra. Flávia Fidélis', pos: '34% 50%' },
+  { src: estacao, alt: 'Estação de trabalho do escritório, com estante de livros jurídicos e janelas amplas', cap: 'Estação de trabalho', pos: '40% 55%' },
+];
+const { i = 0 } = Astro.props;
+const a = fotos[(i * 2) % fotos.length];
+const b = fotos[(i * 2 + 1) % fotos.length];
+---
+<figure class="band-pair" aria-label="Fotos do escritório em Uberlândia">
+  {[a, b].map((f) => (
+    <div class="band-pair__ph" data-drift>
+      <Image src={f.src} alt={f.alt} widths={[480, 720, 960, 1440]} sizes="50vw" loading="lazy" style={`object-position:${f.pos}`} />
+      <figcaption>{f.cap}</figcaption>
+    </div>
+  ))}
+</figure>

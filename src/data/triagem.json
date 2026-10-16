@@ -1,0 +1,159 @@
+{
+  "situacoes": [
+    {
+      "id": "crm",
+      "rotulo": "Recebi uma notificação do CRM",
+      "area": "defesa-no-crm",
+      "titulo": "Notificação do Conselho Regional de Medicina",
+      "explica": "Em geral, é o início de uma sindicância, fase em que o CRM apura se há indícios de infração ética. Ainda não há acusação formal, mas a primeira manifestação do médico é importante.",
+      "agora": [
+        "Anote a data e a forma de recebimento e identifique o prazo indicado no ofício.",
+        "Separe o prontuário e os documentos do atendimento, sem alterar nenhum registro.",
+        "Não procure o denunciante nem comente o caso nas redes: o procedimento é sigiloso."
+      ],
+      "separe": [
+        "Ofício ou mensagem recebida do CRM",
+        "Prontuário completo do atendimento",
+        "Termos de consentimento assinados",
+        "Exames, laudos e prescrições",
+        "Escalas e protocolos da instituição"
+      ],
+      "mensagem": "Olá. Recebi uma notificação do CRM e gostaria de agendar um atendimento para entender os próximos passos."
+    },
+    {
+      "id": "paciente",
+      "rotulo": "Um paciente me processou ou ameaça processar",
+      "area": "responsabilidade-civil",
+      "titulo": "Ação ou ameaça de ação de indenização",
+      "explica": "O paciente pode pedir reparação por dano material, moral ou estético, por notificação ou por ação judicial. Em regra, a indenização depende da demonstração de culpa, e a perícia costuma ser a prova central.",
+      "agora": [
+        "Se recebeu citação, anote a data de recebimento: os prazos de resposta no processo são curtos.",
+        "Reúna prontuário, exames e termos de consentimento, sem alterar nenhum registro.",
+        "Não procure o paciente para discutir o caso e, se tiver seguro, avise a seguradora."
+      ],
+      "separe": [
+        "Citação ou notificação recebida",
+        "Prontuário e evolução do atendimento",
+        "Termos de consentimento e orientações escritas",
+        "Mensagens trocadas com o paciente",
+        "Apólice de seguro profissional, se houver"
+      ],
+      "mensagem": "Olá. Recebi uma notificação ou ação de um paciente e gostaria de agendar um atendimento para avaliar a situação."
+    },
+    {
+      "id": "intimacao",
+      "rotulo": "Recebi intimação da polícia ou do Ministério Público",
+      "area": "defesa-criminal",
+      "titulo": "Intimação policial ou do Ministério Público",
+      "explica": "Pode ser um pedido de documentos, de esclarecimentos ou a convocação para depor em uma investigação. O que é dito ou entregue nessa fase costuma ser usado também no CRM e em ações cíveis.",
+      "agora": [
+        "Verifique quem assina a intimação, a data marcada e o motivo da convocação.",
+        "Não entregue prontuário sem ordem judicial ou autorização escrita do paciente (CEM, art. 89).",
+        "Não preste depoimento antes de entender o que está sendo apurado."
+      ],
+      "separe": [
+        "Intimação ou ofício recebido",
+        "Prontuário e registros do atendimento",
+        "Escala do plantão e nomes da equipe",
+        "Documentos já entregues a outras autoridades"
+      ],
+      "mensagem": "Olá. Recebi uma intimação relacionada a um atendimento e gostaria de conversar antes de qualquer depoimento."
+    },
+    {
+      "id": "redes",
+      "rotulo": "Quero divulgar meu trabalho nas redes",
+      "area": "publicidade-medica",
+      "titulo": "Publicidade médica nas redes sociais",
+      "explica": "Desde março de 2024, a Resolução CFM 2.336/2023 permite divulgar preços, selfies e imagens de pacientes com finalidade educativa. Continuam valendo a identificação obrigatória e a vedação de promessa de resultado e de sensacionalismo.",
+      "agora": [
+        "Confira se a página principal do perfil traz nome, CRM e, se houver especialidade, o RQE.",
+        "Suspenda antes e depois sem texto educativo ou que permita identificar o paciente.",
+        "Reúna as peças planejadas antes de aprovar campanhas com preço, desconto ou parceria."
+      ],
+      "separe": [
+        "Links dos perfis e do site",
+        "Peças e textos de campanhas planejadas",
+        "Autorizações de uso de imagem de pacientes",
+        "Contrato com a agência de marketing",
+        "Comprovante de RQE, se houver"
+      ],
+      "mensagem": "Olá. Quero revisar minha comunicação nas redes de acordo com as regras do CFM e gostaria de agendar um atendimento."
+    },
+    {
+      "id": "clinica",
+      "rotulo": "Vou abrir, dividir ou reorganizar uma clínica",
+      "area": "clinicas-e-sociedades",
+      "titulo": "Estrutura jurídica da clínica",
+      "explica": "Envolve definir a sociedade, as regras entre os sócios, o registro no CRM e os contratos com hospitais, operadoras e fornecedores. O ideal é combinar essas regras por escrito antes de começar a atender.",
+      "agora": [
+        "Liste quem serão os sócios, o que cada um aporta e como pretendem dividir decisões e resultados.",
+        "Defina quem assumirá a direção técnica perante o CRM.",
+        "Não assine contratos de locação, sistemas ou credenciamento antes de revisá-los."
+      ],
+      "separe": [
+        "Contrato social atual, se já existir",
+        "Minutas de contratos de locação ou cessão",
+        "Contratos com operadoras e hospitais",
+        "Contratos de sistemas de prontuário e agenda"
+      ],
+      "mensagem": "Olá. Estou estruturando uma clínica e gostaria de agendar um atendimento para tratar de sociedade e contratos."
+    },
+    {
+      "id": "plantao",
+      "rotulo": "Tenho dúvidas sobre meu vínculo de plantão",
+      "area": "trabalho-medico",
+      "titulo": "Plantões, CLT e pessoa jurídica",
+      "explica": "A forma de contratação, como empregado ou como pessoa jurídica, afeta remuneração, tributos e direitos. A validade da pejotização está em discussão no STF, no Tema 1389, o que pede cautela antes de qualquer medida.",
+      "agora": [
+        "Guarde escalas, mensagens e comprovantes de todos os plantões realizados.",
+        "Não deixe a escala sem aviso prévio e sem garantir a continuidade do atendimento (CEM, art. 36).",
+        "Reúna o contrato assinado e compare-o com a rotina real de trabalho."
+      ],
+      "separe": [
+        "Contrato de trabalho ou de prestação de serviços",
+        "Escalas publicadas e mensagens de convocação",
+        "Comprovantes de pagamento e notas fiscais",
+        "Avisos de cortes ou mudanças de escala"
+      ],
+      "mensagem": "Olá. Tenho dúvidas sobre meu contrato de plantão e gostaria de agendar um atendimento para analisar o vínculo."
+    },
+    {
+      "id": "impostos",
+      "rotulo": "Quero revisar os impostos da minha PJ",
+      "area": "tributario",
+      "titulo": "Tributação do médico e da clínica",
+      "explica": "O valor dos tributos depende do regime, da atividade declarada e da folha de pagamento. Questões como Fator R e serviços hospitalares exigem análise conjunta com a contabilidade.",
+      "agora": [
+        "Peça à contabilidade o regime atual e as apurações dos últimos 12 meses.",
+        "Confira se a atividade do contrato social corresponde ao que a empresa de fato faz.",
+        "Não mude de regime antes de comparar os cenários com base em números reais."
+      ],
+      "separe": [
+        "Contrato social e alterações",
+        "Apurações e guias dos últimos 12 meses",
+        "Folha de pagamento e pró-labore",
+        "Relação dos serviços prestados pela empresa"
+      ],
+      "mensagem": "Olá. Quero revisar o enquadramento tributário da minha PJ e gostaria de agendar um atendimento."
+    },
+    {
+      "id": "carreira",
+      "rotulo": "Tenho dúvida sobre residência, aposentadoria ou FIES",
+      "area": "residencia-medica",
+      "titulo": "Residência, aposentadoria especial e FIES",
+      "explica": "São questões de carreira com regras próprias: direitos do residente, efeitos de continuar em atividade especial depois da aposentadoria e condições do FIES para médicos. Em todas, a documentação de vínculos e pedidos é essencial.",
+      "agora": [
+        "Faça pedidos à instituição ou ao programa sempre por escrito e guarde as respostas.",
+        "Não peça aposentadoria especial antes de planejar como ficará sua rotina de trabalho.",
+        "Reúna os documentos de vínculos, contratos e protocolos já feitos."
+      ],
+      "separe": [
+        "Edital e regulamento da residência",
+        "Histórico de vínculos e contribuições",
+        "Contrato do FIES e extrato do saldo",
+        "Protocolos e respostas de pedidos anteriores"
+      ],
+      "mensagem": "Olá. Tenho uma dúvida sobre residência, aposentadoria ou FIES e gostaria de agendar um atendimento."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import FitTitle from '../../components/FitTitle.astro';
+import Arrow from '../../components/Arrow.astro';
+import Atendimento from '../../components/Atendimento.astro';
+import Band from '../../components/Band.astro';
+import artigos from '../../data/artigos.json';
+---
+<Base title="Conteúdos" description="Artigos da Borges & Fidélis sobre Direito Médico: notificação do CRM, publicidade médica, prontuário e TCLE, responsabilidade civil do médico." current="/conteudos">
+  <section class="page-hero page-hero--short on-paper" data-page-hero>
+    <FitTitle text="Conteúdos" class="page-hero__title" />
+    <div class="page-hero__foot">
+      <p class="page-hero__lede" data-rise style="--i:2">Para ler com calma.<span class="soft">Textos informativos sobre os temas que mais preocupam quem atende pacientes, sempre com a norma citada. Eles não substituem a análise do seu caso.</span></p>
+    </div>
+  </section>
+  <section class="poster on-dark" aria-label="Artigos">
+    <ul style={`--fit:${Math.max(...artigos.map((a) => [...a.h1].length))}`}>
+      {artigos.map((a) => (
+        <li class="poster__item">
+          <a href={`/conteudos/${a.slug}`}>
+            <span class="poster__word lines"><span class="line"><span data-line>{a.h1}</span></span></span>
+            <span class="poster__meta">{a.sub}<br />{a.categoria} · {a.tempoLeitura}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+  <Band i={1} />
+  <Atendimento />
+</Base>

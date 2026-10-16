@@ -1,0 +1,71 @@
+---
+import triagem from '../data/triagem.json';
+import Arrow from './Arrow.astro';
+import { wa, areaBySlug } from '../lib/util.js';
+const sits = triagem.situacoes;
+const first = sits[0].id;
+---
+<section class="triagem on-dark" id="triagem" aria-labelledby="triagem-t" data-triagem>
+  <div class="grid">
+    <div class="triagem__head">
+      <h2 class="t-l lines" id="triagem-t" data-reveal-lines><span class="line"><span data-line>O que aconteceu?</span></span></h2>
+      <p data-reveal>Escolha a situação mais parecida com a sua. A ficha mostra o que ela costuma significar, o que fazer agora e o que separar, e já prepara a mensagem para o escritório.</p>
+    </div>
+    <fieldset class="triagem__opts" data-stagger>
+      <legend class="sr-only">Situação</legend>
+      {sits.map((s) => (
+        <label class="opt">
+          <input type="radio" name="situacao" value={s.id} checked={s.id === first} />
+          <span class="opt__dot" aria-hidden="true"></span>
+          <span class="opt__text">{s.rotulo}</span>
+        </label>
+      ))}
+    </fieldset>
+    <div class="ficha" aria-live="polite" data-ficha>
+      {sits.map((s) => {
+        const area = areaBySlug[s.area];
+        return (
+          <article class:list={['ficha__sit', { 'is-on': s.id === first }]} data-sit={s.id} data-msg={s.mensagem} data-area={area?.nome}>
+            <h3 class="ficha__title">{s.titulo}</h3>
+            <p class="ficha__explica">{s.explica}</p>
+            <div class="ficha__cols">
+              <div>
+                <h4>O que fazer agora</h4>
+                <ol>{s.agora.map((x) => <li>{x}</li>)}</ol>
+              </div>
+              <div>
+                <h4>O que separar</h4>
+                <ul>{s.separe.map((x) => <li>{x}</li>)}</ul>
+              </div>
+            </div>
+            <a class="arrow-link ficha__arealink" href={`/areas/${s.area}`}>Ler sobre {area?.nome?.toLowerCase().startsWith('fies') ? area.nome : area?.nome} <Arrow /></a>
+          </article>
+        );
+      })}
+      <div class="ficha__perfil">
+        <div class="field">
+          <label for="tri-perfil">Você é</label>
+          <select class="select" id="tri-perfil" data-perfil>
+            <option value="">Prefiro não dizer</option>
+            <option>Médico(a)</option>
+            <option>Cirurgião(ã)-dentista</option>
+            <option>Outro profissional da saúde</option>
+            <option>Clínica ou hospital</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="tri-prazo">Há prazo correndo?</label>
+          <select class="select" id="tri-prazo" data-prazo>
+            <option value="">Não sei</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </div>
+      </div>
+      <div class="ficha__acts">
+        <a class="btn" href={wa(sits[0].mensagem)} target="_blank" rel="noopener" data-wa>Enviar pelo WhatsApp <Arrow /></a>
+      </div>
+      <p class="ficha__note">Orientação geral, que não substitui a análise do caso. Não envie nomes, exames ou outros dados de pacientes pelo WhatsApp.</p>
+    </div>
+  </div>
+</section>
