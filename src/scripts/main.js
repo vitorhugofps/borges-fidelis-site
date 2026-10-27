@@ -234,20 +234,39 @@ mm.add(
       gsap.to($('.hero__foot', hero), { opacity: 0, y: -30, ease: 'none', scrollTrigger: { trigger: hero, start: '40% top', end: '85% top', scrub: true } });
     }
 
-    // the plates switch on
-    const plates = $('[data-plates]');
-    if (plates) {
-      const imgs = $$('img', plates);
-      const shades = $$('.plates__shade', plates);
-      gsap.fromTo(imgs, { scale: 1.16 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: plates, start: 'top bottom', end: 'bottom top', scrub: true } });
-      gsap.fromTo(shades, { opacity: 0.86 }, { opacity: 0, ease: 'power1.in', stagger: 0.15, scrollTrigger: { trigger: plates, start: 'top 80%', end: 'center 45%', scrub: true } });
+    // the main photograph comes into focus as it arrives
+    const focus = $('[data-focus] img');
+    if (focus) {
+      gsap.fromTo(
+        focus,
+        { filter: 'blur(14px) brightness(0.55)', scale: 1.04 },
+        { filter: 'blur(0px) brightness(1)', scale: 1, ease: 'power2.out', scrollTrigger: { trigger: '[data-focus]', start: 'top 92%', end: 'center 52%', scrub: 0.5 } }
+      );
     }
 
-    // the partners settle into their field
-    const sImg = $('[data-socias-img] img');
-    if (sImg) {
-      gsap.fromTo(sImg, { yPercent: 12, scale: 1.04 }, { yPercent: 0, scale: 1, ease: 'none', scrollTrigger: { trigger: sImg.closest('section'), start: 'top bottom', end: 'center center', scrub: true } });
-    }
+    // stacked photographs: each new print lands on the last, which recedes into blur and shadow
+    $$('[data-stack]').forEach((sec) => {
+      const slides = $$('[data-slide]', sec);
+      if (slides.length < 2) return;
+      sec.classList.add('is-live');
+      const frames = slides.map((s) => $('.stack__frame', s));
+      const caps = slides.map((s) => $('figcaption', s));
+      gsap.set(frames, { filter: 'blur(0px) brightness(1)' });
+      const tl = gsap.timeline({
+        defaults: { duration: 1 },
+        scrollTrigger: { trigger: sec, start: 'top top', end: 'bottom bottom', scrub: 0.7, invalidateOnRefresh: true },
+      });
+      tl.to({}, { duration: 0.2 });
+      for (let i = 1; i < slides.length; i++) {
+        const at = i - 1 + 0.2;
+        tl.fromTo(slides[i], { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.35, ease: 'power1.out' }, at)
+          .fromTo(frames[i], { yPercent: 26, scale: 1.05, filter: 'blur(18px) brightness(1)' }, { yPercent: 0, scale: 1, filter: 'blur(0px) brightness(1)', ease: 'power3.out' }, at)
+          .to(frames[i - 1], { scale: 0.9, filter: 'blur(10px) brightness(0.32)', ease: 'power1.in' }, at)
+          .to(caps[i - 1], { autoAlpha: 0, duration: 0.3 }, at);
+        if (i >= 2) tl.to(slides[i - 2], { autoAlpha: 0, duration: 0.4 }, at + 0.4);
+      }
+      tl.to({}, { duration: 0.3 });
+    });
 
     // the staircase of steps slides into place
     if (desk) {
@@ -267,6 +286,8 @@ mm.add(
     if (big && desk) {
       gsap.fromTo(big, { xPercent: 6 }, { xPercent: 0, ease: 'none', scrollTrigger: { trigger: '[data-footer]', start: 'top bottom', end: 'top 20%', scrub: true } });
     }
+
+    return () => $$('[data-stack]').forEach((s) => s.classList.remove('is-live'));
   }
 );
 

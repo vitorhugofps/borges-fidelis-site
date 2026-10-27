@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import Arrow from './Arrow.astro';
+import site from '../data/site.json';
+import tuane from '../assets/img/tuane-borges.jpg';
+import flavia from '../assets/img/flavia-fidelis.jpg';
+const { link = false, tone = 'on-paper' } = Astro.props;
+const fotos = { 'tuane-borges': tuane, 'flavia-fidelis': flavia };
+---
+<section class:list={['profiles grid', tone]} aria-labelledby="socias-t">
+  <div class="profiles__head">
+    <h2 class="t-l lines" id="socias-t"><span class="line"><span data-line>As sócias</span></span></h2>
+    {link && <a class="arrow-link" href="/escritorio">Conheça o escritório <Arrow /></a>}
+  </div>
+  {site.socias.map((s, i) => (
+    <article class="profile" id={s.id}>
+      <div class="ph" data-shutter style={`--d:${i * 140}`}><Image src={fotos[s.foto]} alt={`Retrato da ${s.tratamento}`} widths={[400, 610]} sizes="(max-width: 599px) 100vw, (max-width: 1100px) 45vw, 22vw" loading="lazy" /></div>
+      <div class="profile__txt">
+        <h3>{s.tratamento}</h3>
+        <p class="profile__oab">{s.oab.map((o, k) => <span class="nw">{o}{k < s.oab.length - 1 ? ' · ' : ''}</span>)}</p>
+        <ul data-stagger>
+          {s.formacao.map((f) => <li>{f.titulo}{f.instituicao && <span>{f.instituicao}</span>}</li>)}
+        </ul>
+      </div>
+    </article>
+  ))}
+</section>

@@ -7,10 +7,9 @@ import site from '../data/site.json';
 import faq from '../data/faq.json';
 import artigos from '../data/artigos.json';
 import { wa, grupos, splitTitle } from '../lib/util.js';
-import placaBorges from '../assets/img/placa-borges.jpg';
-import placaFidelis from '../assets/img/placa-fidelis.jpg';
-import socias from '../assets/img/socias.png';
-import estacao from '../assets/img/estacao-de-trabalho.jpg';
+import principal from '../assets/img/principal.jpg';
+import Socias from '../components/Socias.astro';
+import Stack from '../components/Stack.astro';
 
 const curtos = {
   'notificacao-do-crm-primeiras-72-horas': 'Ofício do CRM',
@@ -40,21 +39,20 @@ const anos = new Date().getFullYear() - site.desde;
       Desde {site.desde}, a Borges & Fidélis acompanha médicos quando a carreira está em jogo: uma notificação do CRM, uma ação de paciente, uma intimação. E também nos dias comuns, quando ainda dá para prevenir.
     </p>
     <div class="intro__cols" data-stagger>
-      <p><strong>Para quem.</strong> Médicos, cirurgiões-dentistas, enfermeiros e demais profissionais da saúde, além de clínicas e hospitais. Atendimento a profissionais e a empresas da área da saúde.</p>
+      <p><strong>Para quem.</strong> Médicos, cirurgiões-dentistas, enfermeiros e demais profissionais da saúde, além de clínicas e hospitais.</p>
       <p><strong>Em quê.</strong> Defesa no CRM, ações de indenização e investigações criminais; publicidade, clínicas, trabalho e tributos; residência, aposentadoria especial e FIES.</p>
       <p><strong>Onde.</strong> Sede em {site.endereco.cidade}, no bairro {site.endereco.bairro}, e filial em São Paulo. Atendimento presencial ou online, sempre com hora marcada.</p>
       <p><strong>Como falar.</strong> Pelo WhatsApp <a class="link nw" href={wa()} target="_blank" rel="noopener">{site.telefone}</a> ou pelo e-mail <a class="link" href={`mailto:${site.email}`}>{site.email}</a>. Cada conversa é protegida pelo sigilo profissional.</p>
     </div>
   </section>
 
-  <!-- 3 · The plates -->
-  <section class="plates" aria-label="As placas do escritório">
-    <div class="plates__pair" data-plates>
-      <div class="p-borges"><Image src={placaBorges} alt="Placa iluminada com o nome Borges e o monograma do escritório, na sala da Dra. Tuane Borges" widths={[640, 960, 1280, 1920]} sizes="(max-width: 899px) 100vw, 50vw" loading="lazy" /><span class="plates__shade" aria-hidden="true"></span></div>
-      <div class="p-fidelis"><Image src={placaFidelis} alt="Placa iluminada com o nome Fidélis e o monograma do escritório, na sala da Dra. Flávia Fidélis" widths={[640, 960, 1280, 1920]} sizes="(max-width: 899px) 100vw, 50vw" loading="lazy" /><span class="plates__shade" aria-hidden="true"></span></div>
+  <!-- 3 · The office, in focus -->
+  <figure class="principal on-dark" data-focus>
+    <div class="principal__frame">
+      <Image src={principal} alt="Logotipo Borges & Fidélis em letras pretas aplicado na parede de mármore do escritório" widths={[960, 1440, 1920, 2560, 3200]} sizes="100vw" loading="lazy" decoding="async" />
     </div>
-    <p class="plates__cap"><span>As placas das salas das sócias, no escritório de Uberlândia.</span><span>Borges & Fidélis, desde {site.desde}</span></p>
-  </section>
+    <figcaption class="principal__cap"><span>Borges & Fidélis, em Uberlândia</span><span>Desde {site.desde}</span></figcaption>
+  </figure>
 
   <!-- 4 · Live thing -->
   <Triagem />
@@ -97,41 +95,13 @@ const anos = new Date().getFullYear() - site.desde;
     <div class="about__text" data-split>
       <p>O escritório nasceu em Uberlândia com um recorte claro: atender quem trabalha com saúde. Prontuário, escala de plantão e Código de Ética Médica fazem parte do trabalho de todo dia, ao lado das leis processuais. O mesmo episódio pode chegar ao Conselho, à Justiça e à delegacia, e o caso é olhado nas três frentes desde o início.</p>
     </div>
-    <p class="about__label">Formação das sócias</p>
-    <div class="about__lists">
-      {site.socias.map((s) => (
-        <div data-stagger>
-          <p class="about__who">{s.tratamento}</p>
-          <ul>
-            {s.formacao.map((f) => (
-              <li><span>{f.titulo}</span><span>{f.instituicao}</span></li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
   </section>
 
   <!-- 7 · Partners -->
-  <section class="socias on-oak" aria-labelledby="socias-t">
-    <div class="socias__txt">
-      <h2 class="sr-only" id="socias-t">As sócias</h2>
-      <p class="socias__intro" data-reveal>Duas advogadas à frente do escritório, cada uma com a sua sala e a sua placa.</p>
-      {site.socias.map((s, i) => (
-        <div class="socia">
-          <p class="socia__name t-l lines" data-reveal-lines><span class="line"><span data-line>{s.nome}</span></span></p>
-          <p class="socia__oab" data-reveal style={`--d:${200 + i * 80}`}>{s.oab.join(' · ')}</p>
-        </div>
-      ))}
-      <a class="arrow-link socias__more" href="/escritorio">Conheça o escritório <Arrow /></a>
-    </div>
-    <div class="socias__img" data-socias-img>
-      <Image src={socias} alt="Dra. Tuane Borges, à esquerda, e Dra. Flávia Fidélis, à direita, sócias do escritório" widths={[480, 720, 960]} sizes="(max-width: 899px) 100vw, 58vw" loading="lazy" />
-    </div>
-  </section>
+  <Socias link />
 
   <!-- 8 · How we work -->
-  <section class="steps on-paper" aria-labelledby="steps-t">
+  <section class="steps on-paper-2" aria-labelledby="steps-t">
     <h2 class="sr-only" id="steps-t">Como trabalhamos</h2>
     <ol class="steps__list">
       {site.passos.map((p, i) => (
@@ -143,10 +113,7 @@ const anos = new Date().getFullYear() - site.desde;
     </ol>
   </section>
 
-  <figure class="band-photo" data-drift>
-    <Image src={estacao} alt="Estação de trabalho do escritório, com estante de livros jurídicos e janelas amplas" widths={[800, 1280, 1920, 2200]} sizes="100vw" loading="lazy" />
-    <figcaption>Escritório em Uberlândia</figcaption>
-  </figure>
+  <Stack ids={['borges', 'fidelis', 'sala', 'estacao']} />
 
   <!-- 9 · FAQ -->
   <section class="faq on-paper grid" aria-labelledby="faq-t">

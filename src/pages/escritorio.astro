@@ -1,16 +1,11 @@
 ---
-import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import FitTitle from '../components/FitTitle.astro';
 import Arrow from '../components/Arrow.astro';
 import site from '../data/site.json';
 import { wa } from '../lib/util.js';
-import sala from '../assets/img/sala-reunioes.jpg';
-import corredor from '../assets/img/corredor.jpg';
-import placaFidelis from '../assets/img/placa-fidelis.jpg';
-import tuane from '../assets/img/tuane-borges.jpg';
-import flavia from '../assets/img/flavia-fidelis.jpg';
-const fotos = { 'tuane-borges': tuane, 'flavia-fidelis': flavia };
+import Stack from '../components/Stack.astro';
+import Socias from '../components/Socias.astro';
 ---
 <Base title="O escritório" description="Borges & Fidélis Advocacia: sede em Uberlândia, filial em São Paulo e atendimento online. As sócias Dra. Tuane Borges e Dra. Flávia Fidélis, formação, ética e sigilo." current="/escritorio">
   <section class="page-hero page-hero--short on-paper" data-page-hero>
@@ -34,36 +29,9 @@ const fotos = { 'tuane-borges': tuane, 'flavia-fidelis': flavia };
     </div>
   </section>
 
-  <section class="gallery on-paper grid" aria-label="Fotos do escritório">
-    <figure class="g1">
-      <div class="ph" data-shutter><Image src={sala} alt="Sala de reuniões do escritório, com mesa de mármore e cadeiras em couro caramelo" widths={[480, 720, 1080]} sizes="(max-width: 899px) 100vw, 40vw" loading="lazy" /></div>
-      <figcaption>Sala de reuniões</figcaption>
-    </figure>
-    <figure class="g2">
-      <div class="ph" data-shutter><Image src={corredor} alt="Corredor do escritório com divisórias de vidro e vasos de plantas" widths={[640, 960, 1440, 2200]} sizes="(max-width: 899px) 100vw, 56vw" loading="lazy" /></div>
-      <figcaption>Corredor das salas</figcaption>
-    </figure>
-    <figure class="g3">
-      <div class="ph" data-shutter><Image src={placaFidelis} alt="Placa iluminada com o nome Fidélis na sala da Dra. Flávia Fidélis" widths={[480, 720, 1080]} sizes="(max-width: 899px) 100vw, 40vw" loading="lazy" /></div>
-      <figcaption>Sala da Dra. Flávia Fidélis</figcaption>
-    </figure>
-  </section>
+  <Stack ids={['principal', 'borges', 'fidelis', 'sala', 'corredor', 'estacao']} />
 
-  <section class="profiles on-paper grid" aria-labelledby="socias-t">
-    <h2 class="t-l lines" id="socias-t" style="grid-column:1/-1"><span class="line"><span data-line>As sócias</span></span></h2>
-    {site.socias.map((s) => (
-      <article class="profile" id={s.id}>
-        <div class="ph" data-shutter><Image src={fotos[s.foto]} alt={`Retrato da ${s.tratamento}`} widths={[400, 610]} sizes="(max-width: 599px) 100vw, 24vw" loading="lazy" /></div>
-        <div>
-          <h3>{s.tratamento}</h3>
-          <p class="profile__oab">{s.oab.join(' · ')}</p>
-          <ul data-stagger>
-            {s.formacao.map((f) => <li>{f.titulo}{f.instituicao && <span>{f.instituicao}</span>}</li>)}
-          </ul>
-        </div>
-      </article>
-    ))}
-  </section>
+  <Socias />
 
   <section class="ethics on-dark grid" aria-labelledby="etica-t">
     <div class="ethics__head">
