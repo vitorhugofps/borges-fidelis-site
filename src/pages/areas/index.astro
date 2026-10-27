@@ -14,7 +14,6 @@ import { grupos, wa } from '../../lib/util.js';
       <div class="page-hero__act" data-rise style="--i:3"><a class="btn" href={wa()} target="_blank" rel="noopener">Falar com o escritório <Arrow /></a></div>
     </div>
   </section>
-  <Band i={0} />
   <section class="area-index on-paper grid">
     {grupos.map((g) => (
       <div class="area-index__group">
@@ -30,5 +29,6 @@ import { grupos, wa } from '../../lib/util.js';
       </div>
     ))}
   </section>
+  <Band i={0} />
   <Atendimento />
 </Base>

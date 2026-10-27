@@ -160,6 +160,11 @@ h1, h2, h3 {
 p {
   text-wrap: pretty;
 }
+.steps__line,
+.t-l,
+.t-m {
+  text-wrap: balance;
+}
 strong, b {
   font-weight: 600;
 }
@@ -666,24 +671,25 @@ strong, b {
 }
 
 /* ==========================================================================
-   Stacked photographs: each one lands on top of the last as the page scrolls.
-   Photos keep their own proportion; nothing is cropped.
+   Stacked photographs: each print slides up and lands on top of the last,
+   which steps back into shadow. Photos keep their own proportion; nothing
+   is cropped. Without motion it is a plain column of photographs.
    ========================================================================== */
 .stack {
   position: relative;
-}
-.stack__pin {
   padding-block: clamp(72px, 9vw, 140px);
 }
 .stack__stage {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: clamp(48px, 6vw, 96px);
 }
 .stack__slide {
   --maxw: calc(100vw - 2 * var(--margin));
   --maxh: calc(100svh - var(--hdr-h) - 150px);
   --fw: min(var(--maxw), calc(var(--maxh) * var(--ar)), 1680px);
+  --fh: calc(var(--fw) / var(--ar));
   width: var(--fw);
   margin: 0;
 }
@@ -699,34 +705,33 @@ strong, b {
   object-fit: contain;
 }
 .stack__slide figcaption {
+  position: relative;
+  z-index: 1;
   padding-top: 14px;
   font-size: 15.5px;
   color: var(--fg-soft);
 }
 .stack.is-live {
-  height: calc(var(--n) * 88svh + 12svh);
-}
-.stack.is-live .stack__pin {
-  position: sticky;
-  top: 0;
-  height: 100svh;
-  padding: 0;
-  overflow: hidden;
+  padding-block: clamp(56px, 6vw, 96px) 0;
 }
 .stack.is-live .stack__stage {
-  display: block;
-  position: relative;
-  height: 100%;
+  gap: 0;
+  padding-bottom: 4svh;
+}
+.stack + .on-dark {
+  padding-top: clamp(48px, 5vw, 80px);
 }
 .stack.is-live .stack__slide {
-  position: absolute;
-  left: 50%;
-  top: calc(50% + var(--hdr-h) / 2);
-  transform: translate(-50%, -50%);
+  position: sticky;
+  top: max(calc(var(--hdr-h) + 12px), calc((100svh + var(--hdr-h) - var(--fh) - 44px) / 2));
+  margin-bottom: 26svh;
+}
+.stack.is-live .stack__slide:last-child {
+  margin-bottom: 0;
 }
 .stack.is-live .stack__frame {
-  box-shadow: 0 46px 90px -34px rgba(0, 0, 0, 0.78); /* taste-skill-ignore: the shadow is the depth between stacked prints, asked for by the client */
-  transform-origin: 50% 60%;
+  box-shadow: 0 -28px 70px -30px rgba(0, 0, 0, 0.7), 0 40px 80px -36px rgba(0, 0, 0, 0.7); /* taste-skill-ignore: the shadow is the depth between stacked prints, asked for by the client */
+  transform-origin: 50% 40%;
   will-change: transform, filter;
 }
 @media (max-width: 899px) {
@@ -737,13 +742,8 @@ strong, b {
   .stack__slide figcaption {
     padding-inline: var(--margin);
   }
-  .profiles__head {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-  .stack.is-live {
-    height: calc(var(--n) * 78svh + 22svh);
+  .stack.is-live .stack__slide {
+    margin-bottom: 16svh;
   }
 }
 
@@ -1106,6 +1106,9 @@ a.row:focus-visible {
 .about__text p + p {
   margin-top: 0.9em;
 }
+.about__text--solo {
+  grid-column: 5 / 12;
+}
 .about__label {
   grid-column: 1 / 4;
   margin-top: 120px;
@@ -1248,10 +1251,45 @@ a.row:focus-visible {
   color: var(--fg);
   font-weight: 600;
 }
+.faq__links {
+  grid-column: 5 / -1;
+}
+.faq__links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  padding-block: clamp(16px, 1.6vw, 24px);
+  font-size: var(--fs-m);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  transition: color var(--t-hover) ease;
+}
+.faq__links a span {
+  text-wrap: balance;
+}
+.faq__links a svg {
+  flex: none;
+  width: 0.7em;
+  height: 0.7em;
+  transition: transform var(--t-ui) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .faq__links a:hover {
+    color: var(--accent);
+  }
+  .faq__links a:hover svg {
+    transform: translateX(6px);
+  }
+}
 @media (max-width: 899px) {
   .faq__head,
-  .faq__text {
+  .faq__text,
+  .faq__links {
     grid-column: 1 / -1;
+  }
+  .faq__links {
+    margin-top: 28px;
   }
   .faq__text {
     columns: 1;
@@ -1345,9 +1383,6 @@ a.row:focus-visible {
   letter-spacing: -0.04em;
   line-height: 1;
 }
-.contact__rows > *:nth-child(even) {
-  background: var(--band);
-}
 .contact__rows a {
   transition: color var(--t-hover) ease;
 }
@@ -1402,9 +1437,6 @@ a.row:focus-visible {
   }
   .contact__rows .row-note {
     padding-bottom: 0;
-  }
-  .faq__text--home p:nth-child(n + 4) {
-    display: none;
   }
   .contact__rows > .contact__greet {
     background: var(--brass);
@@ -1915,6 +1947,13 @@ a.row:focus-visible {
   align-items: flex-end;
   gap: 24px;
 }
+@media (max-width: 899px) {
+  .profiles__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
 .profile .ph img {
   transition: transform 900ms var(--ease-soft);
 }
@@ -1965,6 +2004,14 @@ a.row:focus-visible {
 .profile .arrow-link {
   margin-top: 22px;
 }
+@media (min-width: 1101px) {
+  .profile:first-of-type {
+    grid-column: 1 / 6;
+  }
+  .profile:last-of-type {
+    grid-column: 8 / -1;
+  }
+}
 @media (max-width: 1100px) {
   .profile {
     grid-column: 1 / -1;
@@ -1975,7 +2022,7 @@ a.row:focus-visible {
     grid-template-columns: 1fr;
   }
   .profile .ph {
-    aspect-ratio: 4 / 5;
+    width: min(100%, 300px);
   }
 }
 
@@ -2184,19 +2231,19 @@ a.row:focus-visible {
 }
 .area-card {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: baseline;
   gap: 8px var(--gutter);
   padding: 22px 0 26px;
 }
 .area-card h3 {
-  font-size: var(--fs-l);
+  font-size: clamp(30px, 3.1vw, 46px);
   line-height: 1;
   letter-spacing: -0.04em;
   transition: color var(--t-hover) ease, transform var(--t-ui) var(--ease-out);
 }
 .area-card p {
   color: var(--fg-soft);
-  align-self: end;
 }
 .area-card .ref {
   grid-column: 2;

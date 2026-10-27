@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import FitTitle from '../components/FitTitle.astro';
 import Arrow from '../components/Arrow.astro';
 import Atendimento from '../components/Atendimento.astro';
-import Band from '../components/Band.astro';
+import Stack from '../components/Stack.astro';
 import site from '../data/site.json';
 import areas from '../data/areas.json';
 import { wa } from '../lib/util.js';
@@ -70,16 +70,13 @@ import { wa } from '../lib/util.js';
   <section class="contact on-paper" aria-labelledby="contato-t">
     <h2 class="sr-only" id="contato-t">Endereço e canais</h2>
     <div class="contact__rows">
-      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>{site.endereco.linha1}</span></a>
-      <p data-wipe style="--d:80"><span>{site.endereco.bairro}, {site.endereco.cidade}</span></p>
-      <p data-wipe style="--d:160"><span>Filial em {site.filial}</span></p>
-      <p data-wipe style="--d:240"><span>Presencial e online, com hora marcada</span></p>
-      <a href={wa()} target="_blank" rel="noopener" data-wipe style="--d:320"><span class="num">WhatsApp {site.telefone}</span></a>
-      <a href={`mailto:${site.email}`} data-wipe style="--d:400"><span>{site.email.replace('@', '\u200B@')}</span></a>
+      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>{site.endereco.linha1}</span><span class="row-note">{site.endereco.bairro}, {site.endereco.cidade} · filial em {site.filial}</span></a>
+      <a href={wa()} target="_blank" rel="noopener" data-wipe style="--d:100"><span class="num">WhatsApp {site.telefone}</span></a>
+      <a href={`mailto:${site.email}`} data-wipe style="--d:200"><span>{site.email.replace('@', '\u200B@')}</span></a>
     </div>
   </section>
 
-  <Band i={2} />
+  <Stack ids={['principal', 'fidelis']} />
 
   <Atendimento titulo="Com quem você fala" texto="As sócias do escritório, Dra. Tuane Borges e Dra. Flávia Fidélis. Atenção a golpes: o escritório não pede pagamentos nem dados bancários por mensagem. Na dúvida, ligue para o número oficial." />
 </Base>

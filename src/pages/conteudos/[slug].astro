@@ -33,7 +33,6 @@ const jsonld = [
     </div>
     <div class="page-hero__foot"><p class="page-hero__lede" data-rise style="--i:2"><span class="soft" style="margin-top:0">{a.resumo}</span></p></div>
   </section>
-  <Band i={i + 1} />
   <article class="article on-paper grid">
     <dl class="article__meta" data-stagger>
       <div><dt>Categoria</dt><dd>{a.categoria}</dd></div>
@@ -46,11 +45,12 @@ const jsonld = [
         if (b.tipo === 'h2') return <h2 data-reveal>{b.texto}</h2>;
         if (b.tipo === 'lista') return <ul data-stagger>{b.itens.map((x) => <li>{x}</li>)}</ul>;
         if (b.tipo === 'citacao') return <blockquote data-reveal>{b.texto}</blockquote>;
-        return <p data-reveal>{b.texto}</p>;
+        return <p>{b.texto}</p>;
       })}
       <p class="article__note">Este texto tem caráter informativo e reflete as normas vigentes na data de publicação. Ele não substitui a análise individual do caso. {site.socias.map((s) => `${s.tratamento}, ${s.oab[0]}`).join(' · ')}.</p>
     </div>
   </article>
+  <Band i={i + 1} />
   <Atendimento titulo="Ficou alguma dúvida?" texto="Conte o que aconteceu, sem dados de pacientes, e combinamos o atendimento com uma das sócias." msg={`Olá. Li o artigo "${a.titulo}" e gostaria de conversar com o escritório.`} />
   <nav class="next on-paper-2" aria-label="Próximo artigo">
     <a href={`/conteudos/${next.slug}`}>

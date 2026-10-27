@@ -50,3 +50,7 @@ export const dataBR = (iso) => {
   const [y, m, d] = iso.split('-').map(Number);
   return `${d} de ${meses[m - 1]} de ${y}`;
 };
+
+/** Anchor id for a question (used by /duvidas and the home links) */
+export const slugify = (s) =>
+  s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').slice(0, 60);

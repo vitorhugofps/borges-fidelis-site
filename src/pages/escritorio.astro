@@ -6,6 +6,7 @@ import site from '../data/site.json';
 import { wa } from '../lib/util.js';
 import Stack from '../components/Stack.astro';
 import Socias from '../components/Socias.astro';
+import Principal from '../components/Principal.astro';
 ---
 <Base title="O escritório" description="Borges & Fidélis Advocacia: sede em Uberlândia, filial em São Paulo e atendimento online. As sócias Dra. Tuane Borges e Dra. Flávia Fidélis, formação, ética e sigilo." current="/escritorio">
   <section class="page-hero page-hero--short on-paper" data-page-hero>
@@ -15,6 +16,8 @@ import Socias from '../components/Socias.astro';
       <div class="page-hero__act" data-rise style="--i:3"><a class="btn" href={wa()} target="_blank" rel="noopener">Falar com o escritório <Arrow /></a></div>
     </div>
   </section>
+
+  <Principal cap="Recepção do escritório, em Uberlândia" />
 
   <section class="about on-paper-2 grid" aria-label="Sobre o escritório">
     <dl class="about__facts" data-stagger>
@@ -29,15 +32,15 @@ import Socias from '../components/Socias.astro';
     </div>
   </section>
 
-  <Stack ids={['principal', 'borges', 'fidelis', 'sala', 'corredor', 'estacao']} />
-
   <Socias />
+
+  <Stack ids={['borges', 'fidelis', 'sala', 'corredor', 'estacao']} />
 
   <section class="ethics on-dark grid" aria-labelledby="etica-t">
     <div class="ethics__head">
       <h2 class="t-l lines" id="etica-t"><span class="line"><span data-line>Ética e sigilo</span></span></h2>
     </div>
-    <div class="ethics__list" data-stagger>
+    <div class="ethics__list">
       <div>
         <h3>Sigilo profissional</h3>
         <p>Tudo o que o cliente conta ao escritório é protegido pelo sigilo profissional do advogado, previsto no Estatuto da Advocacia e no Código de Ética e Disciplina da OAB. O mesmo cuidado vale para prontuários, exames e qualquer documento do caso.</p>

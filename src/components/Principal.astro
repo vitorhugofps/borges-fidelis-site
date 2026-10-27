@@ -1,0 +1,16 @@
+---
+/**
+ * A foto principal do escritório (logotipo na parede de mármore), inteira, em 16:9.
+ * Ao chegar na tela, "acende": sai da penumbra para a luz, sem recorte.
+ */
+import { Image } from 'astro:assets';
+import site from '../data/site.json';
+import { fotos } from '../lib/fotos.js';
+const { cap = `${fotos.principal.cap}`, eager = false } = Astro.props;
+---
+<figure class="principal on-dark" data-focus>
+  <div class="principal__frame">
+    <Image src={fotos.principal.src} alt={fotos.principal.alt} widths={[960, 1440, 1920, 2560, 3200]} sizes="100vw" loading={eager ? 'eager' : 'lazy'} decoding="async" />
+  </div>
+  <figcaption class="principal__cap"><span>{cap}</span><span>Desde {site.desde}</span></figcaption>
+</figure>

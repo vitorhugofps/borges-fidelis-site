@@ -1,8 +1,9 @@
 ---
 /**
- * Galeria em slides empilhados: cada foto entra por cima da anterior conforme o scroll.
- * A que sai recua com desfoque e sombra. As fotos aparecem inteiras (proporção original, sem recorte).
- * Sem JavaScript ou com movimento reduzido, vira uma sequência vertical simples.
+ * Galeria em slides empilhados: cada foto sobe e pousa por cima da anterior conforme o scroll
+ * (position: sticky), e a de baixo recua para a sombra. As fotos aparecem inteiras
+ * (proporção original, sem recorte). Sem JavaScript ou com movimento reduzido, vira uma
+ * sequência vertical simples.
  */
 import { Image } from 'astro:assets';
 import { fotos } from '../lib/fotos.js';
@@ -10,16 +11,14 @@ const { ids = [], label = 'Fotos do escritório em Uberlândia', tone = 'dark' }
 const items = ids.map((id) => fotos[id]).filter(Boolean);
 ---
 <section class:list={['stack', tone === 'dark' ? 'on-dark' : 'on-paper-2']} data-stack style={`--n:${items.length}`} aria-label={label}>
-  <div class="stack__pin">
-    <div class="stack__stage">
-      {items.map((f, i) => (
-        <figure class="stack__slide" data-slide style={`--ar:${(f.src.width / f.src.height).toFixed(4)};--i:${i}`}>
-          <div class="stack__frame">
-            <Image src={f.src} alt={f.alt} widths={[640, 960, 1280, 1920, 2560]} sizes="(max-width: 899px) 100vw, 88vw" loading="lazy" decoding="async" />
-          </div>
-          <figcaption>{f.cap}</figcaption>
-        </figure>
-      ))}
-    </div>
+  <div class="stack__stage">
+    {items.map((f, i) => (
+      <figure class="stack__slide" data-slide style={`--ar:${(f.src.width / f.src.height).toFixed(4)};--i:${i}`}>
+        <div class="stack__frame">
+          <Image src={f.src} alt={f.alt} widths={[640, 960, 1280, 1920, 2560]} sizes="(max-width: 899px) 100vw, 88vw" loading="lazy" decoding="async" />
+        </div>
+        <figcaption>{f.cap}</figcaption>
+      </figure>
+    ))}
   </div>
 </section>

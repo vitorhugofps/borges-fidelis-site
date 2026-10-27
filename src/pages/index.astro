@@ -1,13 +1,12 @@
 ---
-import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import Triagem from '../components/Triagem.astro';
 import Arrow from '../components/Arrow.astro';
 import site from '../data/site.json';
 import faq from '../data/faq.json';
 import artigos from '../data/artigos.json';
-import { wa, grupos, splitTitle } from '../lib/util.js';
-import principal from '../assets/img/principal.jpg';
+import { wa, grupos, splitTitle, slugify } from '../lib/util.js';
+import Principal from '../components/Principal.astro';
 import Socias from '../components/Socias.astro';
 import Stack from '../components/Stack.astro';
 
@@ -33,26 +32,21 @@ const anos = new Date().getFullYear() - site.desde;
     </div>
   </section>
 
-  <!-- 2 · Intro -->
+  <!-- 2 · The office, lights coming on -->
+  <Principal />
+
+  <!-- 3 · Intro -->
   <section class="intro on-paper grid" aria-label="Apresentação">
     <p class="intro__lead" data-split>
       Desde {site.desde}, a Borges & Fidélis acompanha médicos quando a carreira está em jogo: uma notificação do CRM, uma ação de paciente, uma intimação. E também nos dias comuns, quando ainda dá para prevenir.
     </p>
-    <div class="intro__cols" data-stagger>
+    <div class="intro__cols">
       <p><strong>Para quem.</strong> Médicos, cirurgiões-dentistas, enfermeiros e demais profissionais da saúde, além de clínicas e hospitais.</p>
       <p><strong>Em quê.</strong> Defesa no CRM, ações de indenização e investigações criminais; publicidade, clínicas, trabalho e tributos; residência, aposentadoria especial e FIES.</p>
       <p><strong>Onde.</strong> Sede em {site.endereco.cidade}, no bairro {site.endereco.bairro}, e filial em São Paulo. Atendimento presencial ou online, sempre com hora marcada.</p>
       <p><strong>Como falar.</strong> Pelo WhatsApp <a class="link nw" href={wa()} target="_blank" rel="noopener">{site.telefone}</a> ou pelo e-mail <a class="link" href={`mailto:${site.email}`}>{site.email}</a>. Cada conversa é protegida pelo sigilo profissional.</p>
     </div>
   </section>
-
-  <!-- 3 · The office, in focus -->
-  <figure class="principal on-dark" data-focus>
-    <div class="principal__frame">
-      <Image src={principal} alt="Logotipo Borges & Fidélis em letras pretas aplicado na parede de mármore do escritório" widths={[960, 1440, 1920, 2560, 3200]} sizes="100vw" loading="lazy" decoding="async" />
-    </div>
-    <figcaption class="principal__cap"><span>Borges & Fidélis, em Uberlândia</span><span>Desde {site.desde}</span></figcaption>
-  </figure>
 
   <!-- 4 · Live thing -->
   <Triagem />
@@ -86,13 +80,7 @@ const anos = new Date().getFullYear() - site.desde;
 
   <!-- 6 · About -->
   <section class="about on-paper-2 grid" aria-label="O escritório">
-    <dl class="about__facts" data-stagger>
-      <div><dt>Desde</dt><dd class="num">{site.desde}</dd></div>
-      <div><dt>Sede</dt><dd>{site.endereco.cidade}, {site.endereco.uf}</dd></div>
-      <div><dt>Filial</dt><dd>{site.filial}</dd></div>
-      <div><dt>Atendimento</dt><dd>Presencial e online</dd></div>
-    </dl>
-    <div class="about__text" data-split>
+    <div class="about__text about__text--solo" data-split>
       <p>O escritório nasceu em Uberlândia com um recorte claro: atender quem trabalha com saúde. Prontuário, escala de plantão e Código de Ética Médica fazem parte do trabalho de todo dia, ao lado das leis processuais. O mesmo episódio pode chegar ao Conselho, à Justiça e à delegacia, e o caso é olhado nas três frentes desde o início.</p>
     </div>
   </section>
@@ -122,11 +110,11 @@ const anos = new Date().getFullYear() - site.desde;
       <p data-reveal>As perguntas que mais chegam ao escritório, respondidas com a norma ao lado.</p>
       <a class="arrow-link" href="/duvidas">Todas as dúvidas <Arrow /></a>
     </div>
-    <div class="faq__text faq__text--home" data-stagger>
+    <ul class="faq__links">
       {faqHome.map((f) => (
-        <p><strong>{f.q}</strong> {f.a}</p>
+        <li><a href={`/duvidas#${slugify(f.q)}`}><span>{f.q}</span><Arrow /></a></li>
       ))}
-    </div>
+    </ul>
   </section>
 
   <!-- 10 · Contents (poster) -->
@@ -151,13 +139,10 @@ const anos = new Date().getFullYear() - site.desde;
   <section class="contact on-paper" aria-labelledby="contato-t">
     <h2 class="sr-only" id="contato-t">Contato</h2>
     <div class="contact__rows">
-      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>{site.endereco.linha1}</span></a>
-      <p data-wipe style="--d:80"><span>{site.endereco.bairro}, {site.endereco.cidade}</span></p>
-      <p data-wipe style="--d:160"><span>Filial em {site.filial}</span></p>
-      <p data-wipe style="--d:240"><span>Presencial e online, com hora marcada</span></p>
-      <a href={wa()} target="_blank" rel="noopener" data-wipe style="--d:320"><span class="num">WhatsApp {site.telefone}</span></a>
-      <a href={`mailto:${site.email}`} data-wipe style="--d:400"><span>{site.email.replace('@', '\u200B@')}</span></a>
-      <a class="contact__greet" href={wa()} target="_blank" rel="noopener" data-wipe style="--d:480"><span>Vamos conversar?</span><span class="round-btn" aria-hidden="true"><Arrow /></span></a>
+      <a href={site.endereco.mapa} target="_blank" rel="noopener" data-wipe><span>{site.endereco.linha1}</span><span class="row-note">{site.endereco.bairro}, {site.endereco.cidade} · filial em {site.filial}</span></a>
+      <a href={wa()} target="_blank" rel="noopener" data-wipe style="--d:100"><span class="num">WhatsApp {site.telefone}</span></a>
+      <a href={`mailto:${site.email}`} data-wipe style="--d:200"><span>{site.email.replace('@', '\u200B@')}</span></a>
+      <a class="contact__greet" href={wa()} target="_blank" rel="noopener" data-wipe style="--d:300"><span>Vamos conversar?</span><span class="round-btn" aria-hidden="true"><Arrow /></span></a>
     </div>
   </section>
 </Base>

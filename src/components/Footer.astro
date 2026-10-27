@@ -18,7 +18,8 @@ const lockup = lockupRaw.replace('<svg ', '<svg aria-hidden="true" focusable="fa
     <a href={wa()} target="_blank" rel="noopener" aria-label={`Conversar pelo WhatsApp: ${site.telefone}`}><span class="lines"><span class="line"><span data-line>{site.telefone}</span></span></span></a>
   </div>
   <p class="ftr__oab">
-    Borges & Fidélis Advocacia · {site.socias.map((s, i) => <span class="nw">{s.tratamento}, {s.oab.join(', ')}{i < site.socias.length - 1 ? ' · ' : '.'}</span>)}
+    Borges & Fidélis Advocacia.<br />
+    {site.socias.map((s, i) => <>{s.tratamento}, {s.oab.map((o, k) => <span class="nw">{o}{k < s.oab.length - 1 ? ', ' : ''}</span>)}.<br /></>)}
     Conteúdo de caráter informativo, que não substitui a análise individual do caso.
   </p>
   <p class="ftr__oab notice">

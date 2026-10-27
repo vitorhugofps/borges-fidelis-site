@@ -3,10 +3,10 @@ import Base from '../layouts/Base.astro';
 import FitTitle from '../components/FitTitle.astro';
 import Arrow from '../components/Arrow.astro';
 import Atendimento from '../components/Atendimento.astro';
-import Band from '../components/Band.astro';
+import Stack from '../components/Stack.astro';
 import faq from '../data/faq.json';
 import areas from '../data/areas.json';
-const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').slice(0, 60);
+import { slugify } from '../lib/util.js';
 const all = [...faq, ...areas.flatMap((a) => a.faq)];
 const jsonld = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: all.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }];
 ---
@@ -18,10 +18,9 @@ const jsonld = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEnti
     </div>
   </section>
 
-  <Band i={2} />
   <section class="faq on-paper grid" aria-labelledby="geral-t">
-    <div class="faq__head"><h2 class="t-m" id="geral-t">Perguntas gerais</h2></div>
-    <div class="faq__text" data-stagger>
+    <div class="faq__head"><h2 class="t-m lines" id="geral-t"><span class="line"><span data-line>Perguntas gerais</span></span></h2></div>
+    <div class="faq__text">
       {faq.map((f) => <p id={slugify(f.q)}><strong>{f.q}</strong> {f.a}</p>)}
     </div>
   </section>
@@ -29,13 +28,14 @@ const jsonld = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEnti
   {areas.map((a, i) => (
     <section class:list={['faq grid', i % 2 === 0 ? 'on-paper-2' : 'on-paper']} aria-labelledby={`faq-${a.slug}`}>
       <div class="faq__head">
-        <h2 class="t-m" id={`faq-${a.slug}`}>{a.nome}</h2>
+        <h2 class="t-m lines" id={`faq-${a.slug}`}><span class="line"><span data-line>{a.nome}</span></span></h2>
         <a class="arrow-link" href={`/areas/${a.slug}`}>Sobre a área <Arrow /></a>
       </div>
-      <div class="faq__text" data-stagger>
+      <div class="faq__text">
         {a.faq.map((f) => <p id={slugify(f.q)}><strong>{f.q}</strong> {f.a}</p>)}
       </div>
     </section>
   ))}
+  <Stack ids={['principal', 'sala', 'corredor', 'estacao']} />
   <Atendimento />
 </Base>

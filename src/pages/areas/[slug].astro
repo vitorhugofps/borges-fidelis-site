@@ -53,7 +53,7 @@ const jsonld = [
     <div class="points__head">
       <h2 class="t-m" id="points-t" data-reveal>O que você precisa saber</h2>
     </div>
-    <div class="points__text" data-stagger>
+    <div class="points__text">
       {a.pontos.map((p) => <p><strong>{p.titulo}.</strong> {p.texto}</p>)}
     </div>
   </section>
@@ -90,7 +90,7 @@ const jsonld = [
       <h2 class="t-m" id="faq-t">Perguntas frequentes</h2>
       <a class="arrow-link" href="/duvidas">Todas as dúvidas <Arrow /></a>
     </div>
-    <div class="faq__text" data-stagger>
+    <div class="faq__text">
       {a.faq.map((f) => <p><strong>{f.q}</strong> {f.a}</p>)}
     </div>
   </section>
