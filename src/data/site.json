@@ -11,10 +11,10 @@
   "mensagemPadrao": "Olá. Gostaria de agendar um atendimento com o escritório Borges & Fidélis.",
   "endereco": {
     "linha1": "Av. dos Vinhedos, 71, sala 404",
-    "bairro": "Morada da Colina",
+    "bairro": "Jardim Karaíba",
     "cidade": "Uberlândia",
     "uf": "MG",
-    "mapa": "https://www.google.com/maps/search/?api=1&query=Av.+dos+Vinhedos%2C+71%2C+Morada+da+Colina%2C+Uberl%C3%A2ndia+-+MG"
+    "mapa": "https://www.google.com/maps/search/?api=1&query=Av.+dos+Vinhedos%2C+71%2C+Jardim+Kara%C3%ADba%2C+Uberl%C3%A2ndia+-+MG"
   },
   "filial": "São Paulo, SP",
   "atendimento": "Presencial e online, com hora marcada",

@@ -1298,6 +1298,63 @@ a.row:focus-visible {
 }
 
 /* ==========================================================================
+   Reviews: clients in their own words, set as quotations, no ratings
+   ========================================================================== */
+.reviews {
+  padding-block: var(--section);
+}
+.reviews__head {
+  grid-column: 1 / 4;
+  align-self: start;
+}
+.reviews__head p {
+  margin-top: 18px;
+  max-width: 28ch;
+  color: var(--fg-soft);
+}
+.reviews__head .arrow-link {
+  margin-top: 28px;
+}
+.reviews__body {
+  grid-column: 5 / -1;
+}
+.reviews figcaption {
+  margin-top: 14px;
+  font-size: var(--fs-xs);
+  color: var(--fg-soft);
+}
+.reviews__lead blockquote {
+  max-width: 24ch;
+  font-size: clamp(28px, 3vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.reviews__more {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px var(--gutter);
+  margin-top: clamp(56px, 6vw, 96px);
+}
+.reviews__more blockquote {
+  font-size: var(--fs-s);
+  line-height: 1.5;
+}
+@media (max-width: 899px) {
+  .reviews__head,
+  .reviews__body {
+    grid-column: 1 / -1;
+  }
+  .reviews__body {
+    margin-top: 40px;
+  }
+  .reviews__more {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* ==========================================================================
    Poster list (contents)
    ========================================================================== */
 .poster {

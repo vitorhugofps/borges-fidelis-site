@@ -9,6 +9,7 @@ import { wa, grupos, splitTitle, slugify } from '../lib/util.js';
 import Principal from '../components/Principal.astro';
 import Socias from '../components/Socias.astro';
 import Stack from '../components/Stack.astro';
+import Avaliacoes from '../components/Avaliacoes.astro';
 
 const curtos = {
   'notificacao-do-crm-primeiras-72-horas': 'Ofício do CRM',
@@ -41,10 +42,10 @@ const anos = new Date().getFullYear() - site.desde;
       Desde {site.desde}, a Borges & Fidélis acompanha médicos quando a carreira está em jogo: uma notificação do CRM, uma ação de paciente, uma intimação. E também nos dias comuns, quando ainda dá para prevenir.
     </p>
     <div class="intro__cols">
-      <p><strong>Para quem.</strong> Médicos, cirurgiões-dentistas, enfermeiros e demais profissionais da saúde, além de clínicas e hospitais.</p>
-      <p><strong>Em quê.</strong> Defesa no CRM, ações de indenização e investigações criminais; publicidade, clínicas, trabalho e tributos; residência, aposentadoria especial e FIES.</p>
-      <p><strong>Onde.</strong> Sede em {site.endereco.cidade}, no bairro {site.endereco.bairro}, e filial em São Paulo. Atendimento presencial ou online, sempre com hora marcada.</p>
-      <p><strong>Como falar.</strong> Pelo WhatsApp <a class="link nw" href={wa()} target="_blank" rel="noopener">{site.telefone}</a> ou pelo e-mail <a class="link" href={`mailto:${site.email}`}>{site.email}</a>. Cada conversa é protegida pelo sigilo profissional.</p>
+      <p><strong>Para quem:</strong> Médicos, cirurgiões-dentistas, enfermeiros e demais profissionais da saúde, além de clínicas e hospitais.</p>
+      <p><strong>Em que:</strong> Defesa no CRM, ações de indenização e investigações criminais; publicidade, clínicas, trabalho e tributos; residência, aposentadoria especial e FIES.</p>
+      <p><strong>Onde:</strong> Sede em {site.endereco.cidade}, no bairro {site.endereco.bairro}, e filial em São Paulo. Atendimento presencial ou online, sempre com hora marcada.</p>
+      <p><strong>Como falar:</strong> Pelo WhatsApp <a class="link nw" href={wa()} target="_blank" rel="noopener">{site.telefone}</a> ou pelo e-mail <a class="link" href={`mailto:${site.email}`}>{site.email}</a>. Cada conversa é protegida pelo sigilo profissional.</p>
     </div>
   </section>
 
@@ -102,6 +103,9 @@ const anos = new Date().getFullYear() - site.desde;
   </section>
 
   <Stack ids={['borges', 'fidelis', 'sala', 'estacao']} />
+
+  <!-- Clients, in their own words (public Google reviews) -->
+  <Avaliacoes />
 
   <!-- 9 · FAQ -->
   <section class="faq on-paper grid" aria-labelledby="faq-t">

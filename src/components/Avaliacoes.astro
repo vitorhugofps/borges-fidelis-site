@@ -1,0 +1,30 @@
+---
+/**
+ * Avaliações de clientes: trechos reais de avaliações públicas no Google.
+ * Sóbrio de propósito (Prov. 205/2021): sem estrelas, nota média, contagem,
+ * fotos ou nomes completos; nada de resultados prometidos.
+ */
+import Arrow from './Arrow.astro';
+import av from '../data/avaliacoes.json';
+---
+<section class="reviews on-paper-2 grid" aria-labelledby="reviews-t">
+  <div class="reviews__head">
+    <h2 class="t-m lines" id="reviews-t"><span class="line"><span data-line>Nas palavras dos clientes</span></span></h2>
+    <p>Trechos de avaliações publicadas no Google por quem já foi atendido pelo escritório.</p>
+    <a class="arrow-link" href={av.perfil} target="_blank" rel="noopener">Ver no Google <Arrow /></a>
+  </div>
+  <div class="reviews__body">
+    <figure class="reviews__lead">
+      <blockquote><p data-split>“{av.destaque.texto}”</p></blockquote>
+      <figcaption>{av.destaque.nome}, no Google</figcaption>
+    </figure>
+    <div class="reviews__more">
+      {av.outras.map((r) => (
+        <figure>
+          <blockquote><p>“{r.texto}”</p></blockquote>
+          <figcaption>{r.nome}, no Google</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
